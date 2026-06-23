@@ -1,0 +1,14 @@
+scope,dimension,value_1,value_2,count
+paid_all_time,source,Meta Ads,,945
+paid_all_time,source,Google Ads,,120
+paid_all_time,medium,Paid Ads,,1058
+paid_all_time,medium,Paid ads,,6
+paid_all_time,medium,paid ads,,1
+all_contacts,source_medium,Not set,Not set,2369
+all_contacts,source_medium,Meta Ads,Paid Ads,944
+all_contacts,source_medium,Max,Not set,590
+all_contacts,source_medium,Google Ads,Paid Ads,114
+all_contacts,source_medium,Dubai Hills,Not set,95
+all_contacts,source_medium,Google Ads,Paid ads,5
+all_contacts,source_medium,Meta Ads,Paid ads,1
+all_contacts,source_medium,Google Ads,paid ads,1

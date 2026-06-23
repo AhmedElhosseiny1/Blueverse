@@ -36,6 +36,7 @@ OUT_DIR.mkdir(exist_ok=True)
 OUT_HTML = OUT_DIR / "google_ads_report.html"
 ROOT_HTML = ROOT / "index.html"
 OUT_JSON = OUT_DIR / "blueverse_paid_media_data.json"
+RESPOND_SUMMARY_JSON = OUT_DIR / "respondio_paid_contacts_summary.json"
 LOGO_PATH = ROOT / "assets" / "blueverse-logo.png"
 
 DAY_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -250,6 +251,7 @@ def load_data() -> SourceData:
             contacts[col] = 0.0
         contacts[col] = pd.to_numeric(contacts[col], errors="coerce").fillna(0.0)
     contacts["source"] = contacts.get("source", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set"})
+    contacts["medium"] = contacts.get("medium", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set", "": "Not set"})
     contacts["service"] = contacts.get("service", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set", "": "Not set"})
     contacts["lifecycle"] = contacts.get("lifecycle", "Not set").fillna("Not set").astype(str).replace({"nan": "NaN", "": "Not set"})
     if "created_at" in contacts.columns:
@@ -278,7 +280,7 @@ def summarize_google(data: SourceData) -> dict[str, Any]:
     lost = (
         days.groupby("Campaign", dropna=False)
         .apply(
-            lambda g: pd.Series(
+            lambda g, **_: pd.Series(
                 {
                     "Lost IS Rank": weighted_mean(g, "Lost IS Rank", "Impressions"),
                     "Lost IS Budget": weighted_mean(g, "Lost IS Budget", "Impressions"),
@@ -476,6 +478,10 @@ def summarize_meta(meta: pd.DataFrame) -> dict[str, Any]:
 
 
 def summarize_respond(contacts: pd.DataFrame) -> dict[str, Any]:
+    mcp_summary = load_respond_mcp_summary()
+    if mcp_summary:
+        return summarize_respond_mcp(mcp_summary, contacts)
+
     source = contacts.groupby("source", dropna=False).agg(
         Contacts=("id", "count"),
         QuotedValue=("quoted_value", "sum"),
@@ -507,12 +513,300 @@ def summarize_respond(contacts: pd.DataFrame) -> dict[str, Any]:
     }
     return {
         "totals": totals,
+        "june_totals": totals,
         "source": source.sort_values("Contacts", ascending=False),
         "lifecycle": lifecycle,
         "service": service,
         "source_lifecycle": source_lifecycle,
         "source_service": source_service,
         "daily": by_day,
+        "medium": contacts.groupby("medium", dropna=False).agg(Contacts=("id", "count")).reset_index().sort_values("Contacts", ascending=False),
+        "filters": build_respond_filters(scope_from_contacts(contacts)),
+        "summary_meta": {
+            "generated_at": None,
+            "mcp_tool": "june_paid_media_contacts.csv",
+            "total_contacts_scanned": len(contacts),
+            "filter_definition": {
+                "paid_contact": "June CSV fallback",
+                "source_field": "source",
+                "medium_field": "medium",
+            },
+            "all_contacts_source_medium_top": [],
+        },
+    }
+
+
+def load_respond_mcp_summary() -> dict[str, Any] | None:
+    if not RESPOND_SUMMARY_JSON.exists():
+        return None
+    try:
+        return json.loads(RESPOND_SUMMARY_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def coerce_count_map(value: Any) -> dict[str, int]:
+    if not isinstance(value, dict):
+        return {}
+    out: dict[str, int] = {}
+    for key, count in value.items():
+        try:
+            out[str(key)] = int(float(count))
+        except Exception:
+            out[str(key)] = 0
+    return out
+
+
+def coerce_nested_count_map(value: Any) -> dict[str, dict[str, int]]:
+    if not isinstance(value, dict):
+        return {}
+    return {str(key): coerce_count_map(counts) for key, counts in value.items()}
+
+
+def sorted_count_items(counts: dict[str, int], order: list[str] | None = None) -> list[tuple[str, int]]:
+    items = [(str(key), int(value or 0)) for key, value in counts.items()]
+    if order:
+        return sorted(items, key=lambda item: (order.index(item[0]) if item[0] in order else 999, -item[1], item[0].lower()))
+    return sorted(items, key=lambda item: (-item[1], item[0].lower()))
+
+
+def financial_value(financials: dict[str, Any], key: str, field: str) -> float:
+    value = (financials.get(key) or {}).get(field, 0) if isinstance(financials, dict) else 0
+    return float(value or 0)
+
+
+def financial_count(financials: dict[str, Any], key: str, field: str) -> int:
+    value = (financials.get(key) or {}).get(field, 0) if isinstance(financials, dict) else 0
+    return int(value or 0)
+
+
+def count_records(
+    counts: dict[str, int],
+    key_name: str,
+    financials: dict[str, Any] | None = None,
+    order: list[str] | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    rows = []
+    for key, count in sorted_count_items(counts, order=order):
+        row = {key_name: key, "contacts": int(count)}
+        if financials is not None:
+            row.update(
+                {
+                    "quotedValue": financial_value(financials, key, "quoted_value"),
+                    "revenue": financial_value(financials, key, "final_sale_value"),
+                    "contactsWithQuote": financial_count(financials, key, "contacts_with_quote"),
+                    "contactsWithSale": financial_count(financials, key, "contacts_with_sale"),
+                }
+            )
+        rows.append(row)
+    return rows[:limit] if limit else rows
+
+
+def flatten_source_dimension(nested: dict[str, dict[str, int]], dimension_key: str, source_filter: str | None = None, limit: int | None = None) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    sources = [source_filter] if source_filter else sorted(nested.keys())
+    for source in sources:
+        for dimension, count in (nested.get(source) or {}).items():
+            rows.append({"source": source, dimension_key: dimension, "contacts": int(count or 0)})
+    rows.sort(key=lambda row: (-row["contacts"], row["source"].lower(), str(row[dimension_key]).lower()))
+    return rows[:limit] if limit else rows
+
+
+def source_financials_from_contacts(contacts: pd.DataFrame, field_name: str) -> dict[str, dict[str, float | int]]:
+    financials: dict[str, dict[str, float | int]] = {}
+    if contacts.empty or field_name not in contacts.columns:
+        return financials
+    for key, group in contacts.groupby(field_name, dropna=False):
+        label = str(key)
+        financials[label] = {
+            "quoted_value": float(group["quoted_value"].sum()),
+            "final_sale_value": float(group["final_sale_value"].sum()),
+            "contacts_with_quote": int((group["quoted_value"] > 0).sum()),
+            "contacts_with_sale": int((group["final_sale_value"] > 0).sum()),
+        }
+    return financials
+
+
+def scope_from_contacts(contacts: pd.DataFrame) -> dict[str, Any]:
+    if contacts.empty:
+        return {
+            "total": 0,
+            "quoted_value": 0,
+            "final_sale_value": 0,
+            "contacts_with_quote": 0,
+            "contacts_with_sale": 0,
+            "by_source": {},
+            "by_medium": {},
+            "by_lifecycle": {},
+            "by_service": {},
+            "source_financials": {},
+            "service_financials": {},
+            "source_lifecycle": {},
+            "source_medium": {},
+            "source_service": {},
+        }
+    return {
+        "total": int(len(contacts)),
+        "quoted_value": float(contacts["quoted_value"].sum()),
+        "final_sale_value": float(contacts["final_sale_value"].sum()),
+        "contacts_with_quote": int((contacts["quoted_value"] > 0).sum()),
+        "contacts_with_sale": int((contacts["final_sale_value"] > 0).sum()),
+        "by_source": coerce_count_map(contacts["source"].value_counts(dropna=False).to_dict()),
+        "by_medium": coerce_count_map(contacts["medium"].value_counts(dropna=False).to_dict()),
+        "by_lifecycle": coerce_count_map(contacts["lifecycle"].value_counts(dropna=False).to_dict()),
+        "by_service": coerce_count_map(contacts["service"].value_counts(dropna=False).to_dict()),
+        "source_financials": source_financials_from_contacts(contacts, "source"),
+        "service_financials": source_financials_from_contacts(contacts, "service"),
+        "source_lifecycle": {
+            str(src): coerce_count_map(group["lifecycle"].value_counts(dropna=False).to_dict())
+            for src, group in contacts.groupby("source", dropna=False)
+        },
+        "source_medium": {
+            str(src): coerce_count_map(group["medium"].value_counts(dropna=False).to_dict())
+            for src, group in contacts.groupby("source", dropna=False)
+        },
+        "source_service": {
+            str(src): coerce_count_map(group["service"].value_counts(dropna=False).to_dict())
+            for src, group in contacts.groupby("source", dropna=False)
+        },
+    }
+
+
+def respond_filter_from_scope(scope: dict[str, Any], label: str) -> dict[str, Any]:
+    by_source = coerce_count_map(scope.get("by_source"))
+    source_financials = scope.get("source_financials") if isinstance(scope.get("source_financials"), dict) else {}
+    service_financials = scope.get("service_financials") if isinstance(scope.get("service_financials"), dict) else {}
+    source_lifecycle = coerce_nested_count_map(scope.get("source_lifecycle"))
+    source_medium = coerce_nested_count_map(scope.get("source_medium"))
+    source_service = coerce_nested_count_map(scope.get("source_service"))
+    selected_source = None if label == "All" else label
+
+    if selected_source:
+        total = int(by_source.get(selected_source, 0))
+        quoted_value = financial_value(source_financials, selected_source, "quoted_value")
+        revenue = financial_value(source_financials, selected_source, "final_sale_value")
+        contacts_with_quote = financial_count(source_financials, selected_source, "contacts_with_quote")
+        contacts_with_sale = financial_count(source_financials, selected_source, "contacts_with_sale")
+        source_counts = {selected_source: total} if total else {}
+        lifecycle_counts = source_lifecycle.get(selected_source, {})
+        medium_counts = source_medium.get(selected_source, {})
+        service_counts = source_service.get(selected_source, {})
+    else:
+        total = int(scope.get("total") or sum(by_source.values()))
+        quoted_value = float(scope.get("quoted_value") or 0)
+        revenue = float(scope.get("final_sale_value") or 0)
+        contacts_with_quote = int(scope.get("contacts_with_quote") or 0)
+        contacts_with_sale = int(scope.get("contacts_with_sale") or 0)
+        source_counts = by_source
+        lifecycle_counts = coerce_count_map(scope.get("by_lifecycle"))
+        medium_counts = coerce_count_map(scope.get("by_medium"))
+        service_counts = coerce_count_map(scope.get("by_service"))
+
+    lifecycle_rows = count_records(lifecycle_counts, "lifecycle", order=LIFECYCLE_ORDER)
+    customer_like = sum(row["contacts"] for row in lifecycle_rows if row["lifecycle"].lower() in {"customer", "won", "show up"})
+    hot_or_quote = sum(row["contacts"] for row in lifecycle_rows if row["lifecycle"].lower() in {"hot lead", "quotation"})
+
+    return {
+        "label": label,
+        "total": total,
+        "quotedValue": quoted_value,
+        "revenue": revenue,
+        "contactsWithQuote": contacts_with_quote,
+        "contactsWithSale": contacts_with_sale,
+        "hotOrQuote": hot_or_quote,
+        "customerLike": customer_like,
+        "sources": count_records(source_counts, "source", source_financials),
+        "lifecycle": lifecycle_rows,
+        "services": count_records(service_counts, "service", None if selected_source else service_financials, limit=30),
+        "mediums": count_records(medium_counts, "medium", limit=30),
+        "sourceServices": flatten_source_dimension(source_service, "service", selected_source, limit=30),
+        "sourceMediums": flatten_source_dimension(source_medium, "medium", selected_source, limit=30),
+    }
+
+
+def build_respond_filters(scope: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "All": respond_filter_from_scope(scope, "All"),
+        "Meta Ads": respond_filter_from_scope(scope, "Meta Ads"),
+        "Google Ads": respond_filter_from_scope(scope, "Google Ads"),
+    }
+
+
+def respond_df_from_records(records: list[dict[str, Any]], key_name: str, df_key_name: str) -> pd.DataFrame:
+    rows = [
+        {
+            df_key_name: row.get(key_name, "Not set"),
+            "Contacts": int(row.get("contacts") or 0),
+            "QuotedValue": float(row.get("quotedValue") or 0),
+            "Revenue": float(row.get("revenue") or 0),
+        }
+        for row in records
+    ]
+    return pd.DataFrame(rows, columns=[df_key_name, "Contacts", "QuotedValue", "Revenue"])
+
+
+def summarize_respond_mcp(summary: dict[str, Any], contacts: pd.DataFrame) -> dict[str, Any]:
+    all_scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
+    june_scope = summary.get("paid_june_2026") if isinstance(summary.get("paid_june_2026"), dict) else {}
+    filters = build_respond_filters(all_scope)
+    all_filter = filters["All"]
+    source = respond_df_from_records(all_filter["sources"], "source", "source")
+    lifecycle = pd.DataFrame(
+        [{"lifecycle": row["lifecycle"], "Contacts": row["contacts"]} for row in all_filter["lifecycle"]],
+        columns=["lifecycle", "Contacts"],
+    )
+    service = respond_df_from_records(all_filter["services"], "service", "service")
+    medium = pd.DataFrame(
+        [{"medium": row["medium"], "Contacts": row["contacts"]} for row in all_filter["mediums"]],
+        columns=["medium", "Contacts"],
+    )
+    source_service = pd.DataFrame(
+        [{"source": row["source"], "service": row["service"], "Contacts": row["contacts"]} for row in all_filter["sourceServices"]],
+        columns=["source", "service", "Contacts"],
+    )
+
+    daily = contacts.dropna(subset=["created_dt"]).copy()
+    if daily.empty:
+        by_day = pd.DataFrame(columns=["Day", "Contacts"])
+    else:
+        daily["Day"] = daily["created_dt"].dt.strftime("%Y-%m-%d")
+        by_day = daily.groupby("Day", dropna=False).agg(Contacts=("id", "count")).reset_index()
+
+    totals = {
+        "contacts": int(all_filter["total"]),
+        "quoted_value": float(all_filter["quotedValue"]),
+        "revenue": float(all_filter["revenue"]),
+        "contacts_with_quote": int(all_filter["contactsWithQuote"]),
+        "contacts_with_sale": int(all_filter["contactsWithSale"]),
+    }
+    june_totals = {
+        "contacts": int(june_scope.get("total") or 0),
+        "quoted_value": float(june_scope.get("quoted_value") or 0),
+        "revenue": float(june_scope.get("final_sale_value") or 0),
+        "contacts_with_quote": int(june_scope.get("contacts_with_quote") or 0),
+        "contacts_with_sale": int(june_scope.get("contacts_with_sale") or 0),
+    }
+    return {
+        "totals": totals,
+        "june_totals": june_totals,
+        "source": source,
+        "lifecycle": lifecycle,
+        "service": service,
+        "medium": medium,
+        "source_lifecycle": pd.DataFrame(columns=["source", "lifecycle", "Contacts"]),
+        "source_service": source_service,
+        "daily": by_day,
+        "filters": filters,
+        "summary_meta": {
+            "generated_at": summary.get("generated_at"),
+            "mcp_tool": summary.get("mcp_tool", "respond-io-mcp:list_contacts"),
+            "total_contacts_scanned": int(summary.get("total_contacts_scanned") or 0),
+            "filter_definition": summary.get("filter_definition", {}),
+            "all_contacts_source_medium_top": summary.get("all_contacts_source_medium_top", []),
+            "all_contacts_source_counts_top": summary.get("all_contacts_source_counts_top", {}),
+            "all_contacts_medium_counts_top": summary.get("all_contacts_medium_counts_top", {}),
+        },
     }
 
 
@@ -534,6 +828,11 @@ def table(headers: list[str], rows: list[list[str]], class_name: str = "") -> st
             cells.append(f"<td class=\"{cls}\">{value}</td>")
         body.append(f"<tr>{''.join(cells)}</tr>")
     return f"<div class=\"table-wrap {class_name}\"><table><thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+
+
+def live_table(headers: list[str], body_id: str, class_name: str = "") -> str:
+    head = "".join(f"<th>{esc(h)}</th>" for h in headers)
+    return f"<div class=\"table-wrap {class_name}\"><table><thead><tr>{head}</tr></thead><tbody id=\"{esc(body_id)}\"></tbody></table></div>"
 
 
 def is_numeric_text(value: str) -> bool:
@@ -791,6 +1090,8 @@ def build_chart_payloads(google: dict[str, Any], meta: dict[str, Any], respond: 
             "labels": respond["service"]["service"].head(8).tolist(),
             "values": [int(x) for x in respond["service"]["Contacts"].head(8).tolist()],
         },
+        "respondFilters": json_ready(respond.get("filters", {})),
+        "respondMeta": json_ready(respond.get("summary_meta", {})),
     }
 
 
@@ -812,18 +1113,17 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
     gt = google["totals"]
     mt = meta["totals"]
     rt = respond["totals"]
+    jt = respond.get("june_totals", {"contacts": 0})
+    respond_all_filter = respond.get("filters", {}).get("All", {})
+    respond_meta = respond.get("summary_meta", {})
     total_spend = gt["spend"] + mt["spend"]
     total_impressions = gt["impressions"] + mt["impressions"]
     total_platform_events = gt["conversions"] + mt["conversations"]
     blended_cpl_event = safe_div(total_spend, total_platform_events)
     total_respond_contacts = rt["contacts"]
     platform_to_crm = safe_div(total_respond_contacts, total_platform_events) * 100
-    customer_like = int(
-        data.contacts["lifecycle"].str.lower().isin(["customer", "won", "show up"]).sum()
-        if not data.contacts.empty
-        else 0
-    )
-    hot_or_quote = int(data.contacts["lifecycle"].str.lower().isin(["hot lead", "quotation"]).sum())
+    customer_like = int(respond_all_filter.get("customerLike", 0))
+    hot_or_quote = int(respond_all_filter.get("hotOrQuote", 0))
 
     best_google_campaign = google["campaigns"].sort_values(["Conversions", "CPL"], ascending=[False, True]).iloc[0]
     most_efficient_keyword = google["keywords"][google["keywords"]["Conversions"] > 0].sort_values("CPL").head(1)
@@ -856,6 +1156,15 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         [esc(r["source"]), esc(r["service"]), fmt_num(r["Contacts"])]
         for _, r in respond["source_service"].head(12).iterrows()
     ]
+    audit_rows = [
+        [esc(row.get("source", "Not set")), esc(row.get("medium", "Not set")), fmt_num(clean_number(row.get("count", 0)))]
+        for row in respond_meta.get("all_contacts_source_medium_top", [])[:16]
+    ]
+    if not audit_rows:
+        audit_rows = [["No MCP audit rows available", "", "0"]]
+    mcp_tool = respond_meta.get("mcp_tool") or "Respond.io CSV fallback"
+    mcp_generated_at = respond_meta.get("generated_at") or "Not generated"
+    mcp_scanned = int(respond_meta.get("total_contacts_scanned") or rt["contacts"])
 
     monthly_rows = [
         [
@@ -913,8 +1222,8 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
 
     data_gaps = [
         "Age / demographic performance is not present in the shared Google CSVs or Meta workbook. Export age, gender, and age × gender breakdowns from both ad platforms to populate this section.",
-        "Respond.io contact export has source, service, and lifecycle, but not campaign, ad, keyword, UTM, or conversation-owner fields. Campaign-level CRM quality will require those fields or a fresh API pull with custom fields.",
-        "Respond.io quoted value and final sale value are all zero in the current CSV, so ROI/revenue and customer-value analysis are shown as data gaps rather than estimated.",
+        "Respond.io MCP returns source, medium, service, and lifecycle, but not reliable campaign, ad, keyword, UTM, or conversation-owner attribution in the current aggregate. Campaign-level CRM quality will require those fields on new contacts.",
+        "Respond.io quoted value and final sale value are only shown where those custom fields are populated. Empty CRM value fields are treated as zero instead of estimated.",
         "Meta export is June 1-22 only; Google daily export runs April 15-June 23 and monthly export covers April-June. Combined totals therefore label their periods explicitly.",
     ]
 
@@ -935,12 +1244,12 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
           <h1>Paid Media + Respond.io Report</h1>
         </div>
       </div>
-      <p class="hero-copy">Comprehensive Google Ads, Meta Ads, and CRM quality dashboard generated from the source files in this repo. Periods: Google {gt['date_start']} to {gt['date_end']}; Meta {mt['date_start']} to {mt['date_end']}; Respond.io June paid-media contacts.</p>
+      <p class="hero-copy">Comprehensive Google Ads, Meta Ads, and CRM quality dashboard generated from the source files in this repo. Periods: Google {gt['date_start']} to {gt['date_end']}; Meta {mt['date_start']} to {mt['date_end']}; Respond.io paid contacts are verified all-time via MCP, with June 2026 shown separately.</p>
       <div class="hero-grid">
         {kpi_card("Total paid spend", fmt_money(total_spend), "Google + Meta", "blue")}
         {kpi_card("Total impressions", fmt_num(total_impressions), "Cross-channel reach signal", "cyan")}
         {kpi_card("Platform lead events", fmt_num(total_platform_events, 1 if total_platform_events % 1 else 0), "Google conv. + Meta msg starts", "green")}
-        {kpi_card("Respond.io contacts", fmt_num(total_respond_contacts), f"{fmt_pct(platform_to_crm)} event-to-CRM ratio", "orange")}
+        {kpi_card("Respond.io paid contacts", fmt_num(total_respond_contacts), f"{fmt_num(jt.get('contacts', 0))} in June 2026", "orange")}
         {kpi_card("Blended cost / event", fmt_money(blended_cpl_event), "Spend divided by platform lead events", "violet")}
       </div>
     </header>
@@ -1002,13 +1311,21 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
           <h2>Paid Ads to Respond.io</h2>
         </div>
       </div>
+      <div class="filter-row">
+        <div class="segmented" aria-label="Respond.io channel filter">
+          <button type="button" class="active" data-respond-channel="All">All</button>
+          <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
+          <button type="button" data-respond-channel="Google Ads">Google Ads</button>
+        </div>
+        <p class="data-note">Respond.io MCP scan: {fmt_num(mcp_scanned)} total contacts checked; generated {esc(mcp_generated_at)}.</p>
+      </div>
       <div class="funnel">
         {''.join(f'<div class="funnel-step" style="--w:{max(18, 100 - i * 13)}%"><span>{esc(label)}</span><strong>{value}</strong><small>{esc(note)}</small></div>' for i, (label, value, note) in enumerate(funnel_steps))}
       </div>
       <div class="grid-two">
         <div>
           <h3>Contacts by source</h3>
-          {table(["Source", "Contacts", "Quoted value", "Final sale"], source_rows)}
+          {live_table(["Source", "Contacts", "Quoted value", "Final sale"], "respondSourceRows")}
         </div>
         <div>
           <h3>Lifecycle distribution</h3>
@@ -1114,26 +1431,40 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         <div>
           <p class="label">Respond.io</p>
           <h2>Lead Quality and CRM Breakdown</h2>
+          <p>Filter the CRM breakdown by paid source. Paid is verified from Respond.io custom fields: source and medium.</p>
         </div>
       </div>
+      <div class="filter-row">
+        <div class="segmented" aria-label="Respond.io channel filter">
+          <button type="button" class="active" data-respond-channel="All">All</button>
+          <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
+          <button type="button" data-respond-channel="Google Ads">Google Ads</button>
+        </div>
+        <p class="data-note">Showing all-time paid contacts ({fmt_num(rt['contacts'])}); {fmt_num(jt['contacts'])} in June 2026.</p>
+      </div>
       <div class="kpi-grid compact">
-        {kpi_card("Paid-media contacts", fmt_num(rt['contacts']), f"{fmt_num(respond['source'].shape[0])} sources")}
-        {kpi_card("Hot / quotation", fmt_num(hot_or_quote), f"{fmt_pct(safe_div(hot_or_quote, rt['contacts']) * 100)} of contacts")}
-        {kpi_card("Customer / show up", fmt_num(customer_like), f"{fmt_pct(safe_div(customer_like, rt['contacts']) * 100)} of contacts")}
-        {kpi_card("Top service", esc(top_service['service']) if top_service is not None else "N/A", f"{fmt_num(top_service['Contacts']) if top_service is not None else '0'} contacts")}
+        <article class="kpi orange"><span>Paid-media contacts</span><strong id="respondPaidContacts">{fmt_num(rt['contacts'])}</strong><small id="respondPaidNote">All paid contacts ({fmt_num(rt['contacts'])} all-time; {fmt_num(jt['contacts'])} in June 2026)</small></article>
+        <article class="kpi green"><span>Hot / quotation</span><strong id="respondHotQuote">{fmt_num(hot_or_quote)}</strong><small id="respondHotQuoteNote">{fmt_pct(safe_div(hot_or_quote, rt['contacts']) * 100)} of contacts</small></article>
+        <article class="kpi cyan"><span>Customer / show up</span><strong id="respondCustomerLike">{fmt_num(customer_like)}</strong><small id="respondCustomerLikeNote">{fmt_pct(safe_div(customer_like, rt['contacts']) * 100)} of contacts</small></article>
+        <article class="kpi violet"><span>Top service</span><strong id="respondTopService">{esc(top_service['service']) if top_service is not None else "N/A"}</strong><small id="respondTopServiceNote">{fmt_num(top_service['Contacts']) if top_service is not None else '0'} contacts</small></article>
       </div>
       <div class="grid-two">
         <div>
           <h3>Lifecycle counts</h3>
-          {table(["Lifecycle", "Contacts"], lifecycle_rows)}
+          {live_table(["Lifecycle", "Contacts"], "respondLifecycleRows")}
         </div>
         <div>
           <h3>Service counts</h3>
-          {table(["Service", "Contacts", "Quoted value", "Final sale"], service_rows)}
+          {live_table(["Service", "Contacts", "Quoted value", "Final sale"], "respondServiceRows")}
         </div>
       </div>
       <h3>Source × service mix</h3>
-      {table(["Source", "Service", "Contacts"], source_service_rows)}
+      {live_table(["Source", "Service", "Contacts"], "respondSourceServiceRows")}
+      <h3>Source × medium mix</h3>
+      {live_table(["Source", "Medium", "Contacts"], "respondSourceMediumRows")}
+      <h3>All contacts source × medium audit</h3>
+      <p class="data-note">Audit source: {esc(mcp_tool)}. Paid contacts are counted when medium contains paid/cpc/ppc/sem/search ads/social ads or source normalizes to Google Ads / Meta Ads.</p>
+      {table(["Source", "Medium", "Contacts"], audit_rows)}
     </section>
 
     <section id="insights" class="panel">
@@ -1303,6 +1634,46 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
     .insight-card h3 {{ margin: 0 0 8px; }}
     .insight-card p {{ margin: 0; color: #40516a; }}
     .grid-two {{ display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }}
+    .filter-row {{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 8px 0 18px;
+      flex-wrap: wrap;
+    }}
+    .segmented {{
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f7faff;
+      padding: 3px;
+      gap: 3px;
+    }}
+    .segmented button {{
+      appearance: none;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: #40516a;
+      padding: 8px 12px;
+      min-height: 36px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }}
+    .segmented button.active {{
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 5px 14px rgba(8,103,201,0.18);
+    }}
+    .data-note {{
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      max-width: 760px;
+    }}
     .control-grid {{
       display: grid;
       grid-template-columns: 1fr 150px 1.4fr 160px 160px;
@@ -1414,6 +1785,8 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       .toc {{ top: 0; padding-bottom: 10px; }}
       .chart-shell, .chart-shell.tall {{ min-height: 340px; }}
       .funnel-step {{ width: 100%; }}
+      .segmented {{ width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }}
+      .segmented button {{ padding-inline: 6px; }}
     }}
   </style>
 </head>
@@ -1439,6 +1812,10 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
     const tooltip = document.getElementById('tooltip');
     const money = value => 'AED ' + Number(value || 0).toLocaleString(undefined, {{maximumFractionDigits: 0}});
     const num = (value, digits = 0) => Number(value || 0).toLocaleString(undefined, {{maximumFractionDigits: digits}});
+    const pct = value => Number(value || 0).toFixed(1) + '%';
+    const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({{
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+    }}[char]));
 
     function showTip(event, text) {{
       tooltip.textContent = text;
@@ -1669,6 +2046,95 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       refill();
     }}
 
+    let activeRespondFilter = 'All';
+    let respondFiltersReady = false;
+
+    function setText(id, value) {{
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }}
+
+    function renderRows(tbodyId, rows) {{
+      const tbody = document.getElementById(tbodyId);
+      if (!tbody) return;
+      tbody.innerHTML = rows.length
+        ? rows.map(row => `<tr>${{row.map((cell, idx) => `<td class="${{idx && /^AED |^[\\d,.]+$|^[\\d,.]+%/.test(String(cell)) ? 'num' : ''}}">${{cell}}</td>`).join('')}}</tr>`).join('')
+        : '<tr><td colspan="4">No contacts in this filter</td></tr>';
+    }}
+
+    function updateRespond(filterName = activeRespondFilter) {{
+      const filters = REPORT_DATA.respondFilters || {{}};
+      const data = filters[filterName] || filters.All || {{
+        label: filterName,
+        total: 0,
+        hotOrQuote: 0,
+        customerLike: 0,
+        sources: [],
+        lifecycle: [],
+        services: [],
+        sourceServices: [],
+        sourceMediums: []
+      }};
+      activeRespondFilter = data.label || filterName;
+      document.querySelectorAll('[data-respond-channel]').forEach(button => {{
+        button.classList.toggle('active', button.dataset.respondChannel === activeRespondFilter);
+      }});
+      const hotRate = data.total ? data.hotOrQuote / data.total * 100 : 0;
+      const customerRate = data.total ? data.customerLike / data.total * 100 : 0;
+      const topService = (data.services || [])[0] || {{}};
+      setText('respondPaidContacts', num(data.total));
+      setText('respondPaidNote', activeRespondFilter === 'All' ? 'All paid contacts' : `${{activeRespondFilter}} paid contacts`);
+      setText('respondHotQuote', num(data.hotOrQuote));
+      setText('respondHotQuoteNote', `${{pct(hotRate)}} of contacts`);
+      setText('respondCustomerLike', num(data.customerLike));
+      setText('respondCustomerLikeNote', `${{pct(customerRate)}} of contacts`);
+      setText('respondTopService', topService.service || 'N/A');
+      setText('respondTopServiceNote', `${{num(topService.contacts || 0)}} contacts`);
+
+      renderRows('respondSourceRows', (data.sources || []).map(row => [
+        escapeHtml(row.source),
+        num(row.contacts),
+        money(row.quotedValue),
+        money(row.revenue)
+      ]));
+      renderRows('respondLifecycleRows', (data.lifecycle || []).map(row => [
+        escapeHtml(row.lifecycle),
+        num(row.contacts)
+      ]));
+      renderRows('respondServiceRows', (data.services || []).map(row => [
+        escapeHtml(row.service),
+        num(row.contacts),
+        money(row.quotedValue),
+        money(row.revenue)
+      ]));
+      renderRows('respondSourceServiceRows', (data.sourceServices || []).map(row => [
+        escapeHtml(row.source),
+        escapeHtml(row.service),
+        num(row.contacts)
+      ]));
+      renderRows('respondSourceMediumRows', (data.sourceMediums || []).map(row => [
+        escapeHtml(row.source),
+        escapeHtml(row.medium),
+        num(row.contacts)
+      ]));
+      drawBarChart('respondLifecycleChart', {{
+        labels: (data.lifecycle || []).map(row => row.lifecycle),
+        values: (data.lifecycle || []).map(row => row.contacts),
+        horizontal: true,
+        color: COLORS.green,
+        title: `${{activeRespondFilter}} contacts by lifecycle`
+      }});
+    }}
+
+    function initRespondFilters() {{
+      if (respondFiltersReady) return;
+      document.querySelectorAll('[data-respond-channel]').forEach(button => {{
+        button.addEventListener('click', () => updateRespond(button.dataset.respondChannel));
+      }});
+      respondFiltersReady = true;
+      updateRespond('All');
+    }}
+
     function renderAll() {{
       initExplorer();
       drawGroupedBars('googleMonthlyChart', {{
@@ -1701,10 +2167,11 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
           {{label: 'Msg starts', values: REPORT_DATA.metaPlatforms.conversations, color: COLORS.orange}}
         ]
       }});
-      drawBarChart('respondLifecycleChart', {{labels: REPORT_DATA.respondLifecycle.labels, values: REPORT_DATA.respondLifecycle.values, horizontal: true, color: COLORS.green, title: 'Contacts by lifecycle'}});
+      updateRespond(activeRespondFilter);
     }}
     window.addEventListener('resize', () => window.requestAnimationFrame(renderAll));
     renderAll();
+    initRespondFilters();
   </script>
 </body>
 </html>"""
