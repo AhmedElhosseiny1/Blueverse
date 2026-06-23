@@ -23,295 +23,71 @@
       --radius: 22px;
       --shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
     }
-
     * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Bricolage Grotesque", system-ui, sans-serif;
-      line-height: 1.55;
-      min-height: 100vh;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(circle at 10% 10%, rgba(34, 211, 238, 0.12), transparent 35%),
-        radial-gradient(circle at 90% 30%, rgba(59, 130, 246, 0.14), transparent 38%),
-        radial-gradient(circle at 50% 95%, rgba(24, 119, 242, 0.10), transparent 40%);
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .noise {
-      position: fixed;
-      inset: 0;
-      opacity: 0.04;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 24px 80px;
-    }
-
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 16px;
-      margin-bottom: 36px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 24px;
-    }
-
-    .brand {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    h1 {
-      margin: 8px 0 0;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.05;
-      font-weight: 700;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      margin-top: 8px;
-      max-width: 560px;
-    }
-
-    .meta-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 18px;
-      margin-bottom: 36px;
-    }
-
-    .kpi {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      backdrop-filter: blur(14px);
-      box-shadow: var(--shadow);
-      transition: transform 0.2s ease;
-    }
-
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: "Bricolage Grotesque", system-ui, sans-serif; line-height: 1.55; min-height: 100vh; }
+    body::before { content: ""; position: fixed; inset: 0; background: radial-gradient(circle at 10% 10%, rgba(34,211,238,0.12), transparent 35%), radial-gradient(circle at 90% 30%, rgba(59,130,246,0.14), transparent 38%), radial-gradient(circle at 50% 95%, rgba(24,119,242,0.10), transparent 40%); pointer-events: none; z-index: -1; }
+    .noise { position: fixed; inset: 0; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: -1; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px 80px; }
+    header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 36px; border-bottom: 1px solid var(--border); padding-bottom: 24px; }
+    .brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    h1 { margin: 8px 0 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.05; font-weight: 700; }
+    .subtitle { color: var(--muted); margin-top: 8px; max-width: 620px; }
+    .meta-pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 18px; margin-bottom: 36px; }
+    .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; backdrop-filter: blur(14px); box-shadow: var(--shadow); transition: transform 0.2s ease; }
     .kpi:hover { transform: translateY(-4px); }
-
-    .kpi-label {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
-    .kpi-value {
-      font-size: clamp(1.6rem, 4vw, 2.2rem);
-      font-weight: 700;
-      font-family: "Spline Sans Mono", monospace;
-    }
-
-    .kpi-sub {
-      margin-top: 8px;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-      margin-bottom: 36px;
-    }
-
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 26px;
-      backdrop-filter: blur(14px);
-      box-shadow: var(--shadow);
-    }
-
-    .card h2 {
-      margin: 0 0 18px;
-      font-size: 1.25rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
+    .kpi-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 10px; }
+    .kpi-value { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; font-family: "Spline Sans Mono", monospace; }
+    .kpi-sub { margin-top: 8px; font-size: 0.85rem; color: var(--muted); }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 36px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; backdrop-filter: blur(14px); box-shadow: var(--shadow); }
+    .card h2 { margin: 0 0 18px; font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
     .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
     .dot.meta { background: var(--meta); box-shadow: 0 0 10px var(--meta); }
     .dot.google { background: var(--google); box-shadow: 0 0 10px var(--google); }
     .dot.total { background: var(--accent); box-shadow: 0 0 10px var(--accent); }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.92rem;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 12px 10px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    th {
-      color: var(--muted);
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.72rem;
-      letter-spacing: 0.1em;
-    }
-
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.1em; }
     td.num { font-family: "Spline Sans Mono", monospace; text-align: right; }
     tr:last-child td { border-bottom: none; font-weight: 700; }
-
-    .chart-wrap {
-      position: relative;
-      height: 260px;
-      margin-top: 10px;
-    }
-
-    .channel-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-      margin-bottom: 36px;
-    }
-
-    .channel {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      backdrop-filter: blur(14px);
-      box-shadow: var(--shadow);
-      border-left: 4px solid;
-    }
-
+    .chart-wrap { position: relative; height: 260px; margin-top: 10px; }
+    .channel-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-bottom: 36px; }
+    .channel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; backdrop-filter: blur(14px); box-shadow: var(--shadow); border-left: 4px solid; }
     .channel.meta { border-left-color: var(--meta); }
     .channel.google { border-left-color: var(--google); }
-
-    .channel h3 {
-      margin: 0 0 6px;
-      font-size: 1.15rem;
-    }
-
-    .channel .tag {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-    }
-
-    .channel-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 18px;
-    }
-
-    .channel-grid div strong {
-      display: block;
-      font-size: 1.1rem;
-      font-family: "Spline Sans Mono", monospace;
-    }
-
+    .channel h3 { margin: 0 0 6px; font-size: 1.15rem; }
+    .channel .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+    .channel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 18px; }
+    .channel-grid div strong { display: block; font-size: 1.1rem; font-family: "Spline Sans Mono", monospace; }
     .channel-grid div span { color: var(--muted); font-size: 0.8rem; }
-
-    .breakdown-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px;
-      margin-bottom: 36px;
-    }
-
-    .pill-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .pill-list li {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 0.88rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .pill-list .count {
-      background: var(--accent);
-      color: #000;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      font-family: "Spline Sans Mono", monospace;
-    }
-
-    .notice {
-      background: rgba(249, 115, 22, 0.08);
-      border: 1px solid rgba(249, 115, 22, 0.25);
-      border-radius: var(--radius);
-      padding: 22px 26px;
-      margin-bottom: 36px;
-    }
-
+    .breakdown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 36px; }
+    .pill-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+    .pill-list li { background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; display: flex; align-items: center; gap: 8px; }
+    .pill-list .count { background: var(--accent); color: #000; font-weight: 700; padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-family: "Spline Sans Mono", monospace; }
+    .notice { background: rgba(249, 115, 22, 0.08); border: 1px solid rgba(249, 115, 22, 0.25); border-radius: var(--radius); padding: 22px 26px; margin-bottom: 36px; }
     .notice h3 { margin: 0 0 10px; color: var(--google); }
     .notice ul { margin: 0; padding-left: 18px; color: var(--muted); }
     .notice li { margin-bottom: 8px; }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 50px; }
+    @media (max-width: 640px) { .container { padding: 24px 16px 60px; } header { flex-direction: column; align-items: flex-start; } .channel-grid { grid-template-columns: 1fr; } }
+  
+    .tabs { display: flex; gap: 10px; margin-bottom: 36px; flex-wrap: wrap; }
+    .tab-btn { background: var(--surface); border: 1px solid var(--border); color: var(--muted); padding: 10px 20px; border-radius: 999px; cursor: pointer; font-weight: 600; backdrop-filter: blur(14px); transition: all .2s ease; }
+    .tab-btn:hover { border-color: var(--accent); color: var(--text); }
+    .tab-btn.active { background: rgba(34,211,238,0.12); border-color: var(--accent); color: var(--accent); }
+    .tab-panel { display: none; animation: fadeIn .35s ease; }
+    .tab-panel.active { display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .panel-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 28px; }
+    .panel-header h2 { margin: 0; font-size: clamp(1.6rem,4vw,2.2rem); }
+    .panel-header p { color: var(--muted); margin: 6px 0 0; max-width: 620px; }
+    .small { font-size: 0.78rem; color: var(--muted); }
+    .table-scroll { overflow-x: auto; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.72rem; text-transform: uppercase; font-weight: 700; }
+    .badge.enabled { background: rgba(34,211,238,0.15); color: var(--accent); }
+    .badge.paused { background: rgba(139,161,196,0.15); color: var(--muted); }
 
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 640px) {
-      .container { padding: 24px 16px 60px; }
-      header { flex-direction: column; align-items: flex-start; }
-      .channel-grid { grid-template-columns: 1fr; }
-    }
   </style>
 </head>
 <body>
@@ -321,39 +97,49 @@
       <div>
         <div class="brand">BlueVerse</div>
         <h1>June 2026 Paid Media Report</h1>
-        <p class="subtitle">Verified performance across Meta Ads and Google Ads, with Respond.io CRM attribution. Revenue data is currently unavailable.</p>
+        <p class="subtitle">Verified performance across Meta Ads and Google Ads, with Respond.io CRM attribution. Google Ads data covers 1–23 June 2026.</p>
       </div>
       <div class="meta-pill">
         <span class="dot total"></span>
-        AED 5,958.31 total spend
+        AED 6,076.32 total spend
       </div>
     </header>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="google-deep">Google Ads Deep Analysis</button>
+    </nav>
 
+    <div id="panel-overview" class="tab-panel active">
     <section class="kpi-grid">
       <div class="kpi">
         <div class="kpi-label">Total Spend</div>
-        <div class="kpi-value" data-count="5958.31" data-prefix="AED ">AED 0</div>
+        <div class="kpi-value" data-count="6076.32" data-prefix="AED ">AED 0</div>
         <div class="kpi-sub">Meta + Google combined</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">Impressions</div>
-        <div class="kpi-value" data-count="133067">0</div>
+        <div class="kpi-value" data-count="129115">0</div>
         <div class="kpi-sub">Across all campaigns</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">Clicks</div>
-        <div class="kpi-value" data-count="2401">0</div>
-        <div class="kpi-sub">2,154 Meta · 247 Google</div>
+        <div class="kpi-value" data-count="253">0</div>
+        <div class="kpi-sub">Google only; Meta clicks not in raw export</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Reach</div>
+        <div class="kpi-value" data-count="75464">0</div>
+        <div class="kpi-sub">Meta reported reach</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">Lead Events</div>
-        <div class="kpi-value" data-count="351">0</div>
-        <div class="kpi-sub">333 Meta msg starts · 18 Google forms</div>
+        <div class="kpi-value" data-count="346">0</div>
+        <div class="kpi-sub">327 Meta msg starts · 19 Google forms</div>
       </div>
       <div class="kpi">
         <div class="kpi-label">Revenue</div>
         <div class="kpi-value" style="color:#f97316">AED 0</div>
-        <div class="kpi-sub">No June revenue data found</div>
+        <div class="kpi-sub">No June paid-media revenue found</div>
       </div>
     </section>
 
@@ -362,20 +148,20 @@
         <span class="tag">Social</span>
         <h3>Meta Ads</h3>
         <div class="channel-grid">
-          <div><strong>AED 1,856.76</strong><span>Spend</span></div>
-          <div><strong>127,727</strong><span>Impressions</span></div>
-          <div><strong>2,154</strong><span>Clicks</span></div>
-          <div><strong>333</strong><span>Msg starts</span></div>
+          <div><strong>AED 1,818.00</strong><span>Spend</span></div>
+          <div><strong>123,708</strong><span>Impressions</span></div>
+          <div><strong>75,464</strong><span>Reach</span></div>
+          <div><strong>327</strong><span>Msg starts</span></div>
         </div>
       </article>
       <article class="channel google">
         <span class="tag">Search</span>
         <h3>Google Ads</h3>
         <div class="channel-grid">
-          <div><strong>AED 4,101.55</strong><span>Spend</span></div>
-          <div><strong>5,340</strong><span>Impressions</span></div>
-          <div><strong>247</strong><span>Clicks</span></div>
-          <div><strong>18</strong><span>Form leads</span></div>
+          <div><strong>AED 4,258.32</strong><span>Spend</span></div>
+          <div><strong>5,407</strong><span>Impressions</span></div>
+          <div><strong>253</strong><span>Clicks</span></div>
+          <div><strong>19</strong><span>Form conversions</span></div>
         </div>
       </article>
     </section>
@@ -383,15 +169,11 @@
     <section class="grid-2">
       <div class="card">
         <h2><span class="dot meta"></span>Spend Mix</h2>
-        <div class="chart-wrap">
-          <canvas id="spendChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="spendChart"></canvas></div>
       </div>
       <div class="card">
         <h2><span class="dot google"></span>Lead Mix</h2>
-        <div class="chart-wrap">
-          <canvas id="leadChart"></canvas>
-        </div>
+        <div class="chart-wrap"><canvas id="leadChart"></canvas></div>
       </div>
     </section>
 
@@ -428,10 +210,10 @@
           <tr>
             <td>Google</td>
             <td>TT_PPF _Search_April2026</td>
-            <td class="num">3,412.34</td>
-            <td class="num">5,051</td>
-            <td class="num">223</td>
-            <td class="num">18</td>
+            <td class="num">3,569.11</td>
+            <td class="num">5,118</td>
+            <td class="num">229</td>
+            <td class="num">19</td>
           </tr>
           <tr>
             <td>Google</td>
@@ -444,10 +226,10 @@
           <tr>
             <td>Total</td>
             <td>—</td>
-            <td class="num">5,958.31</td>
-            <td class="num">133,067</td>
-            <td class="num">2,401</td>
-            <td class="num">351</td>
+            <td class="num">6,076.32</td>
+            <td class="num">129,115</td>
+            <td class="num">253</td>
+            <td class="num">346</td>
           </tr>
         </tbody>
       </table>
@@ -457,28 +239,19 @@
       <div class="card">
         <h2>Respond.io Contacts by Source</h2>
         <ul class="pill-list">
-          <li>Meta Ads <span class="count">317</span></li>
-          <li>Google Ads <span class="count">2</span></li>
+          <li>Meta Ads <span class="count">317</span></li><li>Google Ads <span class="count">2</span></li>
         </ul>
       </div>
       <div class="card">
         <h2>Contacts by Service</h2>
         <ul class="pill-list">
-          <li>Express Wash <span class="count">242</span></li>
-          <li>Tinting <span class="count">75</span></li>
-          <li>PPF <span class="count">1</span></li>
-          <li>Not set <span class="count">1</span></li>
+          <li>Express Wash <span class="count">242</span></li><li>Tinting <span class="count">75</span></li><li>Paint Protection Film (PPF) <span class="count">1</span></li><li>Not set <span class="count">1</span></li>
         </ul>
       </div>
       <div class="card">
         <h2>Contacts by Lifecycle</h2>
         <ul class="pill-list">
-          <li>New Lead <span class="count">303</span></li>
-          <li>Hot Lead <span class="count">9</span></li>
-          <li>Cold Lead <span class="count">2</span></li>
-          <li>Quotation <span class="count">2</span></li>
-          <li>Lost <span class="count">1</span></li>
-          <li>Not set <span class="count">2</span></li>
+          <li>New Lead <span class="count">303</span></li><li>Hot Lead <span class="count">9</span></li><li>Cold Lead <span class="count">2</span></li><li>Quotation <span class="count">2</span></li><li>Not set <span class="count">2</span></li><li>Lost <span class="count">1</span></li>
         </ul>
       </div>
     </section>
@@ -486,15 +259,131 @@
     <section class="notice">
       <h3>Data Gaps & Reconciliation Notes</h3>
       <ul>
-        <li><strong>Revenue:</strong> No June 2026 paid-media revenue exists in any connected source. Google conversion value = 0, Meta purchase value = 0, and Respond.io sale/quote fields are blank for all 319 contacts. Available revenue documents only cover April–May.</li>
-        <li><strong>Meta lead definition:</strong> Respond.io shows 317 Meta contacts, while Meta API reports 333 messaging conversations started and 6 lead actions. Report uses platform event counts for traffic metrics.</li>
-        <li><strong>Google lead definition:</strong> Respond.io attributes only 2 contacts to Google Ads, but Google Ads reports 18 “Submit lead form” conversions. Likely causes include form leads not flowing into Respond.io, delayed attribution, or source-field mismatch.</li>
-        <li><strong>Next step:</strong> Import offline conversion values into Meta/Google or sync POS/accounting sales to Respond.io custom fields to close revenue reporting.</li>
+        <li><strong>Attribution by source:</strong> Respond.io's <em>medium</em> field is "Paid Ads" for every contact, so the channel split above uses the <em>source</em> field (Meta Ads / Google Ads).</li>
+        <li><strong>Revenue:</strong> No June 2026 paid-media revenue exists in any connected source. Google conversion value = 0, Meta raw export has no revenue data, and Respond.io sale/quote fields are blank for all 319 contacts. CRM Overview shows AED 24,533 from 4 customers, but that revenue is not tied to June paid-media spend.</li>
+        <li><strong>Meta metrics:</strong> The raw Meta workbook provides messaging conversations started (327), not link clicks. Respond.io shows 317 Meta-attributed contacts; the difference is likely unrecorded or duplicate conversations.</li>
+        <li><strong>Google metrics:</strong> Google Ads reports 19 "Submit lead form" conversions for 1–23 June, but only 2 Respond.io contacts are attributed to Google Ads. Form submissions may not be syncing to Respond.io or may be tagged with a different source.</li>
+        <li><strong>Google coverage:</strong> The provided Google Ads report covers 1–23 June 2026. A separate deep-dive tab uses full Google Ads data from 15 Apr – 23 Jun 2026.</li>
+        <li><strong>Next step:</strong> Import offline conversion values into Meta/Google and sync POS/accounting sales to Respond.io custom fields to close revenue reporting.</li>
       </ul>
     </section>
 
+    </div>
+
+    <div id="panel-google-deep" class="tab-panel">
+      <div class="panel-header">
+        <div>
+          <h2>Google Ads Deep Analysis</h2>
+          <p>Search campaign deep-dive across all active BlueVerse service lines. Period: <strong>15 Apr 2026 – 23 Jun 2026</strong>.</p>
+        </div>
+        <div class="meta-pill"><span class="dot google"></span>AED 31,298.01 total spend</div>
+      </div>
+
+      <section class="kpi-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+        <div class="kpi"><div class="kpi-label">Spend</div><div class="kpi-value" data-count="31298.01" data-prefix="AED ">AED 0</div></div>
+        <div class="kpi"><div class="kpi-label">Impressions</div><div class="kpi-value" data-count="49307">0</div></div>
+        <div class="kpi"><div class="kpi-label">Clicks</div><div class="kpi-value" data-count="2625">0</div></div>
+        <div class="kpi"><div class="kpi-label">Conversions</div><div class="kpi-value" data-count="187.0">0</div></div>
+        <div class="kpi"><div class="kpi-label">CTR</div><div class="kpi-value" data-count="5.32" data-suffix="%">0%</div></div>
+        <div class="kpi"><div class="kpi-label">CPL</div><div class="kpi-value" data-count="167.37" data-prefix="AED ">AED 0</div></div>
+        <div class="kpi"><div class="kpi-label">Avg CPC</div><div class="kpi-value" data-count="11.92" data-prefix="AED ">AED 0</div></div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <h2><span class="dot google"></span>Monthly Trend</h2>
+          <div class="chart-wrap"><canvas id="googleTrendChart"></canvas></div>
+          <p class="small" style="margin-top:12px">Spend is on the left axis; conversions are on the right axis. June data is partial (through 23 Jun).</p>
+        </div>
+        <div class="card">
+          <h2><span class="dot google"></span>Campaign Spend vs. Conversions</h2>
+          <div class="chart-wrap"><canvas id="googleCampaignChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-bottom:36px">
+        <h2><span class="dot google"></span>Campaign Breakdown</h2>
+        <div class="table-scroll">
+          <table id="googleCampaignTable">
+            <thead>
+              <tr><th>Campaign</th><th class="num">Spend (AED)</th><th class="num">Impr.</th><th class="num">Clicks</th><th class="num">Conv.</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">CPL</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <h2><span class="dot google"></span>Top Converting Keywords</h2>
+          <div class="table-scroll">
+            <table id="googleKeywordTable">
+              <thead>
+                <tr><th>Keyword</th><th>Match</th><th>Campaign</th><th class="num">Conv.</th><th class="num">CTR</th><th class="num">CPL</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h2><span class="dot google"></span>Top Ad Groups</h2>
+          <div class="table-scroll">
+            <table id="googleAdGroupTable">
+              <thead>
+                <tr><th>Ad Group</th><th>Campaign</th><th>State</th><th class="num">Conv.</th><th class="num">Spend</th><th class="num">CPL</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2">
+        <div class="card">
+          <h2><span class="dot google"></span>Conversions by Day of Week</h2>
+          <div class="chart-wrap"><canvas id="googleDowChart"></canvas></div>
+        </div>
+        <div class="card">
+          <h2><span class="dot google"></span>Conversions by Hour of Day</h2>
+          <div class="chart-wrap"><canvas id="googleHourChart"></canvas></div>
+        </div>
+      </section>
+
+      <section class="breakdown-grid">
+        <div class="card">
+          <h2>Peak Days</h2>
+          <ul class="pill-list" id="googleTopDays"></ul>
+        </div>
+        <div class="card">
+          <h2>Peak Hours</h2>
+          <ul class="pill-list" id="googleTopHours"></ul>
+        </div>
+        <div class="card">
+          <h2>Search Lost Impression Share</h2>
+          <p class="small">Weighted average by impressions:</p>
+          <div class="channel-grid" style="margin-top:10px">
+            <div><strong>61.2%</strong><span>Lost to Ad Rank</span></div>
+            <div><strong>23.1%</strong><span>Lost to Budget</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice">
+        <h3>Google Ads Insights & Recommendations</h3>
+        <ul>
+          <li><strong>PPF and Wrapping dominate spend</strong> — together they account for ~88% of Google spend and ~82% of form conversions.</li>
+          <li><strong>Detailing has the lowest CPL</strong> at AED 85.58, but the campaign only ran in April; consider reactivating for high-intent service queries.</li>
+          <li><strong>Window Tinting is efficient</strong> (AED 126.85 CPL) but paused after April; re-test in peak summer months.</li>
+          <li><strong>June volume dropped</strong> — spend fell 65% vs May and only PPF remained active. Wrapping generated zero June conversions and was paused.</li>
+          <li><strong>Peak lead times</strong> are Tuesday–Thursday, 10:00–15:00; allocate more budget or raise bids during these windows.</li>
+          <li><strong>Budget cap is limiting</strong> — weighted Search lost IS due to budget is 23%, indicating campaigns could scale if daily budgets increase.</li>
+          <li><strong>Keyword mix</strong> — exact-match "car wrapping dubai" and broad price terms convert strongly; prune low-CTR, high-spend keywords with no conversions.</li>
+        </ul>
+      </section>
+    </div>
+
     <footer>
-      Generated from Meta Marketing API, Google Ads API, and Respond.io · June 2026
+      Generated from Meta raw workbook, Google Ads report, and Respond.io export · June 2026
     </footer>
   </div>
 
@@ -514,7 +403,7 @@
       data: {
         labels: ['Meta Ads', 'Google Ads'],
         datasets: [{
-          data: [1856.76, 4101.55],
+          data: [1818.0, 4258.32],
           backgroundColor: ['#1877f2', '#f97316'],
           hoverOffset: 8
         }]
@@ -525,9 +414,9 @@
     new Chart(document.getElementById('leadChart'), {
       type: 'doughnut',
       data: {
-        labels: ['Meta messaging starts', 'Google form leads'],
+        labels: ['Meta messaging starts', 'Google form conversions'],
         datasets: [{
-          data: [333, 18],
+          data: [327, 19],
           backgroundColor: ['#1877f2', '#f97316'],
           hoverOffset: 8
         }]
@@ -535,7 +424,6 @@
       options: commonOptions
     });
 
-    // Animated counters
     document.querySelectorAll('.kpi-value[data-count]').forEach(el => {
       const target = parseFloat(el.dataset.count);
       const prefix = el.dataset.prefix || '';
@@ -546,11 +434,136 @@
         const p = Math.min((now - start) / duration, 1);
         const ease = 1 - Math.pow(1 - p, 3);
         const val = target * ease;
-        el.textContent = prefix + (isFloat ? val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : Math.floor(val).toLocaleString());
+        const suffix = el.dataset.suffix || '';
+        el.textContent = prefix + (isFloat ? val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : Math.floor(val).toLocaleString()) + suffix;
         if (p < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
     });
+  
+
+    // Google Ads deep-dive data
+    const googleAdsData = {"period": "15 Apr 2026 – 23 Jun 2026", "overall": {"spend": 31298.01, "impressions": 49307, "clicks": 2625, "conversions": 187.0, "ctr": 5.32, "cpc": 11.92, "cpl": 167.37}, "monthly": [{"month": "April", "spend": 14754.56, "impressions": 27703, "clicks": 1544, "conversions": 101.0, "ctr": 5.57, "cpl": 146.08}, {"month": "May", "spend": 12285.12, "impressions": 16198, "clicks": 828, "conversions": 67.0, "ctr": 5.11, "cpl": 183.36}, {"month": "June", "spend": 4258.32, "impressions": 5407, "clicks": 253, "conversions": 19.0, "ctr": 4.68, "cpl": 224.12}], "campaigns": [{"name": "TT_PPF", "spend": 14492.09, "impressions": 20819, "clicks": 1024, "conversions": 76.5, "ctr": 4.92, "cpc": 14.15, "cpl": 189.44}, {"name": "TT_Wrapping", "spend": 13151.78, "impressions": 18787, "clicks": 1008, "conversions": 76.0, "ctr": 5.37, "cpc": 13.05, "cpl": 173.05}, {"name": "TT_Window Tinting", "spend": 2156.44, "impressions": 4660, "clicks": 242, "conversions": 17.0, "ctr": 5.19, "cpc": 8.91, "cpl": 126.85}, {"name": "TT_Detailing&Coating&Dent", "spend": 1497.7, "impressions": 5041, "clicks": 351, "conversions": 17.5, "ctr": 6.96, "cpc": 4.27, "cpl": 85.58}], "monthlyCampaignSpend": {"TT_Detailing&Coating&Dent": [1497.7, 0.0, 0.0], "TT_PPF": [5586.66, 5336.34, 3569.11], "TT_Window Tinting": [2156.43, 0.0, 0.0], "TT_Wrapping": [5513.77, 6948.78, 689.21]}, "monthlyCampaignConversions": {"TT_Detailing&Coating&Dent": [17.5, 0.0, 0.0], "TT_PPF": [29.5, 28.0, 19.0], "TT_Window Tinting": [17.0, 0.0, 0.0], "TT_Wrapping": [37.0, 39.0, 0.0]}, "adGroups": [{"campaign": "TT_Wrapping", "adgroup": "wrapping Dubai", "state": "Enabled", "spend": 4811.74, "impressions": 5304, "clicks": 281, "conversions": 33.0, "cpl": 145.81}, {"campaign": "TT_PPF", "adgroup": "Dubai", "state": "Enabled", "spend": 5700.98, "impressions": 7185, "clicks": 368, "conversions": 31.0, "cpl": 183.9}, {"campaign": "TT_Wrapping", "adgroup": "wrapping Dubai", "state": "Paused", "spend": 5260.68, "impressions": 8451, "clicks": 458, "conversions": 30.0, "cpl": 175.36}, {"campaign": "TT_PPF", "adgroup": "Stek", "state": "Enabled", "spend": 3061.09, "impressions": 5120, "clicks": 227, "conversions": 19.5, "cpl": 156.98}, {"campaign": "TT_Window Tinting", "adgroup": "window tinting", "state": "Enabled", "spend": 2156.43, "impressions": 4660, "clicks": 242, "conversions": 17.0, "cpl": 126.85}, {"campaign": "TT_Wrapping", "adgroup": "Price & Cost", "state": "Enabled", "spend": 2213.01, "impressions": 2706, "clicks": 174, "conversions": 13.0, "cpl": 170.23}], "keywords": [{"keyword": "car wrapping dubai", "match": "Broad match", "campaign": "TT_Wrapping", "spend": 942.55, "clicks": 86, "conversions": 7.0, "ctr": 4.06, "cpl": 134.65}, {"keyword": "car wrap price dubai", "match": "Broad match", "campaign": "TT_Wrapping", "spend": 738.99, "clicks": 60, "conversions": 7.0, "ctr": 6.36, "cpl": 105.57}, {"keyword": "car wrapping dubai", "match": "Exact match", "campaign": "TT_Wrapping", "spend": 1284.84, "clicks": 45, "conversions": 6.5, "ctr": 10.11, "cpl": 198.58}, {"keyword": "car foil dubai", "match": "Broad match", "campaign": "TT_Wrapping", "spend": 987.07, "clicks": 71, "conversions": 6.0, "ctr": 4.68, "cpl": 164.51}, {"keyword": "dyno stek", "match": "Broad match", "campaign": "TT_PPF", "spend": 902.42, "clicks": 59, "conversions": 6.0, "ctr": 3.82, "cpl": 150.4}, {"keyword": "paint protection dubai", "match": "Broad match", "campaign": "TT_PPF", "spend": 1504.35, "clicks": 131, "conversions": 6.0, "ctr": 5.57, "cpl": 250.72}, {"keyword": "xpel ppf dubai", "match": "Broad match", "campaign": "TT_PPF", "spend": 1061.44, "clicks": 81, "conversions": 6.0, "ctr": 5.11, "cpl": 176.91}, {"keyword": "car vinyl wrap dubai", "match": "Broad match", "campaign": "TT_Wrapping", "spend": 291.33, "clicks": 20, "conversions": 5.5, "ctr": 3.03, "cpl": 52.68}, {"keyword": "car wrapping price in dubai", "match": "Broad match", "campaign": "TT_Wrapping", "spend": 852.22, "clicks": 65, "conversions": 5.0, "ctr": 6.54, "cpl": 170.44}, {"keyword": "car ppf dubai", "match": "Phrase match", "campaign": "TT_PPF", "spend": 176.27, "clicks": 8, "conversions": 4.0, "ctr": 8.99, "cpl": 44.07}], "dayOfWeek": [{"day": "Sun", "spend": 4678.31, "clicks": 393, "conversions": 25.0, "ctr": 5.75}, {"day": "Mon", "spend": 4066.34, "clicks": 321, "conversions": 23.0, "ctr": 5.29}, {"day": "Tue", "spend": 4020.08, "clicks": 370, "conversions": 31.0, "ctr": 5.27}, {"day": "Wed", "spend": 4697.45, "clicks": 429, "conversions": 31.0, "ctr": 5.27}, {"day": "Thu", "spend": 5312.08, "clicks": 379, "conversions": 31.0, "ctr": 5.41}, {"day": "Fri", "spend": 3887.82, "clicks": 347, "conversions": 20.0, "ctr": 5.04}, {"day": "Sat", "spend": 4633.3, "clicks": 385, "conversions": 26.0, "ctr": 5.25}], "hourly": [{"hour": 0, "conversions": 5.0, "clicks": 80, "ctr": 5.53}, {"hour": 1, "conversions": 4.0, "clicks": 59, "ctr": 4.92}, {"hour": 2, "conversions": 1.0, "clicks": 60, "ctr": 6.95}, {"hour": 3, "conversions": 1.0, "clicks": 37, "ctr": 6.79}, {"hour": 4, "conversions": 0.0, "clicks": 30, "ctr": 7.37}, {"hour": 5, "conversions": 1.0, "clicks": 26, "ctr": 5.6}, {"hour": 6, "conversions": 2.5, "clicks": 44, "ctr": 5.21}, {"hour": 7, "conversions": 7.0, "clicks": 83, "ctr": 6.11}, {"hour": 8, "conversions": 5.0, "clicks": 99, "ctr": 5.16}, {"hour": 9, "conversions": 6.5, "clicks": 133, "ctr": 5.08}, {"hour": 10, "conversions": 15.5, "clicks": 179, "ctr": 5.48}, {"hour": 11, "conversions": 13.0, "clicks": 220, "ctr": 5.75}, {"hour": 12, "conversions": 13.0, "clicks": 200, "ctr": 4.79}, {"hour": 13, "conversions": 18.5, "clicks": 220, "ctr": 5.51}, {"hour": 14, "conversions": 17.0, "clicks": 191, "ctr": 5.25}, {"hour": 15, "conversions": 15.0, "clicks": 160, "ctr": 5.2}, {"hour": 16, "conversions": 9.0, "clicks": 131, "ctr": 4.51}, {"hour": 17, "conversions": 11.0, "clicks": 129, "ctr": 4.59}, {"hour": 18, "conversions": 11.0, "clicks": 128, "ctr": 5.33}, {"hour": 19, "conversions": 10.0, "clicks": 103, "ctr": 5.42}, {"hour": 20, "conversions": 9.0, "clicks": 94, "ctr": 5.79}, {"hour": 21, "conversions": 3.0, "clicks": 79, "ctr": 5.29}, {"hour": 22, "conversions": 6.0, "clicks": 66, "ctr": 4.88}, {"hour": 23, "conversions": 3.0, "clicks": 73, "ctr": 6.15}], "topHours": [{"hour": 13, "conversions": 18.5, "clicks": 220, "ctr": 5.51}, {"hour": 14, "conversions": 17.0, "clicks": 191, "ctr": 5.25}, {"hour": 10, "conversions": 15.5, "clicks": 179, "ctr": 5.48}, {"hour": 15, "conversions": 15.0, "clicks": 160, "ctr": 5.2}, {"hour": 11, "conversions": 13.0, "clicks": 220, "ctr": 5.75}], "topDays": [{"day": "Tue", "spend": 4020.08, "clicks": 370, "conversions": 31.0, "ctr": 5.27}, {"day": "Wed", "spend": 4697.45, "clicks": 429, "conversions": 31.0, "ctr": 5.27}, {"day": "Thu", "spend": 5312.08, "clicks": 379, "conversions": 31.0, "ctr": 5.41}], "lostIS": {"rankWeightedAvg": 61.2, "budgetWeightedAvg": 23.1}};
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (btn.dataset.tab === 'google-deep') {
+          setTimeout(() => {
+            ['googleTrendChart','googleCampaignChart','googleDowChart','googleHourChart'].forEach(id => {
+              const ch = Chart.getChart(id);
+              if (ch) ch.resize();
+            });
+          }, 50);
+        }
+      });
+    });
+
+    // Populate Google tables
+    const gcBody = document.querySelector('#googleCampaignTable tbody');
+    googleAdsData.campaigns.forEach(c => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${c.name}</td><td class="num">${c.spend.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</td><td class="num">${c.impressions.toLocaleString()}</td><td class="num">${c.clicks.toLocaleString()}</td><td class="num">${c.conversions.toLocaleString(undefined,{minimumFractionDigits:1,maximumFractionDigits:1})}</td><td class="num">${c.ctr}%</td><td class="num">AED ${c.cpc.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</td><td class="num">${c.cpl !== null ? 'AED '+c.cpl.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}) : '—'}</td>`;
+      gcBody.appendChild(row);
+    });
+
+    const kwBody = document.querySelector('#googleKeywordTable tbody');
+    googleAdsData.keywords.forEach(k => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${k.keyword}</td><td>${k.match}</td><td>${k.campaign}</td><td class="num">${k.conversions.toLocaleString(undefined,{minimumFractionDigits:1,maximumFractionDigits:1})}</td><td class="num">${k.ctr}%</td><td class="num">${k.cpl !== null ? 'AED '+k.cpl.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}) : '—'}</td>`;
+      kwBody.appendChild(row);
+    });
+
+    const agBody = document.querySelector('#googleAdGroupTable tbody');
+    googleAdsData.adGroups.forEach(a => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${a.adgroup}</td><td>${a.campaign}</td><td><span class="badge ${a.state.toLowerCase()}">${a.state}</span></td><td class="num">${a.conversions.toLocaleString(undefined,{minimumFractionDigits:1,maximumFractionDigits:1})}</td><td class="num">AED ${a.spend.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</td><td class="num">${a.cpl !== null ? 'AED '+a.cpl.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}) : '—'}</td>`;
+      agBody.appendChild(row);
+    });
+
+    const topDaysEl = document.getElementById('googleTopDays');
+    googleAdsData.topDays.forEach(d => {
+      topDaysEl.innerHTML += `<li>${d.day} <span class="count">${d.conversions.toLocaleString(undefined,{minimumFractionDigits:1,maximumFractionDigits:1})}</span></li>`;
+    });
+    const topHoursEl = document.getElementById('googleTopHours');
+    googleAdsData.topHours.forEach(h => {
+      const label = h.hour.toString().padStart(2,'0') + ':00';
+      topHoursEl.innerHTML += `<li>${label} <span class="count">${h.conversions.toLocaleString(undefined,{minimumFractionDigits:1,maximumFractionDigits:1})}</span></li>`;
+    });
+
+    // Google charts
+    const months = googleAdsData.monthly.map(m => m.month);
+    const monthlySpend = googleAdsData.monthly.map(m => m.spend);
+    const monthlyConv = googleAdsData.monthly.map(m => m.conversions);
+
+    new Chart(document.getElementById('googleTrendChart'), {
+      type: 'bar',
+      data: {
+        labels: months,
+        datasets: [
+          { label: 'Spend (AED)', data: monthlySpend, backgroundColor: '#f97316', yAxisID: 'y', order: 2 },
+          { label: 'Conversions', data: monthlyConv, type: 'line', borderColor: '#22d3ee', backgroundColor: '#22d3ee', borderWidth: 3, pointRadius: 5, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'bottom', labels: { color: '#8ba1c4' } } },
+        scales: {
+          x: { ticks: { color: '#8ba1c4' }, grid: { color: 'rgba(139,161,196,0.1)' } },
+          y: { type: 'linear', display: true, position: 'left', ticks: { color: '#f97316' }, grid: { color: 'rgba(139,161,196,0.1)' } },
+          y1: { type: 'linear', display: true, position: 'right', ticks: { color: '#22d3ee' }, grid: { drawOnChartArea: false } }
+        }
+      }
+    });
+
+    const campNames = googleAdsData.campaigns.map(c => c.name);
+    const campSpend = googleAdsData.campaigns.map(c => c.spend);
+    const campConv = googleAdsData.campaigns.map(c => c.conversions);
+    new Chart(document.getElementById('googleCampaignChart'), {
+      type: 'bar',
+      data: {
+        labels: campNames,
+        datasets: [
+          { label: 'Spend (AED)', data: campSpend, backgroundColor: '#f97316', yAxisID: 'y', order: 2 },
+          { label: 'Conversions', data: campConv, type: 'line', borderColor: '#22d3ee', backgroundColor: '#22d3ee', borderWidth: 3, pointRadius: 5, yAxisID: 'y1', order: 1 }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: { legend: { position: 'bottom', labels: { color: '#8ba1c4' } } },
+        scales: {
+          x: { ticks: { color: '#8ba1c4' }, grid: { color: 'rgba(139,161,196,0.1)' } },
+          y: { position: 'left', ticks: { color: '#f97316' }, grid: { color: 'rgba(139,161,196,0.1)' } },
+          y1: { position: 'right', ticks: { color: '#22d3ee' }, grid: { drawOnChartArea: false } }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('googleDowChart'), {
+      type: 'bar',
+      data: {
+        labels: googleAdsData.dayOfWeek.map(d => d.day),
+        datasets: [{ label: 'Conversions', data: googleAdsData.dayOfWeek.map(d => d.conversions), backgroundColor: '#f97316', borderRadius: 6 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#8ba1c4' }, grid: { color: 'rgba(139,161,196,0.1)' } }, y: { ticks: { color: '#8ba1c4' }, grid: { color: 'rgba(139,161,196,0.1)' } } } }
+    });
+
+    new Chart(document.getElementById('googleHourChart'), {
+      type: 'line',
+      data: {
+        labels: googleAdsData.hourly.map(h => h.hour.toString().padStart(2,'0') + ':00'),
+        datasets: [{ label: 'Conversions', data: googleAdsData.hourly.map(h => h.conversions), borderColor: '#f97316', backgroundColor: 'rgba(249,115,22,0.2)', fill: true, tension: 0.4, pointRadius: 3, borderWidth: 2 }]
+      },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { color: '#8ba1c4', maxTicksLimit: 12 }, grid: { color: 'rgba(139,161,196,0.1)' } }, y: { ticks: { color: '#8ba1c4' }, grid: { color: 'rgba(139,161,196,0.1)' } } } }
+    });
+
   </script>
 </body>
 </html>
