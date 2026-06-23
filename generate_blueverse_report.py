@@ -34,6 +34,7 @@ RESPOND_CSV = ROOT / "june_paid_media_contacts.csv"
 OUT_DIR = ROOT / "outputs"
 OUT_DIR.mkdir(exist_ok=True)
 OUT_HTML = OUT_DIR / "google_ads_report.html"
+ROOT_HTML = ROOT / "index.html"
 OUT_JSON = OUT_DIR / "blueverse_paid_media_data.json"
 LOGO_PATH = ROOT / "assets" / "blueverse-logo.png"
 
@@ -1716,6 +1717,7 @@ def build_report() -> dict[str, Any]:
     respond = summarize_respond(data.contacts)
     html_report = render_report(data, google, meta, respond)
     OUT_HTML.write_text(html_report, encoding="utf-8")
+    ROOT_HTML.write_text(html_report, encoding="utf-8")
     data_out = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "google_totals": google["totals"],
@@ -1730,6 +1732,7 @@ def build_report() -> dict[str, Any]:
 def main() -> None:
     data_out = build_report()
     print(f"Wrote {OUT_HTML}")
+    print(f"Wrote {ROOT_HTML}")
     print(json.dumps(data_out, indent=2, ensure_ascii=False, default=str))
 
 
