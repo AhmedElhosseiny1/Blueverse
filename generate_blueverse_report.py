@@ -845,7 +845,6 @@ def render_campaign_table(df: pd.DataFrame) -> str:
         rows.append(
             [
                 esc(r["Campaign"]),
-                status_badge(r["Status"]),
                 fmt_money(r["Cost"]),
                 fmt_num(r["Impressions"]),
                 fmt_num(r["Clicks"]),
@@ -857,7 +856,7 @@ def render_campaign_table(df: pd.DataFrame) -> str:
                 fmt_pct(r["Lost IS Budget"]),
             ]
         )
-    return table(["Campaign", "Status", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CVR", "CPL", "Lost Rank", "Lost Budget"], rows)
+    return table(["Campaign", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CVR", "CPL", "Lost Rank", "Lost Budget"], rows)
 
 
 def render_adgroup_table(df: pd.DataFrame, limit: int | None = None) -> str:
@@ -867,7 +866,6 @@ def render_adgroup_table(df: pd.DataFrame, limit: int | None = None) -> str:
             [
                 esc(r["Campaign"]),
                 esc(r["Ad group"]),
-                status_badge(r["Status"]),
                 fmt_money(r["Cost"]),
                 fmt_num(r["Impressions"]),
                 fmt_num(r["Clicks"]),
@@ -876,7 +874,7 @@ def render_adgroup_table(df: pd.DataFrame, limit: int | None = None) -> str:
                 fmt_money(r["CPL"]),
             ]
         )
-    return table(["Campaign", "Ad group", "Status", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL"], rows)
+    return table(["Campaign", "Ad group", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL"], rows)
 
 
 def render_keyword_table(df: pd.DataFrame, limit: int | None = None) -> str:
@@ -897,6 +895,27 @@ def render_keyword_table(df: pd.DataFrame, limit: int | None = None) -> str:
             ]
         )
     return table(["Keyword", "Campaign", "Match", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL", "Action"], rows)
+
+
+def render_no_conversion_keyword_table(df: pd.DataFrame, limit: int | None = None) -> str:
+    rows = []
+    for _, r in (df.head(limit) if limit else df).iterrows():
+        rows.append(
+            [
+                esc(r["Keyword"]),
+                esc(r["Campaign"]),
+                esc(r["Match type"]),
+                '<span class="badge muted">Paused</span>',
+                fmt_money(r["Cost"]),
+                fmt_num(r["Impressions"]),
+                fmt_num(r["Clicks"]),
+                fmt_pct(r["CTR"]),
+                fmt_num(r["Conversions"], 1 if r["Conversions"] % 1 else 0),
+                fmt_money(r["CPL"]),
+                rec_badge(r["Recommendation"]),
+            ]
+        )
+    return table(["Keyword", "Campaign", "Match", "Status", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL", "Action"], rows)
 
 
 def render_meta_table(df: pd.DataFrame, kind: str) -> str:
@@ -1200,7 +1219,6 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
                 esc(r["Campaign"]),
                 esc(r["Ad group"]),
                 esc(headline),
-                status_badge(r["Status"]),
                 fmt_money(r["Cost"]),
                 fmt_num(r["Impressions"]),
                 fmt_num(r["Clicks"]),
@@ -1213,19 +1231,11 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
     no_conversion_keywords = google["keywords"][(google["keywords"]["Conversions"] == 0) & (google["keywords"]["Cost"] >= 100)].sort_values("Cost", ascending=False)
     top_keywords = google["keywords"][google["keywords"]["Conversions"] > 0].sort_values(["Conversions", "CPL"], ascending=[False, True])
 
-    active_adgroups = google["adgroups"][google["adgroups"]["Status"].str.lower().eq("enabled")]
-    paused_adgroups = google["adgroups"][~google["adgroups"]["Status"].str.lower().eq("enabled")]
+
 
     meta_campaign_rows = render_meta_table(meta["campaigns"], "campaign")
     meta_platform_rows = render_meta_table(meta["platforms"], "platform")
     meta_ad_rows = render_meta_table(meta["ads"].head(14), "ad")
-
-    data_gaps = [
-        "Age / demographic performance is not present in the shared Google CSVs or Meta workbook. Export age, gender, and age × gender breakdowns from both ad platforms to populate this section.",
-        "Respond.io MCP returns source, medium, service, and lifecycle, but not reliable campaign, ad, keyword, UTM, or conversation-owner attribution in the current aggregate. Campaign-level CRM quality will require those fields on new contacts.",
-        "Respond.io quoted value and final sale value are only shown where those custom fields are populated. Empty CRM value fields are treated as zero instead of estimated.",
-        "Meta export is June 1-22 only; Google daily export runs April 15-June 23 and monthly export covers April-June. Combined totals therefore label their periods explicitly.",
-    ]
 
     funnel_steps = [
         ("Paid spend", fmt_money(total_spend), "Google + Meta spend"),
@@ -1261,9 +1271,7 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       <a href="#google">Google Ads</a>
       <a href="#keywords">Keywords</a>
       <a href="#meta">Meta Ads</a>
-      <a href="#respond">Respond.io</a>
       <a href="#insights">Insights</a>
-      <a href="#gaps">Data gaps</a>
     </nav>
 
     <section id="explorer" class="panel primary-panel">
@@ -1317,10 +1325,10 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
           <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
           <button type="button" data-respond-channel="Google Ads">Google Ads</button>
         </div>
-        <p class="data-note">Respond.io MCP scan: {fmt_num(mcp_scanned)} total contacts checked; generated {esc(mcp_generated_at)}.</p>
+        <p class="data-note">Showing all-time paid contacts ({fmt_num(rt['contacts'])}); {fmt_num(jt['contacts'])} in June 2026. Respond.io MCP scan: {fmt_num(mcp_scanned)} total contacts checked; generated {esc(mcp_generated_at)}.</p>
       </div>
       <div class="funnel">
-        {''.join(f'<div class="funnel-step" style="--w:{max(18, 100 - i * 13)}%"><span>{esc(label)}</span><strong>{value}</strong><small>{esc(note)}</small></div>' for i, (label, value, note) in enumerate(funnel_steps))}
+        {''.join(f'<div class="funnel-step" id="funnelStep{i+1}" style="--w:{max(18, 100 - i * 13)}%"><span>{esc(label)}</span><strong>{value}</strong><small>{esc(note)}</small></div>' for i, (label, value, note) in enumerate(funnel_steps))}
       </div>
       <div class="grid-two">
         <div>
@@ -1332,6 +1340,8 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
           <div class="chart-shell"><svg id="respondLifecycleChart"></svg></div>
         </div>
       </div>
+      <h3>Service counts</h3>
+      {live_table(["Service", "Contacts", "Quoted value", "Final sale"], "respondServiceRows")}
     </section>
 
     <section id="google" class="panel">
@@ -1355,16 +1365,8 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       {table(["Month", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CVR", "CPL"], monthly_rows)}
       <h3>Campaign detail</h3>
       {render_campaign_table(google['campaigns'])}
-      <div class="grid-two">
-        <div>
-          <h3>Active ad groups</h3>
-          {render_adgroup_table(active_adgroups, 12)}
-        </div>
-        <div>
-          <h3>Paused / non-active ad groups</h3>
-          {render_adgroup_table(paused_adgroups, 12)}
-        </div>
-      </div>
+      <h3>Ad group performance</h3>
+      {render_adgroup_table(google['adgroups'], 12)}
       <div class="grid-two">
         <div>
           <h3>Weekday performance</h3>
@@ -1392,13 +1394,13 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         </div>
         <div>
           <h3>High-spend no-conversion keywords</h3>
-          {render_keyword_table(no_conversion_keywords, 12)}
+          {render_no_conversion_keyword_table(no_conversion_keywords, 12)}
         </div>
       </div>
       <h3>Match type performance</h3>
       {table(["Match type", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CVR", "CPL"], match_rows)}
       <h3>Ad performance</h3>
-      {table(["Campaign", "Ad group", "Primary headline", "Status", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL"], ad_rows)}
+      {table(["Campaign", "Ad group", "Primary headline", "Spend", "Impr.", "Clicks", "CTR", "Conv.", "CPL"], ad_rows)}
     </section>
 
     <section id="meta" class="panel">
@@ -1426,47 +1428,6 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       {meta_ad_rows}
     </section>
 
-    <section id="respond" class="panel">
-      <div class="section-head">
-        <div>
-          <p class="label">Respond.io</p>
-          <h2>Lead Quality and CRM Breakdown</h2>
-          <p>Filter the CRM breakdown by paid source. Paid is verified from Respond.io custom fields: source and medium.</p>
-        </div>
-      </div>
-      <div class="filter-row">
-        <div class="segmented" aria-label="Respond.io channel filter">
-          <button type="button" class="active" data-respond-channel="All">All</button>
-          <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
-          <button type="button" data-respond-channel="Google Ads">Google Ads</button>
-        </div>
-        <p class="data-note">Showing all-time paid contacts ({fmt_num(rt['contacts'])}); {fmt_num(jt['contacts'])} in June 2026.</p>
-      </div>
-      <div class="kpi-grid compact">
-        <article class="kpi orange"><span>Paid-media contacts</span><strong id="respondPaidContacts">{fmt_num(rt['contacts'])}</strong><small id="respondPaidNote">All paid contacts ({fmt_num(rt['contacts'])} all-time; {fmt_num(jt['contacts'])} in June 2026)</small></article>
-        <article class="kpi green"><span>Hot / quotation</span><strong id="respondHotQuote">{fmt_num(hot_or_quote)}</strong><small id="respondHotQuoteNote">{fmt_pct(safe_div(hot_or_quote, rt['contacts']) * 100)} of contacts</small></article>
-        <article class="kpi cyan"><span>Customer / show up</span><strong id="respondCustomerLike">{fmt_num(customer_like)}</strong><small id="respondCustomerLikeNote">{fmt_pct(safe_div(customer_like, rt['contacts']) * 100)} of contacts</small></article>
-        <article class="kpi violet"><span>Top service</span><strong id="respondTopService">{esc(top_service['service']) if top_service is not None else "N/A"}</strong><small id="respondTopServiceNote">{fmt_num(top_service['Contacts']) if top_service is not None else '0'} contacts</small></article>
-      </div>
-      <div class="grid-two">
-        <div>
-          <h3>Lifecycle counts</h3>
-          {live_table(["Lifecycle", "Contacts"], "respondLifecycleRows")}
-        </div>
-        <div>
-          <h3>Service counts</h3>
-          {live_table(["Service", "Contacts", "Quoted value", "Final sale"], "respondServiceRows")}
-        </div>
-      </div>
-      <h3>Source × service mix</h3>
-      {live_table(["Source", "Service", "Contacts"], "respondSourceServiceRows")}
-      <h3>Source × medium mix</h3>
-      {live_table(["Source", "Medium", "Contacts"], "respondSourceMediumRows")}
-      <h3>All contacts source × medium audit</h3>
-      <p class="data-note">Audit source: {esc(mcp_tool)}. Paid contacts are counted when medium contains paid/cpc/ppc/sem/search ads/social ads or source normalizes to Google Ads / Meta Ads.</p>
-      {table(["Source", "Medium", "Contacts"], audit_rows)}
-    </section>
-
     <section id="insights" class="panel">
       <div class="section-head">
         <div>
@@ -1482,17 +1443,7 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
       </div>
     </section>
 
-    <section id="gaps" class="panel warning-panel">
-      <div class="section-head">
-        <div>
-          <p class="label">Data quality</p>
-          <h2>Known Gaps Before Final Board-Ready Version</h2>
-        </div>
-      </div>
-      <ul class="gap-list">
-        {''.join(f'<li>{esc(gap)}</li>' for gap in data_gaps)}
-      </ul>
-    </section>
+
     """
 
     return f"""<!doctype html>
