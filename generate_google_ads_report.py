@@ -221,6 +221,19 @@ def campaign_performance(months, days=None):
     return grp
 
 
+def campaign_daily_performance(days):
+    grp = days.groupby(["Campaign", "Day"]).agg(
+        Cost=("Cost", "sum"), Impressions=("Impressions", "sum"),
+        Clicks=("Clicks", "sum"), Conversions=("Conversions", "sum"),
+    ).reset_index()
+    grp["CTR"] = grp.apply(lambda r: safe_div(r["Clicks"], r["Impressions"], 0.0) * 100, axis=1)
+    grp["CPC"] = grp.apply(lambda r: safe_div(r["Cost"], r["Clicks"], 0.0), axis=1)
+    grp["CPL"] = grp.apply(lambda r: safe_div(r["Cost"], r["Conversions"], 0.0), axis=1)
+    grp["CPM"] = grp.apply(lambda r: safe_div(r["Cost"], r["Impressions"], 0.0) * 1000, axis=1)
+    grp["CVR"] = grp.apply(lambda r: safe_div(r["Conversions"], r["Clicks"], 0.0) * 100, axis=1)
+    return grp.sort_values(["Campaign", "Day"])
+
+
 def adgroup_performance(months):
     grp = months.groupby(["Campaign", "Ad group"]).agg(
         Status=("Status", lambda x: x.mode()[0] if not x.mode().empty else x.iloc[-1]),
@@ -299,6 +312,7 @@ def day_performance(days):
     grp["CPC"] = grp.apply(lambda r: safe_div(r["Cost"], r["Clicks"], 0.0), axis=1)
     grp["CPL"] = grp.apply(lambda r: safe_div(r["Cost"], r["Conversions"], 0.0), axis=1)
     grp["CPM"] = grp.apply(lambda r: safe_div(r["Cost"], r["Impressions"], 0.0) * 1000, axis=1)
+    grp["CVR"] = grp.apply(lambda r: safe_div(r["Conversions"], r["Clicks"], 0.0) * 100, axis=1)
     return grp.sort_values("Day")
 
 
@@ -320,7 +334,7 @@ def to_json(obj):
 # HTML report generation
 # -----------------------------------------------------------------------------
 
-def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa, match_df):
+def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa, match_df, camp_daily):
     months_sorted = monthly.sort_values("MonthSort")
     month_labels = months_sorted["Month"].tolist()
     month_spend = months_sorted["Cost"].round(2).tolist()
@@ -336,6 +350,42 @@ def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa,
     camp_cpl = [round(v, 2) for v in camp_sorted["CPL"].tolist()]
     camp_lost_rank = [round(v, 2) for v in camp_sorted["Lost_IS_Rank"].tolist()]
     camp_lost_budget = [round(v, 2) for v in camp_sorted["Lost_IS_Budget"].tolist()]
+
+    # Daily series for interactive campaign explorer
+    exp_dates = sorted(camp_daily["Day"].dt.date.astype(str).unique())
+    exp_series = {}
+    overall_daily = day_perf.sort_values("Day")
+    exp_series["All campaigns"] = {
+        "dates": overall_daily["Day"].dt.strftime("%Y-%m-%d").tolist(),
+        "metrics": {
+            "Cost": overall_daily["Cost"].round(2).tolist(),
+            "Impressions": overall_daily["Impressions"].tolist(),
+            "Clicks": overall_daily["Clicks"].tolist(),
+            "Conversions": overall_daily["Conversions"].tolist(),
+            "CTR": [round(v, 2) for v in overall_daily["CTR"].tolist()],
+            "CPC": [round(v, 2) for v in overall_daily["CPC"].tolist()],
+            "CPL": [round(v, 2) for v in overall_daily["CPL"].tolist()],
+            "CPM": [round(v, 2) for v in overall_daily["CPM"].tolist()],
+            "CVR": [round(v, 2) for v in overall_daily["CVR"].tolist()],
+        }
+    }
+    for camp, g in camp_daily.groupby("Campaign"):
+        g = g.sort_values("Day")
+        exp_series[camp] = {
+            "dates": g["Day"].dt.strftime("%Y-%m-%d").tolist(),
+            "metrics": {
+                "Cost": g["Cost"].round(2).tolist(),
+                "Impressions": g["Impressions"].tolist(),
+                "Clicks": g["Clicks"].tolist(),
+                "Conversions": g["Conversions"].tolist(),
+                "CTR": [round(v, 2) for v in g["CTR"].tolist()],
+                "CPC": [round(v, 2) for v in g["CPC"].tolist()],
+                "CPL": [round(v, 2) for v in g["CPL"].tolist()],
+                "CPM": [round(v, 2) for v in g["CPM"].tolist()],
+                "CVR": [round(v, 2) for v in g["CVR"].tolist()],
+            }
+        }
+    explorer_json = json.dumps({"dates": exp_dates, "series": exp_series})
 
     ag_sorted = adgroups.sort_values("Cost", ascending=False)
     ag_labels = (ag_sorted["Campaign"] + " | " + ag_sorted["Ad group"]).tolist()
@@ -462,6 +512,9 @@ def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa,
     .kpi-value {{ font-size:1.6rem; font-weight:700; }}
     .grid-2 {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(420px,1fr)); gap:24px; }}
     .grid-3 {{ display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:24px; }}
+    .controls {{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; margin-bottom:16px; }}
+    .controls label {{ font-size:0.85rem; color:var(--muted); font-weight:500; }}
+    .controls select {{ margin-left:6px; padding:6px 10px; border-radius:8px; border:1px solid var(--border); background:var(--surface); font-size:0.9rem; }}
     .chart-wrap {{ position:relative; height:320px; margin-top:10px; }}
     .chart-wrap.small {{ height:260px; }}
     table {{ width:100%; border-collapse:collapse; font-size:0.88rem; }}
@@ -500,6 +553,7 @@ def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa,
     </header>
 
     <nav>
+      <a href="#explorer">Explorer</a>
       <a href="#exec">Executive Summary</a>
       <a href="#kpi">KPIs</a>
       <a href="#monthly">Monthly</a>
@@ -517,6 +571,17 @@ def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa,
       <a href="#recommendations">Recs</a>
       <a href="#insight">Insight</a>
     </nav>
+
+    <section id="explorer">
+      <h2>Campaign Explorer</h2>
+      <p>Pick a campaign and up to two metrics to see the daily trend update instantly.</p>
+      <div class="controls">
+        <label>Campaign <select id="expCampaign"></select></label>
+        <label>Metric 1 <select id="expMetric1"></select></label>
+        <label>Metric 2 <select id="expMetric2"></select></label>
+      </div>
+      <div class="chart-wrap" style="height:420px"><canvas id="explorerChart"></canvas></div>
+    </section>
 
     <section id="exec">
       <h2>1. Executive Summary</h2>
@@ -834,6 +899,69 @@ def render_html(kpi, monthly, campaigns, adgroups, kw, ads, heat, day_perf, qsa,
       data: {{labels:{to_json(camp_names)}, datasets:[{{label:'Lost IS Budget (%)', data:{to_json(camp_lost_budget)}, backgroundColor:palette.amber}}]}},
       options: {{responsive:true, maintainAspectRatio:false, scales:{{y:{{beginAtZero:true, max:100}}}}}}
     }});
+    const explorerData = {explorer_json};
+    const metricMeta = {{
+      Cost: {{label:'Cost (AED)', color:palette.google, axis:'y'}},
+      Impressions: {{label:'Impressions', color:palette.blue, axis:'y1'}},
+      Clicks: {{label:'Clicks', color:palette.teal, axis:'y1'}},
+      Conversions: {{label:'Conversions', color:palette.green, axis:'y1'}},
+      CTR: {{label:'CTR (%)', color:palette.red, axis:'y2'}},
+      CPC: {{label:'CPC (AED)', color:palette.amber, axis:'y'}},
+      CPL: {{label:'CPL (AED)', color:'#8b5cf6', axis:'y'}},
+      CPM: {{label:'CPM (AED)', color:'#ec4899', axis:'y'}},
+      CVR: {{label:'CVR (%)', color:'#14b8a6', axis:'y2'}},
+    }};
+    const expCampSel = document.getElementById('expCampaign');
+    const expM1Sel = document.getElementById('expMetric1');
+    const expM2Sel = document.getElementById('expMetric2');
+    Object.keys(explorerData.series).sort().forEach(c => {{
+      const opt = document.createElement('option');
+      opt.value = c; opt.textContent = c;
+      expCampSel.appendChild(opt);
+    }});
+    Object.keys(metricMeta).forEach(m => {{
+      const opt1 = document.createElement('option');
+      opt1.value = m; opt1.textContent = metricMeta[m].label;
+      expM1Sel.appendChild(opt1);
+      const opt2 = document.createElement('option');
+      opt2.value = m; opt2.textContent = metricMeta[m].label;
+      expM2Sel.appendChild(opt2);
+    }});
+    expCampSel.value = 'All campaigns';
+    expM1Sel.value = 'Cost';
+    expM2Sel.value = 'Conversions';
+    let explorerChart = null;
+    function buildExplorerDataset(metric, seriesDates, seriesMetrics) {{
+      const map = Object.fromEntries(seriesDates.map((d,i) => [d, seriesMetrics[metric][i]]));
+      const data = explorerData.dates.map(d => map[d] ?? null);
+      return {{label: metricMeta[metric].label, data, borderColor: metricMeta[metric].color, backgroundColor: metricMeta[metric].color, tension:0.25, yAxisID: metricMeta[metric].axis, spanGaps:true}};
+    }}
+    function updateExplorerChart() {{
+      const camp = expCampSel.value;
+      const m1 = expM1Sel.value;
+      const m2 = expM2Sel.value;
+      const s = explorerData.series[camp] || explorerData.series[Object.keys(explorerData.series)[0]];
+      const datasets = [buildExplorerDataset(m1, s.dates, s.metrics)];
+      if (m2 && m2 !== m1) datasets.push(buildExplorerDataset(m2, s.dates, s.metrics));
+      const scales = {{
+        x: {{grid:{{color:'#e2e8f0'}}}},
+        y: {{position:'left', beginAtZero:true, grid:{{color:'#e2e8f0'}}, title:{{display:true, text:'AED'}}}},
+        y1: {{position:'right', beginAtZero:true, grid:{{display:false}}, title:{{display:true, text:'Count'}}}},
+        y2: {{position:'right', beginAtZero:true, grid:{{display:false}}, title:{{display:true, text:'%'}}}}
+      }};
+      const usedAxes = new Set(datasets.map(d => d.yAxisID));
+      if (!usedAxes.has('y')) scales.y.display = false;
+      if (!usedAxes.has('y1')) scales.y1.display = false;
+      if (!usedAxes.has('y2')) scales.y2.display = false;
+      if (explorerChart) {{ explorerChart.data.datasets = datasets; explorerChart.options.scales = scales; explorerChart.update(); return; }}
+      explorerChart = new Chart(document.getElementById('explorerChart'), {{
+        type: 'line',
+        data: {{labels: explorerData.dates, datasets}},
+        options: {{responsive:true, maintainAspectRatio:false, interaction:{{mode:'index', intersect:false}}, scales, plugins:{{legend:{{position:'top'}}}}}}
+      }});
+    }}
+    [expCampSel, expM1Sel, expM2Sel].forEach(el => el.addEventListener('change', updateExplorerChart));
+    updateExplorerChart();
   </script>
 </body>
 </html>
@@ -847,13 +975,14 @@ def main():
     monthly = monthly_performance(months)
     campaigns = campaign_performance(months, days)
     adgroups = adgroup_performance(months)
+    camp_daily = campaign_daily_performance(days)
     ads_df = ads_performance(ads)
     match_df = match_type_analysis(kw)
     heat_df = heatmap_data(heat)
     day_perf = day_performance(days)
     qsa = quality_score_audit(kw)
 
-    html = render_html(kpi, monthly, campaigns, adgroups, kw, ads_df, heat_df, day_perf, qsa, match_df)
+    html = render_html(kpi, monthly, campaigns, adgroups, kw, ads_df, heat_df, day_perf, qsa, match_df, camp_daily)
     OUT_HTML.write_text(html, encoding="utf-8")
     print(f"Report written to {OUT_HTML}")
 
