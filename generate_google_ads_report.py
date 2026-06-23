@@ -18,6 +18,12 @@ OUT_DIR = Path(__file__).resolve().parent / "outputs"
 OUT_DIR.mkdir(exist_ok=True)
 OUT_HTML = OUT_DIR / "google_ads_report.html"
 
+if __name__ == "__main__":
+    from generate_blueverse_report import main as generate_blueverse_main
+
+    generate_blueverse_main()
+    raise SystemExit
+
 
 def read_csv(path, sep=None, encoding=None, skiprows=2):
     if encoding is None:

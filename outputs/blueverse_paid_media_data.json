@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-23T12:57:21",
+  "google_totals": {
+    "spend": 31297.999999999996,
+    "impressions": 49308.0,
+    "clicks": 2625.0,
+    "conversions": 187.0,
+    "ctr": 5.3236797274275975,
+    "cpc": 11.923047619047617,
+    "cpl": 167.36898395721923,
+    "cpm": 634.744868986777,
+    "cvr": 7.123809523809524,
+    "lost_is_rank": 61.238491289269284,
+    "lost_is_budget": 23.053493013162434,
+    "date_start": "2026-04-15",
+    "date_end": "2026-06-23"
+  },
+  "meta_totals": {
+    "spend": 1817.9999999999998,
+    "impressions": 123708,
+    "reach": 75464,
+    "conversations": 327.0,
+    "date_start": "2026-06-01",
+    "date_end": "2026-06-22",
+    "cpmc": 5.559633027522935,
+    "cpm": 14.695896789213307,
+    "frequency": 1.6392982084172585
+  },
+  "respond_totals": {
+    "contacts": 319,
+    "quoted_value": 0.0,
+    "revenue": 0.0,
+    "contacts_with_quote": 0,
+    "contacts_with_sale": 0
+  }
+}
