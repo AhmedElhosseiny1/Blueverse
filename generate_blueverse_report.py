@@ -733,6 +733,33 @@ def build_respond_filters(scope: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def respond_funnel_for_filter(label: str, fdata: dict[str, Any], gt: dict[str, Any], mt: dict[str, Any]) -> list[dict[str, str]]:
+    if label == "Meta Ads":
+        spend = mt["spend"]
+        platform_events = mt["conversations"]
+        spend_note = "Meta Ads spend"
+        events_note = "Meta message starts"
+    elif label == "Google Ads":
+        spend = gt["spend"]
+        platform_events = gt["conversions"]
+        spend_note = "Google Ads spend"
+        events_note = "Google conversions"
+    else:
+        spend = gt["spend"] + mt["spend"]
+        platform_events = gt["conversions"] + mt["conversations"]
+        spend_note = "Google + Meta spend"
+        events_note = "Google conversions + Meta message starts"
+    contacts = int(fdata.get("total", 0))
+    platform_to_crm = safe_div(contacts, platform_events) * 100
+    return [
+        {"label": "Paid spend", "value": fmt_money(spend), "note": spend_note},
+        {"label": "Platform lead events", "value": fmt_num(platform_events, 1 if platform_events % 1 else 0), "note": events_note},
+        {"label": "Respond.io contacts", "value": fmt_num(contacts), "note": f"{fmt_pct(platform_to_crm)} of platform events"},
+        {"label": "Hot / quotation", "value": fmt_num(int(fdata.get("hotOrQuote", 0))), "note": "CRM quality signal available now"},
+        {"label": "Customer / show up", "value": fmt_num(int(fdata.get("customerLike", 0))), "note": "Needs richer lifecycle hygiene"},
+    ]
+
+
 def respond_df_from_records(records: list[dict[str, Any]], key_name: str, df_key_name: str) -> pd.DataFrame:
     rows = [
         {
@@ -1109,7 +1136,10 @@ def build_chart_payloads(google: dict[str, Any], meta: dict[str, Any], respond: 
             "labels": respond["service"]["service"].head(8).tolist(),
             "values": [int(x) for x in respond["service"]["Contacts"].head(8).tolist()],
         },
-        "respondFilters": json_ready(respond.get("filters", {})),
+        "respondFilters": json_ready({
+            label: {**fdata, "funnel": respond_funnel_for_filter(label, fdata, google["totals"], meta["totals"])}
+            for label, fdata in respond.get("filters", {}).items()
+        }),
         "respondMeta": json_ready(respond.get("summary_meta", {})),
     }
 
@@ -1327,9 +1357,7 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         </div>
         <p class="data-note">Showing all-time paid contacts ({fmt_num(rt['contacts'])}); {fmt_num(jt['contacts'])} in June 2026. Respond.io MCP scan: {fmt_num(mcp_scanned)} total contacts checked; generated {esc(mcp_generated_at)}.</p>
       </div>
-      <div class="funnel">
-        {''.join(f'<div class="funnel-step" id="funnelStep{i+1}" style="--w:{max(18, 100 - i * 13)}%"><span>{esc(label)}</span><strong>{value}</strong><small>{esc(note)}</small></div>' for i, (label, value, note) in enumerate(funnel_steps))}
-      </div>
+      <div class="funnel"></div>
       <div class="grid-two">
         <div>
           <h3>Contacts by source</h3>
@@ -2013,6 +2041,18 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         : '<tr><td colspan="4">No contacts in this filter</td></tr>';
     }}
 
+    function renderFunnelSteps(funnel) {{
+      const container = document.querySelector('#funnel .funnel');
+      if (!container || !funnel || !funnel.length) return;
+      container.innerHTML = funnel.map((step, i) => `
+        <div class="funnel-step" id="funnelStep${{i + 1}}" style="--w:${{Math.max(18, 100 - i * 13)}}%">
+          <span>${{escapeHtml(step.label)}}</span>
+          <strong>${{escapeHtml(step.value)}}</strong>
+          <small>${{escapeHtml(step.note)}}</small>
+        </div>
+      `).join('');
+    }}
+
     function updateRespond(filterName = activeRespondFilter) {{
       const filters = REPORT_DATA.respondFilters || {{}};
       const data = filters[filterName] || filters.All || {{
@@ -2075,6 +2115,7 @@ def render_report(data: SourceData, google: dict[str, Any], meta: dict[str, Any]
         color: COLORS.green,
         title: `${{activeRespondFilter}} contacts by lifecycle`
       }});
+      renderFunnelSteps(data.funnel);
     }}
 
     function initRespondFilters() {{
