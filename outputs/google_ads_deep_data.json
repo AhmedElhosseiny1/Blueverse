@@ -1,0 +1,547 @@
+{
+  "period": "15 Apr 2026 \u2013 23 Jun 2026",
+  "overall": {
+    "spend": 31298.01,
+    "impressions": 49307,
+    "clicks": 2625,
+    "conversions": 187.0,
+    "ctr": 5.32,
+    "cpc": 11.92,
+    "cpl": 167.37
+  },
+  "monthly": [
+    {
+      "month": "April",
+      "spend": 14754.56,
+      "impressions": 27703,
+      "clicks": 1544,
+      "conversions": 101.0,
+      "ctr": 5.57,
+      "cpl": 146.08
+    },
+    {
+      "month": "May",
+      "spend": 12285.12,
+      "impressions": 16198,
+      "clicks": 828,
+      "conversions": 67.0,
+      "ctr": 5.11,
+      "cpl": 183.36
+    },
+    {
+      "month": "June",
+      "spend": 4258.32,
+      "impressions": 5407,
+      "clicks": 253,
+      "conversions": 19.0,
+      "ctr": 4.68,
+      "cpl": 224.12
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "TT_PPF",
+      "spend": 14492.09,
+      "impressions": 20819,
+      "clicks": 1024,
+      "conversions": 76.5,
+      "ctr": 4.92,
+      "cpc": 14.15,
+      "cpl": 189.44
+    },
+    {
+      "name": "TT_Wrapping",
+      "spend": 13151.78,
+      "impressions": 18787,
+      "clicks": 1008,
+      "conversions": 76.0,
+      "ctr": 5.37,
+      "cpc": 13.05,
+      "cpl": 173.05
+    },
+    {
+      "name": "TT_Window Tinting",
+      "spend": 2156.44,
+      "impressions": 4660,
+      "clicks": 242,
+      "conversions": 17.0,
+      "ctr": 5.19,
+      "cpc": 8.91,
+      "cpl": 126.85
+    },
+    {
+      "name": "TT_Detailing&Coating&Dent",
+      "spend": 1497.7,
+      "impressions": 5041,
+      "clicks": 351,
+      "conversions": 17.5,
+      "ctr": 6.96,
+      "cpc": 4.27,
+      "cpl": 85.58
+    }
+  ],
+  "monthlyCampaignSpend": {
+    "TT_Detailing&Coating&Dent": [
+      1497.7,
+      0.0,
+      0.0
+    ],
+    "TT_PPF": [
+      5586.66,
+      5336.34,
+      3569.11
+    ],
+    "TT_Window Tinting": [
+      2156.43,
+      0.0,
+      0.0
+    ],
+    "TT_Wrapping": [
+      5513.77,
+      6948.78,
+      689.21
+    ]
+  },
+  "monthlyCampaignConversions": {
+    "TT_Detailing&Coating&Dent": [
+      17.5,
+      0.0,
+      0.0
+    ],
+    "TT_PPF": [
+      29.5,
+      28.0,
+      19.0
+    ],
+    "TT_Window Tinting": [
+      17.0,
+      0.0,
+      0.0
+    ],
+    "TT_Wrapping": [
+      37.0,
+      39.0,
+      0.0
+    ]
+  },
+  "adGroups": [
+    {
+      "campaign": "TT_Wrapping",
+      "adgroup": "wrapping Dubai",
+      "state": "Enabled",
+      "spend": 4811.74,
+      "impressions": 5304,
+      "clicks": 281,
+      "conversions": 33.0,
+      "cpl": 145.81
+    },
+    {
+      "campaign": "TT_PPF",
+      "adgroup": "Dubai",
+      "state": "Enabled",
+      "spend": 5700.98,
+      "impressions": 7185,
+      "clicks": 368,
+      "conversions": 31.0,
+      "cpl": 183.9
+    },
+    {
+      "campaign": "TT_Wrapping",
+      "adgroup": "wrapping Dubai",
+      "state": "Paused",
+      "spend": 5260.68,
+      "impressions": 8451,
+      "clicks": 458,
+      "conversions": 30.0,
+      "cpl": 175.36
+    },
+    {
+      "campaign": "TT_PPF",
+      "adgroup": "Stek",
+      "state": "Enabled",
+      "spend": 3061.09,
+      "impressions": 5120,
+      "clicks": 227,
+      "conversions": 19.5,
+      "cpl": 156.98
+    },
+    {
+      "campaign": "TT_Window Tinting",
+      "adgroup": "window tinting",
+      "state": "Enabled",
+      "spend": 2156.43,
+      "impressions": 4660,
+      "clicks": 242,
+      "conversions": 17.0,
+      "cpl": 126.85
+    },
+    {
+      "campaign": "TT_Wrapping",
+      "adgroup": "Price & Cost",
+      "state": "Enabled",
+      "spend": 2213.01,
+      "impressions": 2706,
+      "clicks": 174,
+      "conversions": 13.0,
+      "cpl": 170.23
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "car wrapping dubai",
+      "match": "Broad match",
+      "campaign": "TT_Wrapping",
+      "spend": 942.55,
+      "clicks": 86,
+      "conversions": 7.0,
+      "ctr": 4.06,
+      "cpl": 134.65
+    },
+    {
+      "keyword": "car wrap price dubai",
+      "match": "Broad match",
+      "campaign": "TT_Wrapping",
+      "spend": 738.99,
+      "clicks": 60,
+      "conversions": 7.0,
+      "ctr": 6.36,
+      "cpl": 105.57
+    },
+    {
+      "keyword": "car wrapping dubai",
+      "match": "Exact match",
+      "campaign": "TT_Wrapping",
+      "spend": 1284.84,
+      "clicks": 45,
+      "conversions": 6.5,
+      "ctr": 10.11,
+      "cpl": 198.58
+    },
+    {
+      "keyword": "car foil dubai",
+      "match": "Broad match",
+      "campaign": "TT_Wrapping",
+      "spend": 987.07,
+      "clicks": 71,
+      "conversions": 6.0,
+      "ctr": 4.68,
+      "cpl": 164.51
+    },
+    {
+      "keyword": "dyno stek",
+      "match": "Broad match",
+      "campaign": "TT_PPF",
+      "spend": 902.42,
+      "clicks": 59,
+      "conversions": 6.0,
+      "ctr": 3.82,
+      "cpl": 150.4
+    },
+    {
+      "keyword": "paint protection dubai",
+      "match": "Broad match",
+      "campaign": "TT_PPF",
+      "spend": 1504.35,
+      "clicks": 131,
+      "conversions": 6.0,
+      "ctr": 5.57,
+      "cpl": 250.72
+    },
+    {
+      "keyword": "xpel ppf dubai",
+      "match": "Broad match",
+      "campaign": "TT_PPF",
+      "spend": 1061.44,
+      "clicks": 81,
+      "conversions": 6.0,
+      "ctr": 5.11,
+      "cpl": 176.91
+    },
+    {
+      "keyword": "car vinyl wrap dubai",
+      "match": "Broad match",
+      "campaign": "TT_Wrapping",
+      "spend": 291.33,
+      "clicks": 20,
+      "conversions": 5.5,
+      "ctr": 3.03,
+      "cpl": 52.68
+    },
+    {
+      "keyword": "car wrapping price in dubai",
+      "match": "Broad match",
+      "campaign": "TT_Wrapping",
+      "spend": 852.22,
+      "clicks": 65,
+      "conversions": 5.0,
+      "ctr": 6.54,
+      "cpl": 170.44
+    },
+    {
+      "keyword": "car ppf dubai",
+      "match": "Phrase match",
+      "campaign": "TT_PPF",
+      "spend": 176.27,
+      "clicks": 8,
+      "conversions": 4.0,
+      "ctr": 8.99,
+      "cpl": 44.07
+    }
+  ],
+  "dayOfWeek": [
+    {
+      "day": "Sun",
+      "spend": 4678.31,
+      "clicks": 393,
+      "conversions": 25.0,
+      "ctr": 5.75
+    },
+    {
+      "day": "Mon",
+      "spend": 4066.34,
+      "clicks": 321,
+      "conversions": 23.0,
+      "ctr": 5.29
+    },
+    {
+      "day": "Tue",
+      "spend": 4020.08,
+      "clicks": 370,
+      "conversions": 31.0,
+      "ctr": 5.27
+    },
+    {
+      "day": "Wed",
+      "spend": 4697.45,
+      "clicks": 429,
+      "conversions": 31.0,
+      "ctr": 5.27
+    },
+    {
+      "day": "Thu",
+      "spend": 5312.08,
+      "clicks": 379,
+      "conversions": 31.0,
+      "ctr": 5.41
+    },
+    {
+      "day": "Fri",
+      "spend": 3887.82,
+      "clicks": 347,
+      "conversions": 20.0,
+      "ctr": 5.04
+    },
+    {
+      "day": "Sat",
+      "spend": 4633.3,
+      "clicks": 385,
+      "conversions": 26.0,
+      "ctr": 5.25
+    }
+  ],
+  "hourly": [
+    {
+      "hour": 0,
+      "conversions": 5.0,
+      "clicks": 80,
+      "ctr": 5.53
+    },
+    {
+      "hour": 1,
+      "conversions": 4.0,
+      "clicks": 59,
+      "ctr": 4.92
+    },
+    {
+      "hour": 2,
+      "conversions": 1.0,
+      "clicks": 60,
+      "ctr": 6.95
+    },
+    {
+      "hour": 3,
+      "conversions": 1.0,
+      "clicks": 37,
+      "ctr": 6.79
+    },
+    {
+      "hour": 4,
+      "conversions": 0.0,
+      "clicks": 30,
+      "ctr": 7.37
+    },
+    {
+      "hour": 5,
+      "conversions": 1.0,
+      "clicks": 26,
+      "ctr": 5.6
+    },
+    {
+      "hour": 6,
+      "conversions": 2.5,
+      "clicks": 44,
+      "ctr": 5.21
+    },
+    {
+      "hour": 7,
+      "conversions": 7.0,
+      "clicks": 83,
+      "ctr": 6.11
+    },
+    {
+      "hour": 8,
+      "conversions": 5.0,
+      "clicks": 99,
+      "ctr": 5.16
+    },
+    {
+      "hour": 9,
+      "conversions": 6.5,
+      "clicks": 133,
+      "ctr": 5.08
+    },
+    {
+      "hour": 10,
+      "conversions": 15.5,
+      "clicks": 179,
+      "ctr": 5.48
+    },
+    {
+      "hour": 11,
+      "conversions": 13.0,
+      "clicks": 220,
+      "ctr": 5.75
+    },
+    {
+      "hour": 12,
+      "conversions": 13.0,
+      "clicks": 200,
+      "ctr": 4.79
+    },
+    {
+      "hour": 13,
+      "conversions": 18.5,
+      "clicks": 220,
+      "ctr": 5.51
+    },
+    {
+      "hour": 14,
+      "conversions": 17.0,
+      "clicks": 191,
+      "ctr": 5.25
+    },
+    {
+      "hour": 15,
+      "conversions": 15.0,
+      "clicks": 160,
+      "ctr": 5.2
+    },
+    {
+      "hour": 16,
+      "conversions": 9.0,
+      "clicks": 131,
+      "ctr": 4.51
+    },
+    {
+      "hour": 17,
+      "conversions": 11.0,
+      "clicks": 129,
+      "ctr": 4.59
+    },
+    {
+      "hour": 18,
+      "conversions": 11.0,
+      "clicks": 128,
+      "ctr": 5.33
+    },
+    {
+      "hour": 19,
+      "conversions": 10.0,
+      "clicks": 103,
+      "ctr": 5.42
+    },
+    {
+      "hour": 20,
+      "conversions": 9.0,
+      "clicks": 94,
+      "ctr": 5.79
+    },
+    {
+      "hour": 21,
+      "conversions": 3.0,
+      "clicks": 79,
+      "ctr": 5.29
+    },
+    {
+      "hour": 22,
+      "conversions": 6.0,
+      "clicks": 66,
+      "ctr": 4.88
+    },
+    {
+      "hour": 23,
+      "conversions": 3.0,
+      "clicks": 73,
+      "ctr": 6.15
+    }
+  ],
+  "topHours": [
+    {
+      "hour": 13,
+      "conversions": 18.5,
+      "clicks": 220,
+      "ctr": 5.51
+    },
+    {
+      "hour": 14,
+      "conversions": 17.0,
+      "clicks": 191,
+      "ctr": 5.25
+    },
+    {
+      "hour": 10,
+      "conversions": 15.5,
+      "clicks": 179,
+      "ctr": 5.48
+    },
+    {
+      "hour": 15,
+      "conversions": 15.0,
+      "clicks": 160,
+      "ctr": 5.2
+    },
+    {
+      "hour": 11,
+      "conversions": 13.0,
+      "clicks": 220,
+      "ctr": 5.75
+    }
+  ],
+  "topDays": [
+    {
+      "day": "Tue",
+      "spend": 4020.08,
+      "clicks": 370,
+      "conversions": 31.0,
+      "ctr": 5.27
+    },
+    {
+      "day": "Wed",
+      "spend": 4697.45,
+      "clicks": 429,
+      "conversions": 31.0,
+      "ctr": 5.27
+    },
+    {
+      "day": "Thu",
+      "spend": 5312.08,
+      "clicks": 379,
+      "conversions": 31.0,
+      "ctr": 5.41
+    }
+  ],
+  "lostIS": {
+    "rankWeightedAvg": 61.2,
+    "budgetWeightedAvg": 23.1
+  }
+}
