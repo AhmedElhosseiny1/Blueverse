@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueVerse Google Ads Performance Report · Apr–Jun 2026</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix@2.0.1/dist/chartjs-chart-matrix.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f6f8fb; --surface:#fff; --text:#0f172a; --muted:#64748b; --border:#e2e8f0;
+      --google:#f97316; --blue:#2563eb; --teal:#0d9488; --red:#dc2626; --green:#16a34a; --amber:#d97706;
+      --radius:16px; --shadow:0 4px 24px rgba(15,23,42,0.06); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+    .container { max-width:1320px; margin:0 auto; padding:32px 24px 80px; }
+    header, section { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px; margin-bottom:24px; box-shadow:var(--shadow); }
+    header h1 { margin:0 0 8px; font-size:2rem; }
+    header p { margin:0; color:var(--muted); }
+    nav { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:28px; position:sticky; top:12px; z-index:50; background:rgba(246,248,251,0.92); backdrop-filter:blur(8px); padding:10px 0; }
+    nav a { text-decoration:none; color:var(--muted); background:var(--surface); border:1px solid var(--border); padding:8px 16px; border-radius:999px; font-size:0.85rem; font-weight:500; }
+    nav a:hover { color:var(--blue); border-color:var(--blue); }
+    h2 { margin:0 0 18px; font-size:1.35rem; display:flex; align-items:center; gap:10px; }
+    h3 { margin:24px 0 12px; font-size:1.05rem; color:var(--muted); }
+    .kpi-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:16px; }
+    .kpi { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow); }
+    .kpi-label { font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px; }
+    .kpi-value { font-size:1.6rem; font-weight:700; }
+    .grid-2 { display:grid; grid-template-columns:repeat(auto-fit, minmax(420px,1fr)); gap:24px; }
+    .grid-3 { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px,1fr)); gap:24px; }
+    .chart-wrap { position:relative; height:320px; margin-top:10px; }
+    .chart-wrap.small { height:260px; }
+    table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+    th, td { padding:10px 8px; border-bottom:1px solid var(--border); text-align:left; }
+    th { color:var(--muted); font-weight:600; text-transform:uppercase; font-size:0.7rem; letter-spacing:0.05em; }
+    td.num { text-align:right; font-variant-numeric:tabular-nums; }
+    tr:hover td { background:#f8fafc; }
+    .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-size:0.72rem; font-weight:600; text-transform:uppercase; }
+    .badge.scale { background:#dcfce7; color:#166534; }
+    .badge.keep { background:#e0f2fe; color:#075985; }
+    .badge.monitor { background:#fef3c7; color:#92400e; }
+    .badge.pause { background:#fee2e2; color:#991b1b; }
+    .badge.negative { background:#f3f4f6; color:#374151; }
+    .badge.paused { background:#f1f5f9; color:#64748b; }
+    .insight { background:#f0f9ff; border-left:4px solid var(--blue); padding:16px 18px; border-radius:0 10px 10px 0; margin:16px 0; }
+    .insight strong { color:var(--blue); }
+    .notice { background:#fff7ed; border-left:4px solid var(--google); padding:16px 18px; border-radius:0 10px 10px 0; margin:16px 0; }
+    .recommendation { background:#f0fdf4; border-left:4px solid var(--green); padding:16px 18px; border-radius:0 10px 10px 0; margin:12px 0; }
+    .pill-list { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
+    .pill-list li { background:#f1f5f9; border:1px solid var(--border); border-radius:999px; padding:8px 14px; font-size:0.85rem; }
+    .scroll { overflow-x:auto; }
+    .timeline { position:relative; padding-left:24px; }
+    .timeline::before { content:""; position:absolute; left:7px; top:0; bottom:0; width:2px; background:var(--border); }
+    .timeline-item { position:relative; margin-bottom:18px; }
+    .timeline-item::before { content:""; position:absolute; left:-21px; top:6px; width:10px; height:10px; border-radius:50%; background:var(--blue); }
+    .timeline-item span { font-size:0.75rem; color:var(--muted); }
+    footer { text-align:center; color:var(--muted); font-size:0.8rem; margin-top:50px; }
+    @media(max-width:768px){ .grid-2,.grid-3{grid-template-columns:1fr;} header h1{font-size:1.5rem;} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BlueVerse Google Ads Performance Report</h1>
+      <p>Period: 1 April 2026 – 23 June 2026 · Google Ads search performance, optimization impact, and next steps.</p>
+    </header>
+
+    <nav>
+      <a href="#exec">Executive Summary</a>
+      <a href="#kpi">KPIs</a>
+      <a href="#monthly">Monthly</a>
+      <a href="#campaigns">Campaigns</a>
+      <a href="#adgroups">Ad Groups</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#match">Match Types</a>
+      <a href="#ads">Ads</a>
+      <a href="#search">Search Hygiene</a>
+      <a href="#heatmap">Heatmap</a>
+      <a href="#days">Daily</a>
+      <a href="#lostis">Lost IS</a>
+      <a href="#qs">Quality Score</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#recommendations">Recs</a>
+      <a href="#insight">Insight</a>
+    </nav>
+
+    <section id="exec">
+      <h2>1. Executive Summary</h2>
+      <p>From 1 April to 23 June 2026, BlueVerse Google Ads invested <strong>AED 31,298.00</strong> across 4 search campaigns, generating <strong>2,625</strong> clicks, <strong>49,308</strong> impressions, and <strong>183</strong> form leads.</p>
+      <div class="grid-3">
+        <div>
+          <h3>Headline metrics</h3>
+          <ul class="pill-list">
+            <li>CTR <strong>5.32%</strong></li>
+            <li>CPC <strong>AED 11.92</strong></li>
+            <li>CPL <strong>AED 171.03</strong></li>
+            <li>CVR <strong>6.97%</strong></li>
+            <li>CPM <strong>AED 634.74</strong></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Best performing campaign</h3>
+          <p><strong>TT_Wrapping _Search_April2026</strong> — 76 leads at AED 173.05 CPL, 5.37% CTR.</p>
+        </div>
+        <div>
+          <h3>Weakest campaign</h3>
+          <p><strong>TT_PPF _Search_April2026</strong> — 73 leads, AED 198.52 CPL, 4.92% CTR.</p>
+        </div>
+      </div>
+      <div class="insight"><strong>Biggest opportunity:</strong> TT_Wrapping _Search_April2026 is losing 22.86% of impressions to budget while still converting. Raising its daily budget should directly increase lead volume.</div>
+    </section>
+
+    <section id="kpi">
+      <h2>2. KPI Cards</h2>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="kpi-label">Total Spend</div><div class="kpi-value">AED 31,298.00</div></div>
+        <div class="kpi"><div class="kpi-label">Impressions</div><div class="kpi-value">49,308</div></div>
+        <div class="kpi"><div class="kpi-label">Clicks</div><div class="kpi-value">2,625</div></div>
+        <div class="kpi"><div class="kpi-label">CTR</div><div class="kpi-value">5.32%</div></div>
+        <div class="kpi"><div class="kpi-label">CPC</div><div class="kpi-value">AED 11.92</div></div>
+        <div class="kpi"><div class="kpi-label">Conversions</div><div class="kpi-value">183</div></div>
+        <div class="kpi"><div class="kpi-label">CPL</div><div class="kpi-value">AED 171.03</div></div>
+        <div class="kpi"><div class="kpi-label">CVR</div><div class="kpi-value">6.97%</div></div>
+        <div class="kpi"><div class="kpi-label">CPM</div><div class="kpi-value">AED 634.74</div></div>
+        <div class="kpi"><div class="kpi-label">Lost IS Rank</div><div class="kpi-value">61.24%</div></div>
+        <div class="kpi"><div class="kpi-label">Lost IS Budget</div><div class="kpi-value">23.05%</div></div>
+      </div>
+    </section>
+
+    <section id="monthly">
+      <h2>3. Monthly Performance Trend</h2>
+      <div class="insight"><strong>April 2026</strong> delivered the best efficiency with a CPL of <strong>AED 150.56</strong>. CPL worsened from April (AED 150.56) to June (AED 224.12), a 148.9% increase. CPC moved from AED 9.56 in April to AED 16.83 in June. June lead volume (19) is down vs May (66) but with a smaller budget.</div>
+      <div class="chart-wrap"><canvas id="monthlyChart"></canvas></div>
+      <h3>Monthly detail</h3>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Month</th><th>Cost</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>CPC</th><th>Leads</th><th>CVR</th><th>CPL</th><th>CPM</th></tr></thead>
+          <tbody><tr><td>April 2026</td><td class='num'>AED 14,754.56</td><td class='num'>27,703</td><td class='num'>1,544</td><td class='num'>5.57%</td><td class='num'>AED 9.56</td><td class='num'>98</td><td class='num'>6.35%</td><td class='num'>AED 150.56</td><td class='num'>AED 532.60</td></tr>
+<tr><td>May 2026</td><td class='num'>AED 12,285.12</td><td class='num'>16,198</td><td class='num'>828</td><td class='num'>5.11%</td><td class='num'>AED 14.84</td><td class='num'>66</td><td class='num'>7.97%</td><td class='num'>AED 186.14</td><td class='num'>AED 758.43</td></tr>
+<tr><td>June 2026</td><td class='num'>AED 4,258.32</td><td class='num'>5,407</td><td class='num'>253</td><td class='num'>4.68%</td><td class='num'>AED 16.83</td><td class='num'>19</td><td class='num'>7.51%</td><td class='num'>AED 224.12</td><td class='num'>AED 787.56</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="campaigns">
+      <h2>4. Campaign Performance</h2>
+      <div class="grid-2">
+        <div class="chart-wrap small"><canvas id="campSpendChart"></canvas></div>
+        <div class="chart-wrap small"><canvas id="campLeadsChart"></canvas></div>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Campaign</th><th>Status</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Leads</th><th>CVR</th><th>Cost</th><th>Avg CPC</th><th>CPL</th><th>Lost IS Rank</th><th>Lost IS Budget</th></tr></thead>
+          <tbody><tr><td>TT_PPF _Search_April2026</td><td>Enabled</td><td class='num'>20,820</td><td class='num'>1,024</td><td class='num'>4.92%</td><td class='num'>73</td><td class='num'>7.13%</td><td class='num'>AED 14,492.11</td><td class='num'>AED 14.15</td><td class='num'>AED 198.52</td><td class='num'>60.66%</td><td class='num'>21.85%</td></tr>
+<tr><td>TT_Wrapping _Search_April2026</td><td>Enabled</td><td class='num'>18,787</td><td class='num'>1,008</td><td class='num'>5.37%</td><td class='num'>76</td><td class='num'>7.54%</td><td class='num'>AED 13,151.76</td><td class='num'>AED 13.05</td><td class='num'>AED 173.05</td><td class='num'>56.55%</td><td class='num'>22.86%</td></tr>
+<tr><td>TT_Window Tinting_Search_April2026</td><td>Enabled</td><td class='num'>4,660</td><td class='num'>242</td><td class='num'>5.19%</td><td class='num'>17</td><td class='num'>7.02%</td><td class='num'>AED 2,156.43</td><td class='num'>AED 8.91</td><td class='num'>AED 126.85</td><td class='num'>65.58%</td><td class='num'>21.03%</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Enabled</td><td class='num'>5,041</td><td class='num'>351</td><td class='num'>6.96%</td><td class='num'>17</td><td class='num'>4.84%</td><td class='num'>AED 1,497.70</td><td class='num'>AED 4.27</td><td class='num'>AED 88.10</td><td class='num'>70.29%</td><td class='num'>21.27%</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="adgroups">
+      <h2>5. Ad Group Performance</h2>
+      <div class="chart-wrap small"><canvas id="agSpendChart"></canvas></div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Campaign</th><th>Ad Group</th><th>Status</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Cost</th><th>CPC</th><th>Leads</th><th>CVR</th><th>CPL</th></tr></thead>
+          <tbody><tr><td>TT_Wrapping _Search_April2026</td><td>wrapping Dubai</td><td>Paused</td><td class='num'>13,755</td><td class='num'>739</td><td class='num'>5.37%</td><td class='num'>AED 10,072.41</td><td class='num'>AED 13.63</td><td class='num'>63</td><td class='num'>8.53%</td><td class='num'>AED 159.88</td></tr>
+<tr><td>TT_PPF _Search_April2026</td><td>Dubai</td><td>Enabled</td><td class='num'>9,827</td><td class='num'>469</td><td class='num'>4.77%</td><td class='num'>AED 6,897.89</td><td class='num'>AED 14.71</td><td class='num'>34</td><td class='num'>7.25%</td><td class='num'>AED 202.88</td></tr>
+<tr><td>TT_PPF _Search_April2026</td><td>Stek</td><td>Enabled</td><td class='num'>7,464</td><td class='num'>343</td><td class='num'>4.60%</td><td class='num'>AED 4,353.39</td><td class='num'>AED 12.69</td><td class='num'>27</td><td class='num'>7.87%</td><td class='num'>AED 161.24</td></tr>
+<tr><td>TT_PPF _Search_April2026</td><td>Price and cost</td><td>Enabled</td><td class='num'>3,520</td><td class='num'>212</td><td class='num'>6.02%</td><td class='num'>AED 3,240.83</td><td class='num'>AED 15.29</td><td class='num'>12</td><td class='num'>5.66%</td><td class='num'>AED 270.07</td></tr>
+<tr><td>TT_Wrapping _Search_April2026</td><td>Price & Cost</td><td>Enabled</td><td class='num'>2,969</td><td class='num'>187</td><td class='num'>6.30%</td><td class='num'>AED 2,357.34</td><td class='num'>AED 12.61</td><td class='num'>13</td><td class='num'>6.95%</td><td class='num'>AED 181.33</td></tr>
+<tr><td>TT_Window Tinting_Search_April2026</td><td>window tinting</td><td>Enabled</td><td class='num'>4,660</td><td class='num'>242</td><td class='num'>5.19%</td><td class='num'>AED 2,156.43</td><td class='num'>AED 8.91</td><td class='num'>17</td><td class='num'>7.02%</td><td class='num'>AED 126.85</td></tr>
+<tr><td>TT_Wrapping _Search_April2026</td><td>Near me</td><td>Enabled</td><td class='num'>2,063</td><td class='num'>82</td><td class='num'>3.97%</td><td class='num'>AED 722.01</td><td class='num'>AED 8.80</td><td class='num'>0</td><td class='num'>0.00%</td><td class='num'>AED 0.00</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>exterior car detailing</td><td>Enabled</td><td class='num'>2,932</td><td class='num'>189</td><td class='num'>6.45%</td><td class='num'>AED 660.30</td><td class='num'>AED 3.49</td><td class='num'>7</td><td class='num'>3.70%</td><td class='num'>AED 94.33</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Interior Detailing</td><td>Enabled</td><td class='num'>1,156</td><td class='num'>97</td><td class='num'>8.39%</td><td class='num'>AED 504.53</td><td class='num'>AED 5.20</td><td class='num'>3</td><td class='num'>3.09%</td><td class='num'>AED 168.18</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>ceramic coating</td><td>Enabled</td><td class='num'>425</td><td class='num'>27</td><td class='num'>6.35%</td><td class='num'>AED 178.11</td><td class='num'>AED 6.60</td><td class='num'>5</td><td class='num'>18.52%</td><td class='num'>AED 35.62</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Dent repair</td><td>Enabled</td><td class='num'>528</td><td class='num'>38</td><td class='num'>7.20%</td><td class='num'>AED 154.76</td><td class='num'>AED 4.07</td><td class='num'>2</td><td class='num'>5.26%</td><td class='num'>AED 77.38</td></tr>
+<tr><td>TT_PPF _Search_April2026</td><td>3M</td><td>Enabled</td><td class='num'>9</td><td class='num'>0</td><td class='num'>0.00%</td><td class='num'>AED 0.00</td><td class='num'>AED 0.00</td><td class='num'>0</td><td class='num'>0.00%</td><td class='num'>AED 0.00</td></tr></tbody>
+        </table>
+      </div>
+      <div class="insight"><strong>Top efficient ad group:</strong> TT_Detailing&Coating&Dent _Search_April2026 → ceramic coating (5 leads at AED 35.62). <strong>Highest spend ad group:</strong> TT_Wrapping _Search_April2026 → wrapping Dubai (AED 10,072.41, 63 leads).</div>
+    </section>
+
+    <section id="keywords">
+      <h2>6. Keyword Performance</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Top converters</h3>
+          <div class="scroll">
+            <table><thead><tr><th>Keyword</th><th>Match</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Leads</th><th>CPL</th></tr></thead><tbody><tr><td>car wrapping dubai</td><td>Broad match</td><td class='num'>2,117</td><td class='num'>86</td><td class='num'>4.06%</td><td class='num'>7</td><td class='num'>AED 134.65</td></tr>
+<tr><td>car wrap price dubai</td><td>Broad match</td><td class='num'>944</td><td class='num'>60</td><td class='num'>6.36%</td><td class='num'>7</td><td class='num'>AED 105.57</td></tr>
+<tr><td>xpel ppf dubai</td><td>Broad match</td><td class='num'>1,584</td><td class='num'>81</td><td class='num'>5.11%</td><td class='num'>6</td><td class='num'>AED 176.91</td></tr>
+<tr><td>dyno stek</td><td>Broad match</td><td class='num'>1,545</td><td class='num'>59</td><td class='num'>3.82%</td><td class='num'>6</td><td class='num'>AED 150.40</td></tr>
+<tr><td>paint protection dubai</td><td>Broad match</td><td class='num'>2,353</td><td class='num'>131</td><td class='num'>5.57%</td><td class='num'>6</td><td class='num'>AED 250.73</td></tr>
+<tr><td>car wrapping dubai</td><td>Exact match</td><td class='num'>445</td><td class='num'>45</td><td class='num'>10.11%</td><td class='num'>6</td><td class='num'>AED 198.62</td></tr>
+<tr><td>car foil dubai</td><td>Broad match</td><td class='num'>1,517</td><td class='num'>71</td><td class='num'>4.68%</td><td class='num'>6</td><td class='num'>AED 164.51</td></tr>
+<tr><td>car vinyl wrap dubai</td><td>Broad match</td><td class='num'>660</td><td class='num'>20</td><td class='num'>3.03%</td><td class='num'>5</td><td class='num'>AED 52.67</td></tr>
+<tr><td>car wrapping price in dubai</td><td>Broad match</td><td class='num'>994</td><td class='num'>65</td><td class='num'>6.54%</td><td class='num'>5</td><td class='num'>AED 170.44</td></tr>
+<tr><td>stek dyno</td><td>Broad match</td><td class='num'>1,483</td><td class='num'>57</td><td class='num'>3.84%</td><td class='num'>4</td><td class='num'>AED 129.72</td></tr></tbody></table>
+          </div>
+        </div>
+        <div>
+          <h3>Lowest CPL keywords</h3>
+          <div class="scroll">
+            <table><thead><tr><th>Keyword</th><th>Match</th><th>Clicks</th><th>Leads</th><th>CPL</th><th>Cost</th></tr></thead><tbody><tr><td>paint dent repair</td><td>Broad match</td><td class='num'>1</td><td class='num'>1</td><td class='num'>AED 3.84</td><td class='num'>AED 3.84</td></tr>
+<tr><td>ceramic coating car</td><td>Phrase match</td><td class='num'>1</td><td class='num'>1</td><td class='num'>AED 4.11</td><td class='num'>AED 4.11</td></tr>
+<tr><td>full interior and exterior car wash</td><td>Phrase match</td><td class='num'>2</td><td class='num'>1</td><td class='num'>AED 8.90</td><td class='num'>AED 8.90</td></tr>
+<tr><td>stek dynoshield ppf</td><td>Exact match</td><td class='num'>1</td><td class='num'>1</td><td class='num'>AED 9.28</td><td class='num'>AED 9.28</td></tr>
+<tr><td>nano ceramic coating</td><td>Broad match</td><td class='num'>4</td><td class='num'>1</td><td class='num'>AED 9.48</td><td class='num'>AED 9.48</td></tr>
+<tr><td>stek dynoshield price</td><td>Exact match</td><td class='num'>2</td><td class='num'>1</td><td class='num'>AED 10.67</td><td class='num'>AED 10.67</td></tr>
+<tr><td>ppf stek</td><td>Exact match</td><td class='num'>1</td><td class='num'>1</td><td class='num'>AED 11.77</td><td class='num'>AED 11.77</td></tr>
+<tr><td>full car wash interior and exterior</td><td>Broad match</td><td class='num'>8</td><td class='num'>2</td><td class='num'>AED 12.75</td><td class='num'>AED 25.49</td></tr>
+<tr><td>paintless dent removal</td><td>Phrase match</td><td class='num'>5</td><td class='num'>1</td><td class='num'>AED 14.47</td><td class='num'>AED 14.47</td></tr>
+<tr><td>car wash exterior and interior near me</td><td>Exact match</td><td class='num'>4</td><td class='num'>1</td><td class='num'>AED 16.08</td><td class='num'>AED 16.08</td></tr></tbody></table>
+          </div>
+        </div>
+      </div>
+      <h3>High-spend, no-conversion keywords</h3>
+      <div class="scroll">
+        <table><thead><tr><th>Keyword</th><th>Campaign</th><th>Match</th><th>Cost</th><th>Impr.</th><th>CTR</th><th>Action</th></tr></thead><tbody><tr><td>car wrapping price</td><td>TT_Wrapping _Search_April2026</td><td>Phrase match</td><td class='num'>AED 249.70</td><td class='num'>102</td><td class='num'>9.80%</td><td><span class='badge monitor'>Monitor</span></td></tr>
+<tr><td>paint protection dubai</td><td>TT_PPF _Search_April2026</td><td>Phrase match</td><td class='num'>AED 239.96</td><td class='num'>179</td><td class='num'>5.59%</td><td><span class='badge monitor'>Monitor</span></td></tr>
+<tr><td>ppf in dubai</td><td>TT_PPF _Search_April2026</td><td>Broad match</td><td class='num'>AED 229.75</td><td class='num'>457</td><td class='num'>3.06%</td><td><span class='badge monitor'>Monitor</span></td></tr>
+<tr><td>car interior vinyl wrap near me</td><td>TT_Wrapping _Search_April2026</td><td>Broad match</td><td class='num'>AED 217.83</td><td class='num'>298</td><td class='num'>8.05%</td><td><span class='badge monitor'>Monitor</span></td></tr>
+<tr><td>ppf price for car</td><td>TT_PPF _Search_April2026</td><td>Phrase match</td><td class='num'>AED 204.75</td><td class='num'>134</td><td class='num'>5.97%</td><td><span class='badge monitor'>Monitor</span></td></tr></tbody></table>
+      </div>
+    </section>
+
+    <section id="match">
+      <h2>7. Match-Type Analysis</h2>
+      <div class="grid-2">
+        <div class="chart-wrap small"><canvas id="matchSpendChart"></canvas></div>
+        <div class="chart-wrap small"><canvas id="matchCplChart"></canvas></div>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Match Type</th><th>Cost</th><th>Impr.</th><th>Clicks</th><th>CPC</th><th>Leads</th><th>CVR</th><th>CPL</th></tr></thead>
+          <tbody><tr><td>Broad match</td><td class='num'>AED 19,723.52</td><td class='num'>38,427</td><td class='num'>1,817</td><td class='num'>AED 10.85</td><td class='num'>116</td><td class='num'>6.38%</td><td class='num'>AED 170.03</td></tr>
+<tr><td>Exact match</td><td class='num'>AED 4,635.65</td><td class='num'>2,958</td><td class='num'>231</td><td class='num'>AED 20.07</td><td class='num'>26</td><td class='num'>11.26%</td><td class='num'>AED 178.29</td></tr>
+<tr><td>Phrase match</td><td class='num'>AED 6,920.85</td><td class='num'>7,828</td><td class='num'>574</td><td class='num'>AED 12.06</td><td class='num'>40</td><td class='num'>6.97%</td><td class='num'>AED 173.02</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="ads">
+      <h2>8. Responsive Search Ad Analysis</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Highest CTR ads (min 100 impr.)</h3>
+          <div class="scroll">
+            <table><thead><tr><th>Campaign</th><th>Ad Group</th><th>Impr.</th><th>CTR</th><th>CPC</th><th>CPL</th></tr></thead><tbody><tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Interior Detailing</td><td class='num'>547</td><td class='num'>8.78%</td><td class='num'>AED 5.14</td><td class='num'>AED 246.56</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Interior Detailing</td><td class='num'>609</td><td class='num'>8.05%</td><td class='num'>AED 5.26</td><td class='num'>AED 128.99</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Dent repair</td><td class='num'>528</td><td class='num'>7.20%</td><td class='num'>AED 4.07</td><td class='num'>AED 77.38</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>exterior car detailing</td><td class='num'>1,561</td><td class='num'>6.92%</td><td class='num'>AED 3.87</td><td class='num'>AED 104.55</td></tr>
+<tr><td>TT_Wrapping _Search_April2026</td><td>Price & Cost</td><td class='num'>2,272</td><td class='num'>6.51%</td><td class='num'>AED 12.45</td><td class='num'>AED 141.73</td></tr></tbody></table>
+          </div>
+        </div>
+        <div>
+          <h3>Lowest CPL ads</h3>
+          <div class="scroll">
+            <table><thead><tr><th>Campaign</th><th>Ad Group</th><th>Clicks</th><th>Leads</th><th>CPL</th><th>Cost</th></tr></thead><tbody><tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>ceramic coating</td><td class='num'>27</td><td class='num'>5</td><td class='num'>AED 35.62</td><td class='num'>AED 178.11</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>Dent repair</td><td class='num'>38</td><td class='num'>2</td><td class='num'>AED 77.38</td><td class='num'>AED 154.76</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>exterior car detailing</td><td class='num'>81</td><td class='num'>3</td><td class='num'>AED 80.70</td><td class='num'>AED 242.10</td></tr>
+<tr><td>TT_Detailing&Coating&Dent _Search_April2026</td><td>exterior car detailing</td><td class='num'>108</td><td class='num'>4</td><td class='num'>AED 104.55</td><td class='num'>AED 418.20</td></tr>
+<tr><td>TT_Window Tinting_Search_April2026</td><td>window tinting</td><td class='num'>242</td><td class='num'>17</td><td class='num'>AED 126.85</td><td class='num'>AED 2,156.43</td></tr></tbody></table>
+          </div>
+        </div>
+      </div>
+      <div class="notice"><strong>Headline / description check:</strong> Ensure every RSA has at least 3 headline variants and 2 description variants. Pinning unique value props into headline positions 1 or 3 can improve CTR without hurting auctions.</div>
+    </section>
+
+    <section id="search">
+      <h2>9. Search-Term Hygiene</h2>
+      <div class="recommendation">
+        <strong>Recommended negative keywords to add:</strong>
+        <ul>
+          <li><code>free</code>, <code>cheap</code>, <code>jobs</code>, <code>career</code>, <code>internship</code> (if not recruiting)</li>
+          <li>Competitor brand terms with no conversions</li>
+          <li>Generic terms with >500 impressions, CTR <1%, 0 leads</li>
+        </ul>
+      </div>
+      <p>Review the Google Ads Search Terms report weekly and add non-converting, high-cost queries as exact or phrase negatives at campaign level.</p>
+    </section>
+
+    <section id="heatmap">
+      <h2>10. Day × Hour Conversion Heatmap</h2>
+      <div class="chart-wrap"><canvas id="heatConvChart"></canvas></div>
+      <div class="grid-2">
+        <div class="chart-wrap small"><canvas id="heatCplChart"></canvas></div>
+        <div class="chart-wrap small"><canvas id="heatCostChart"></canvas></div>
+      </div>
+    </section>
+
+    <section id="days">
+      <h2>11. Daily Performance</h2>
+      <div class="chart-wrap"><canvas id="dailyChart"></canvas></div>
+    </section>
+
+    <section id="lostis">
+      <h2>12. Lost Impression Share</h2>
+      <div class="grid-2">
+        <div class="chart-wrap small"><canvas id="lostRankChart"></canvas></div>
+        <div class="chart-wrap small"><canvas id="lostBudgetChart"></canvas></div>
+      </div>
+      <div class="insight"><strong>Diagnosis:</strong> Lost IS is dominated by rank. Rank-driven losses suggest low Quality Score or low bids.</div>
+    </section>
+
+    <section id="qs">
+      <h2>13. Quality Score Audit</h2>
+      <p>Quality Score data is not available in this export. Enable all Quality Score columns in Google Ads and re-export to populate this audit.</p>
+      <div class="recommendation"><strong>QS action plan:</strong> Enable Quality Score columns in Google Ads reports and refresh this dashboard to surface QS-based actions.</div>
+    </section>
+
+    <section id="timeline">
+      <h2>14. Optimization Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item"><span>Week 1 · Immediate</span><br>Pause high-cost/no-conversion keywords; add negative keywords from search terms.</div>
+        <div class="timeline-item"><span>Week 2 · Quick wins</span><br>Increase budgets on campaigns with >20% Lost IS (Budget) and positive CPL; raise bids on top-CPL keywords.</div>
+        <div class="timeline-item"><span>Week 3 · Creative</span><br>Test 2–3 new RSA headlines per ad group based on top search terms; add sitelinks and callouts.</div>
+        <div class="timeline-item"><span>Week 4 · Structure</span><br>Review match-type mix; move top exact keywords to dedicated ad groups; schedule ads around peak conversion hours.</div>
+        <div class="timeline-item"><span>Ongoing</span><br>Weekly search-term hygiene, bi-weekly Quality Score review, monthly landing-page A/B test.</div>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <h2>15. AI Recommendations</h2>
+      <div class="recommendation"><strong>1. Scale what works:</strong> Push budget into campaigns and ad groups with the lowest historical CPL while their Lost IS (Budget) is high.</div>
+      <div class="recommendation"><strong>2. Stop waste:</strong> Pause or reduce bids on keywords with AED 200+ spend and zero conversions; add irrelevant spenders as negatives.</div>
+      <div class="recommendation"><strong>3. Improve CTR:</strong> Add more compelling, keyword-specific headlines; use countdown and location ad customizers if relevant.</div>
+      <div class="recommendation"><strong>4. Lower CPL:</strong> Tighten match types, improve Quality Score through ad relevance, and direct traffic to dedicated landing pages.</div>
+      <div class="recommendation"><strong>5. Capture missed impressions:</strong> Address the dominant Lost IS driver (rank) through bid/QS or budget increases.</div>
+    </section>
+
+    <section id="insight">
+      <h2>16. Final Executive Insight</h2>
+      <p>BlueVerse Google Ads is generating measurable leads, but efficiency has compressed as the quarter progressed. The best levers are <strong>budget reallocation</strong> toward the converting campaigns, <strong>search-term hygiene</strong> to cut waste, and <strong>ad/landing-page relevance</strong> to recover Quality Score and lower CPC/CPL.</p>
+      <div class="insight"><strong>Expected 30-day impact if executed:</strong> 15–25% CPL reduction, 10–20% lead volume increase, and improved impression share with the same or lower spend.</div>
+    </section>
+
+    <footer>Generated by BlueVerse analytics pipeline · 2026-06-23 11:40</footer>
+  </div>
+
+  <script>
+    const palette = {google:'#f97316', blue:'#2563eb', teal:'#0d9488', red:'#dc2626', green:'#16a34a', amber:'#d97706', slate:'#64748b'};
+    Chart.defaults.font.family = "'Inter', sans-serif";
+    Chart.defaults.color = '#475569';
+
+    new Chart(document.getElementById('monthlyChart'), {
+      type: 'bar',
+      data: {
+        labels: ["April 2026", "May 2026", "June 2026"],
+        datasets: [
+          {label:'Spend (AED)', data:[14754.56, 12285.12, 4258.32], backgroundColor:palette.google, yAxisID:'y'},
+          {label:'Clicks', data:[1544, 828, 253], type:'line', borderColor:palette.blue, backgroundColor:palette.blue, yAxisID:'y1', tension:0.3},
+          {label:'Leads', data:[98, 66, 19], type:'line', borderColor:palette.teal, backgroundColor:palette.teal, yAxisID:'y1', tension:0.3}
+        ]
+      },
+      options: {responsive:true, maintainAspectRatio:false, interaction:{mode:'index', intersect:false}, scales:{y:{beginAtZero:true, grid:{color:'#e2e8f0'}}, y1:{position:'right', beginAtZero:true, grid:{display:false}}}}
+    });
+
+    new Chart(document.getElementById('campSpendChart'), {
+      type: 'doughnut',
+      data: {labels:["TT_PPF _Search_April2026", "TT_Wrapping _Search_April2026", "TT_Window Tinting_Search_April2026", "TT_Detailing&Coating&Dent _Search_April2026"], datasets:[{data:[14492.11, 13151.76, 2156.43, 1497.7], backgroundColor:[palette.google,palette.blue,palette.teal,palette.red,palette.green,palette.amber,'#8b5cf6','#ec4899']}]},
+      options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'right'}}}
+    });
+
+    new Chart(document.getElementById('campLeadsChart'), {
+      type: 'bar',
+      data: {labels:["TT_PPF _Search_April2026", "TT_Wrapping _Search_April2026", "TT_Window Tinting_Search_April2026", "TT_Detailing&Coating&Dent _Search_April2026"], datasets:[{label:'Leads', data:[73, 76, 17, 17], backgroundColor:palette.blue}]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{y:{beginAtZero:true}}}
+    });
+
+    new Chart(document.getElementById('agSpendChart'), {
+      type: 'bar',
+      data: {labels:["TT_Wrapping _Search_April2026 | wrapping Dubai", "TT_PPF _Search_April2026 | Dubai", "TT_PPF _Search_April2026 | Stek", "TT_PPF _Search_April2026 | Price and cost", "TT_Wrapping _Search_April2026 | Price & Cost", "TT_Window Tinting_Search_April2026 | window tinting", "TT_Wrapping _Search_April2026 | Near me", "TT_Detailing&Coating&Dent _Search_April2026 | exterior car detailing", "TT_Detailing&Coating&Dent _Search_April2026 | Interior Detailing", "TT_Detailing&Coating&Dent _Search_April2026 | ceramic coating", "TT_Detailing&Coating&Dent _Search_April2026 | Dent repair", "TT_PPF _Search_April2026 | 3M"], datasets:[{label:'Spend (AED)', data:[10072.41, 6897.89, 4353.39, 3240.83, 2357.34, 2156.43, 722.01, 660.3, 504.53, 178.11, 154.76, 0.0], backgroundColor:palette.google}]},
+      options: {responsive:true, maintainAspectRatio:false, indexAxis:'y', scales:{x:{beginAtZero:true}}}
+    });
+
+    new Chart(document.getElementById('matchSpendChart'), {
+      type: 'pie',
+      data: {labels:["Broad match", "Exact match", "Phrase match"], datasets:[{data:[19723.52, 4635.65, 6920.85], backgroundColor:[palette.blue,palette.google,palette.teal,palette.red]}]},
+      options: {responsive:true, maintainAspectRatio:false}
+    });
+
+    new Chart(document.getElementById('matchCplChart'), {
+      type: 'bar',
+      data: {labels:["Broad match", "Exact match", "Phrase match"], datasets:[{label:'CPL (AED)', data:[170.03, 178.29, 173.02], backgroundColor:palette.teal}]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{y:{beginAtZero:true}}}
+    });
+
+    const heatLabels = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const heatHours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+    function heatDS(data, label, colorScale) {
+      return {
+        type: 'matrix',
+        label: label,
+        data: data.flatMap((row, y) => row.map((v, x) => ({x:x, y:y, v:v}))),
+        backgroundColor(ctx) {
+          const v = ctx.raw?.v ?? 0;
+          return colorScale(v);
+        },
+        width: {size:18}, height: {size:18}
+      };
+    }
+    function convColor(v){ const max = Math.max(...[[0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 4, 2, 2, 1, 1, 0, 3, 3, 1, 1, 0, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 0, 3, 3, 4, 3, 2, 1, 2, 1, 2, 3, 0], [1, 0, 0, 0, 0, 0, 0, 2, 2, 3, 2, 2, 1, 1, 1, 2, 2, 2, 1, 2, 3, 1, 1, 2], [1, 1, 0, 0, 0, 0, 1, 3, 0, 0, 2, 2, 3, 5, 3, 3, 0, 0, 0, 1, 2, 0, 2, 1], [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 2, 1, 2, 3, 2, 1, 1, 3, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 5, 2, 4, 1, 1, 2, 0, 3, 1, 0, 0, 0], [0, 2, 0, 0, 0, 0, 0, 2, 0, 2, 3, 1, 1, 3, 2, 1, 2, 1, 3, 1, 1, 0, 0, 0]].flat()); return `rgba(249,115,22,${max? v/max*0.85+0.15 : 0.1})`; }
+    function cplColor(v){ const max = Math.max(...[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.435, 0.0, 42.25, 38.8, 41.945, 58.12499999999999, 17.6775, 76.0025, 0.0, 69.66, 85.81333333333333, 36.17666666666667, 45.663333333333334, 0.0, 0.0, 0.0], [3.15, 13.845, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 32.39, 53.7675, 42.24, 0.0, 20.1075, 58.7475, 19.3275, 35.9525, 5.9075, 13.6175, 2.8775, 2.6, 77.78, 23.61, 0.0], [4.31, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.96, 9.3975, 57.237500000000004, 12.585, 16.21, 60.7425, 2.25, 33.565, 14.325, 33.9975, 27.7625, 28.195, 14.97, 20.705, 11.615, 10.9325, 6.8025], [15.19, 6.7825, 0.0, 0.0, 0.0, 0.0, 27.0025, 16.990000000000002, 0.0, 16.735, 82.9875, 38.615, 89.98500000000001, 28.75, 81.74666666666667, 108.30333333333333, 0.0, 0.0, 0.0, 25.123333333333335, 29.13, 0.0, 37.583333333333336, 25.71], [15.7225, 0.0, 40.196666666666665, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 19.4575, 65.3125, 26.095, 37.7625, 82.89250000000001, 21.66, 25.02, 24.705, 49.940000000000005, 0.0, 0.0, 0.0, 0.0, 0.0], [18.1375, 0.0, 0.0, 17.0525, 0.0, 7.9025, 5.6425, 0.0, 2.035, 0.0, 104.885, 46.07, 26.425, 24.2, 42.72, 1.7075, 7.625, 15.7875, 0.0, 15.552499999999998, 2.3775, 0.0, 0.0, 0.0], [0.0, 18.207500000000003, 0.0, 0.0, 0.0, 0.0, 0.0, 33.21, 0.0, 25.0075, 106.7725, 46.8675, 30.1875, 30.345000000000002, 27.64, 42.1675, 11.085, 29.1425, 48.644999999999996, 16.9225, 12.1525, 0.0, 0.0, 0.0]].flat()); return `rgba(37,99,235,${max? v/max*0.85+0.15 : 0.1})`; }
+    function costColor(v){ const max = Math.max(...[[105.34, 112.02, 82.61, 44.4, 48.97, 3.89, 28.240000000000002, 110.58, 135.74, 274.77, 176.36, 439.79, 190.95000000000002, 329.73, 207.85, 492.87999999999994, 168.66, 248.5, 324.38, 201.87, 208.32, 47.65, 21.509999999999998, 61.33], [53.09, 70.24000000000001, 28.52, 45.459999999999994, 29.529999999999998, 35.5, 47.1, 117.02, 76.03, 159.8, 244.97, 355.6, 133.62, 365.03999999999996, 291.99, 204.54, 301.52, 161.44, 147.37, 288.32, 169.85, 319.26, 134.65, 239.62], [103.10999999999999, 67.34, 77.04, 6.0600000000000005, 26.51, 57.190000000000005, 42.55, 212.08, 121.08000000000001, 299.41, 284.61, 317.68, 403.67999999999995, 371.67, 275.22999999999996, 332.28, 199.42, 577.52, 195.63, 197.93, 199.43, 139.35, 113.15, 77.5], [85.06, 65.9, 82.99000000000001, 52.410000000000004, 32.54, 67.3, 108.75, 112.03, 310.57, 219.12, 392.88, 682.45, 620.5500000000001, 649.66, 473.07, 324.90999999999997, 111.69, 174.42, 75.24, 154.62, 176.94, 133.08999999999997, 112.99, 92.9], [95.25, 39.5, 142.93, 15.21, 77.46000000000001, 54.510000000000005, 75.33, 76.84, 84.27, 243.07999999999998, 267.92, 340.69, 211.85999999999999, 466.92999999999995, 459.75, 213.82000000000002, 178.79, 183.81, 279.27, 106.65, 113.04, 44.54, 37.07, 79.3], [107.76, 106.89, 77.37, 130.53, 21.36, 93.50999999999999, 77.42, 166.57999999999998, 340.08, 401.21999999999997, 424.84, 413.8, 363.15, 401.08, 383.08000000000004, 168.29000000000002, 189.93, 181.81, 222.9, 106.75, 87.15, 98.45, 45.25, 24.1], [189.79999999999998, 108.9, 100.28, 61.809999999999995, 104.58, 33.03, 66.59, 145.85, 101.77, 348.6, 437.63, 353.83, 400.4, 420.97, 476.83000000000004, 327.33, 181.59, 150.26999999999998, 276.39, 104.03, 106.83, 30.89, 67.96000000000001, 82.15]].flat()); return `rgba(13,148,136,${max? v/max*0.85+0.15 : 0.1})`; }
+
+    new Chart(document.getElementById('heatConvChart'), {
+      type: 'matrix',
+      data: {datasets:[heatDS([[0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 4, 2, 2, 1, 1, 0, 3, 3, 1, 1, 0, 0, 0], [1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 0, 3, 3, 4, 3, 2, 1, 2, 1, 2, 3, 0], [1, 0, 0, 0, 0, 0, 0, 2, 2, 3, 2, 2, 1, 1, 1, 2, 2, 2, 1, 2, 3, 1, 1, 2], [1, 1, 0, 0, 0, 0, 1, 3, 0, 0, 2, 2, 3, 5, 3, 3, 0, 0, 0, 1, 2, 0, 2, 1], [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3, 2, 1, 2, 3, 2, 1, 1, 3, 0, 0, 0, 0, 0], [1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 5, 2, 4, 1, 1, 2, 0, 3, 1, 0, 0, 0], [0, 2, 0, 0, 0, 0, 0, 2, 0, 2, 3, 1, 1, 3, 2, 1, 2, 1, 3, 1, 1, 0, 0, 0]], 'Conversions', convColor)]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{x:{type:'category', labels:heatHours, title:{display:true, text:'Hour of day'}}, y:{type:'category', labels:heatLabels, title:{display:true, text:'Day'}}}, plugins:{tooltip:{callbacks:{label:c=>'Conversions: '+c.raw.v}}}}
+    });
+    new Chart(document.getElementById('heatCplChart'), {
+      type: 'matrix',
+      data: {datasets:[heatDS([[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.435, 0.0, 42.25, 38.8, 41.945, 58.12499999999999, 17.6775, 76.0025, 0.0, 69.66, 85.81333333333333, 36.17666666666667, 45.663333333333334, 0.0, 0.0, 0.0], [3.15, 13.845, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 32.39, 53.7675, 42.24, 0.0, 20.1075, 58.7475, 19.3275, 35.9525, 5.9075, 13.6175, 2.8775, 2.6, 77.78, 23.61, 0.0], [4.31, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 13.96, 9.3975, 57.237500000000004, 12.585, 16.21, 60.7425, 2.25, 33.565, 14.325, 33.9975, 27.7625, 28.195, 14.97, 20.705, 11.615, 10.9325, 6.8025], [15.19, 6.7825, 0.0, 0.0, 0.0, 0.0, 27.0025, 16.990000000000002, 0.0, 16.735, 82.9875, 38.615, 89.98500000000001, 28.75, 81.74666666666667, 108.30333333333333, 0.0, 0.0, 0.0, 25.123333333333335, 29.13, 0.0, 37.583333333333336, 25.71], [15.7225, 0.0, 40.196666666666665, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 19.4575, 65.3125, 26.095, 37.7625, 82.89250000000001, 21.66, 25.02, 24.705, 49.940000000000005, 0.0, 0.0, 0.0, 0.0, 0.0], [18.1375, 0.0, 0.0, 17.0525, 0.0, 7.9025, 5.6425, 0.0, 2.035, 0.0, 104.885, 46.07, 26.425, 24.2, 42.72, 1.7075, 7.625, 15.7875, 0.0, 15.552499999999998, 2.3775, 0.0, 0.0, 0.0], [0.0, 18.207500000000003, 0.0, 0.0, 0.0, 0.0, 0.0, 33.21, 0.0, 25.0075, 106.7725, 46.8675, 30.1875, 30.345000000000002, 27.64, 42.1675, 11.085, 29.1425, 48.644999999999996, 16.9225, 12.1525, 0.0, 0.0, 0.0]], 'Avg CPL (AED)', cplColor)]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{x:{type:'category', labels:heatHours}, y:{type:'category', labels:heatLabels}}}
+    });
+    new Chart(document.getElementById('heatCostChart'), {
+      type: 'matrix',
+      data: {datasets:[heatDS([[105.34, 112.02, 82.61, 44.4, 48.97, 3.89, 28.240000000000002, 110.58, 135.74, 274.77, 176.36, 439.79, 190.95000000000002, 329.73, 207.85, 492.87999999999994, 168.66, 248.5, 324.38, 201.87, 208.32, 47.65, 21.509999999999998, 61.33], [53.09, 70.24000000000001, 28.52, 45.459999999999994, 29.529999999999998, 35.5, 47.1, 117.02, 76.03, 159.8, 244.97, 355.6, 133.62, 365.03999999999996, 291.99, 204.54, 301.52, 161.44, 147.37, 288.32, 169.85, 319.26, 134.65, 239.62], [103.10999999999999, 67.34, 77.04, 6.0600000000000005, 26.51, 57.190000000000005, 42.55, 212.08, 121.08000000000001, 299.41, 284.61, 317.68, 403.67999999999995, 371.67, 275.22999999999996, 332.28, 199.42, 577.52, 195.63, 197.93, 199.43, 139.35, 113.15, 77.5], [85.06, 65.9, 82.99000000000001, 52.410000000000004, 32.54, 67.3, 108.75, 112.03, 310.57, 219.12, 392.88, 682.45, 620.5500000000001, 649.66, 473.07, 324.90999999999997, 111.69, 174.42, 75.24, 154.62, 176.94, 133.08999999999997, 112.99, 92.9], [95.25, 39.5, 142.93, 15.21, 77.46000000000001, 54.510000000000005, 75.33, 76.84, 84.27, 243.07999999999998, 267.92, 340.69, 211.85999999999999, 466.92999999999995, 459.75, 213.82000000000002, 178.79, 183.81, 279.27, 106.65, 113.04, 44.54, 37.07, 79.3], [107.76, 106.89, 77.37, 130.53, 21.36, 93.50999999999999, 77.42, 166.57999999999998, 340.08, 401.21999999999997, 424.84, 413.8, 363.15, 401.08, 383.08000000000004, 168.29000000000002, 189.93, 181.81, 222.9, 106.75, 87.15, 98.45, 45.25, 24.1], [189.79999999999998, 108.9, 100.28, 61.809999999999995, 104.58, 33.03, 66.59, 145.85, 101.77, 348.6, 437.63, 353.83, 400.4, 420.97, 476.83000000000004, 327.33, 181.59, 150.26999999999998, 276.39, 104.03, 106.83, 30.89, 67.96000000000001, 82.15]], 'Spend (AED)', costColor)]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{x:{type:'category', labels:heatHours}, y:{type:'category', labels:heatLabels}}}
+    });
+
+    new Chart(document.getElementById('dailyChart'), {
+      type: 'line',
+      data: {
+        labels: ["2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20", "2026-05-21", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-21", "2026-06-22", "2026-06-23"],
+        datasets: [
+          {label:'Spend (AED)', data:[51.91, 1142.47, 1354.83, 1620.76, 1430.78, 929.07, 906.07, 685.35, 1370.84, 992.46, 989.66, 963.04, 884.96, 772.17, 660.19, 0.0, 320.76, 1291.99, 1182.62, 456.08, 555.01, 726.72, 847.26, 958.93, 883.81, 650.59, 549.75, 658.97, 737.48, 708.23, 442.1, 733.02, 581.82, 107.08, 761.21, 546.07, 102.68, 104.94, 97.5, 98.14, 105.31, 47.7, 63.44, 209.39, 405.46, 293.66, 285.58, 324.98, 210.76, 384.74, 109.67], borderColor:palette.google, backgroundColor:palette.google, tension:0.2, yAxisID:'y'},
+          {label:'Leads', data:[2, 5, 7, 9, 5, 7, 9, 9, 8, 7, 7, 7, 3, 10, 4, 0, 1, 6, 5, 2, 5, 5, 4, 6, 5, 6, 2, 4, 3, 4, 0, 5, 4, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 3, 0, 2, 1, 4, 2, 1], borderColor:palette.teal, backgroundColor:palette.teal, tension:0.2, yAxisID:'y1'}
+        ]
+      },
+      options: {responsive:true, maintainAspectRatio:false, interaction:{mode:'index', intersect:false}, scales:{y:{beginAtZero:true}, y1:{position:'right', beginAtZero:true, grid:{display:false}}}}
+    });
+
+    new Chart(document.getElementById('lostRankChart'), {
+      type: 'bar',
+      data: {labels:["TT_PPF _Search_April2026", "TT_Wrapping _Search_April2026", "TT_Window Tinting_Search_April2026", "TT_Detailing&Coating&Dent _Search_April2026"], datasets:[{label:'Lost IS Rank (%)', data:[60.66, 56.55, 65.58, 70.29], backgroundColor:palette.red}]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{y:{beginAtZero:true, max:100}}}
+    });
+    new Chart(document.getElementById('lostBudgetChart'), {
+      type: 'bar',
+      data: {labels:["TT_PPF _Search_April2026", "TT_Wrapping _Search_April2026", "TT_Window Tinting_Search_April2026", "TT_Detailing&Coating&Dent _Search_April2026"], datasets:[{label:'Lost IS Budget (%)', data:[21.85, 22.86, 21.03, 21.27], backgroundColor:palette.amber}]},
+      options: {responsive:true, maintainAspectRatio:false, scales:{y:{beginAtZero:true, max:100}}}
+    });
+  </script>
+</body>
+</html>
