@@ -3,105 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blueverse Dashboard</title>
+  <title>Blueverse Command Center</title>
   <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
+<nav class="top-nav" aria-label="Main">
+  <a class="brand" href="index.html">
+    <img src="./assets/blueverse-logo.png" alt="BlueVerse logo">
+  </a>
+  <div class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="respond.html">CRM</a>
+    <a href="paid.html">Paid Ads</a>
+  </div>
+</nav>
+
 <main class="page">
-<header class="hero">
-      <div class="brand-row">
-        <img class="brand-logo" src="./assets/blueverse-logo.png" alt="BlueVerse logo">
-        <div>
-          <p class="eyeline">Blueverse performance command center</p>
-          <h1>Paid Media + Respond.io Report</h1>
-        </div>
+  <header class="hero hero-simple">
+    <div class="brand-row">
+      <img class="brand-logo" src="./assets/blueverse-logo.png" alt="BlueVerse logo">
+      <div>
+        <p class="eyeline">Blueverse performance command center</p>
+        <h1>What would you like to view?</h1>
       </div>
-      <p class="hero-copy">Comprehensive Google Ads, Meta Ads, and CRM quality dashboard generated from the source files in this repo. Periods: Google 2026-04-15 to 2026-06-23; Meta 2026-06-01 to 2026-06-22; Respond.io paid contacts are verified all-time via MCP, with June 2026 shown separately.</p>
-      <div class="hero-grid" id="heroKpis"></div>
-    </header>
-<nav class="toc">
-      <a href="#overview">Overview</a>
-      <a href="#insights">Insights</a>
-      <a href="respond.html">CRM</a>
-      <a href="paid.html">Paid Media</a>
-    </nav>
-<section id="overview" class="panel">
-      <div class="section-head">
-        <div>
-          <p class="label">Executive overview</p>
-          <h2>Combined Paid-Media Numbers</h2>
-        </div>
-      </div>
-      <div class="split">
-        <article class="insight-card "><h3>Best Google signal</h3><p><strong>TT_PPF _Search_April2026</strong> leads Google volume with 76.5 conversions at AED 189 CPL.</p></article>
-        <article class="insight-card "><h3>Best Meta signal</h3><p><strong>TTX_Dubai_ Washing Campaign_Messages_March2025_IG</strong> generated 252 messaging starts at AED 2.74 per start.</p></article>
-        <article class="insight-card "><h3>Respond.io quality</h3><p>Top captured service is <strong>Not set: 725 contacts</strong>. Quotation/customer movement is low in the current lifecycle export and should be audited.</p></article>
-      </div>
-      <div class="kpi-grid compact">
-        
-      <article class="kpi" id="kpiGoogleSpend">
-        <span>Google spend</span>
-        <strong>AED 31,298</strong>
-        <small>187 conversions; AED 167 CPL</small>
-      </article>
-    
-        
-      <article class="kpi" id="kpiMetaSpend">
-        <span>Meta spend</span>
-        <strong>AED 1,818</strong>
-        <small>327 msg starts; AED 5.56 cost/msg</small>
-      </article>
-    
-        
-      <article class="kpi" id="kpiQuotedValue">
-        <span>CRM quoted value</span>
-        <strong>AED 0</strong>
-        <small>0 contacts with quote value</small>
-      </article>
-    
-        
-      <article class="kpi" id="kpiFinalSaleValue">
-        <span>CRM final sale value</span>
-        <strong>AED 28,293</strong>
-        <small>8 contacts with sale value</small>
-      </article>
-    
-      </div>
-    </section>
-<section id="insights" class="panel">
-      <div class="section-head">
-        <div>
-          <p class="label">Actions</p>
-          <h2>Useful Insights From the Current Files</h2>
-        </div>
-      </div>
-      <div class="split">
-        <article class="insight-card "><h3>Scale the best Google pockets</h3><p>Prioritize budget and bid reviews for <strong>TT_PPF _Search_April2026</strong>, then protect low-CPL converting keywords from budget loss.</p></article>
-        <article class="insight-card "><h3>Fix CRM attribution</h3><p>Respond.io currently proves source-level volume, but the decisive report needs campaign/ad/keyword or UTM custom fields. Add those fields to forms and chat entry points so CRM quality can be tied back to spend.</p></article>
-        <article class="insight-card "><h3>Clean low-intent Google spend</h3><p>There are <strong>20</strong> keywords with AED 100+ spend and zero conversions. Review them as pause, bid-down, or negative-keyword candidates.</p></article>
-        <article class="insight-card "><h3>Meta is the volume engine</h3><p>Meta produced <strong>327</strong> message starts at AED 5.56 per start, but Respond.io lifecycle hygiene should prove how many become hot leads, quotations, show-ups, or customers.</p></article>
-      </div>
-    </section>
-    <section id="pages" class="section">
-      <h2 class="section-title">Detailed Reports</h2>
-      <div class="kpi-grid compact" style="margin-top:18px;">
-        <a href="respond.html" class="kpi blue" style="text-decoration:none; color:inherit;">
-          <span>Respond.io</span>
-          <strong>Funnel &amp; Sources</strong>
-          <small>Source, lifecycle and service attribution</small>
-        </a>
-        <a href="paid.html" class="kpi cyan" style="text-decoration:none; color:inherit;">
-          <span>Paid Media</span>
-          <strong>Google + Meta</strong>
-          <small>Campaigns, keywords, creatives and explorer</small>
-        </a>
-      </div>
-    </section>
-  </main>
+    </div>
+    <p class="hero-copy">Choose the dashboard you want to explore.</p>
+  </header>
 
-  <div class="tooltip" id="tooltip"></div>
-
-<script src="report-data.js"></script>
-<script src="src/index.js"></script>
+  <section class="panel options-panel">
+    <div class="options-grid">
+      <a href="respond.html" class="option-card">
+        <span class="option-icon" aria-hidden="true">🗂️</span>
+        <h2>CRM</h2>
+        <p>Respond.io lifecycle funnel, lead quality, source attribution, and contact cards.</p>
+        <span class="option-cta">Open CRM →</span>
+      </a>
+      <a href="paid.html" class="option-card">
+        <span class="option-icon" aria-hidden="true">📈</span>
+        <h2>Paid Ads</h2>
+        <p>Google Ads + Meta Ads explorer, campaigns, keywords, and creative performance.</p>
+        <span class="option-cta">Open Paid Ads →</span>
+      </a>
+      <a href="overview.html" class="option-card">
+        <span class="option-icon" aria-hidden="true">📊</span>
+        <h2>Full Report</h2>
+        <p>Combined paid media and CRM numbers with detailed insights.</p>
+        <span class="option-cta">Open Full Report →</span>
+      </a>
+    </div>
+  </section>
+</main>
 </body>
 </html>

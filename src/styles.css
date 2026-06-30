@@ -523,3 +523,121 @@ tbody tr:hover td { background: #f8fbff; }
   .filter-actions { width: 100%; }
   .filter-actions .btn { flex: 1; }
 }
+
+/* Persistent top navigation */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+.top-nav .brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.top-nav .brand img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+.top-nav .links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.top-nav .links a {
+  text-decoration: none;
+  color: #33445c;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.top-nav .links a:hover {
+  color: var(--blue);
+  background: #f0f6ff;
+}
+.top-nav .links a.active {
+  color: var(--blue);
+  background: #eef5ff;
+}
+
+/* Simple homepage hero */
+.hero-simple {
+  min-height: auto;
+  padding-bottom: 18px;
+}
+
+/* Homepage option cards */
+.options-panel {
+  padding: 28px;
+}
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.option-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+.option-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(15, 37, 66, 0.12);
+  border-color: var(--blue);
+}
+.option-card .option-icon {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.option-card h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.option-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+.option-card .option-cta {
+  margin-top: auto;
+  padding-top: 14px;
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .top-nav {
+    padding: 10px 14px;
+  }
+  .top-nav .links a {
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  .options-panel {
+    padding: 18px;
+  }
+}
+
+/* Offset sticky TOC when persistent top nav is present */
+.top-nav + .page .toc {
+  top: 58px;
+}
