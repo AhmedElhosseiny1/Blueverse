@@ -343,86 +343,164 @@
       </div>
     </header>
 <nav class="toc">
-      <a href="#overview">Overview</a>
-      <a href="#insights">Insights</a>
+      <a href="index.html">Dashboard</a>
       <a href="respond.html">Respond.io</a>
-      <a href="paid.html">Paid Media</a>
+      <a href="#explorer">Explorer</a>
+      <a href="#google">Google Ads</a>
+      <a href="#keywords">Keywords</a>
+      <a href="#meta">Meta Ads</a>
     </nav>
-<section id="overview" class="panel">
+<section id="explorer" class="panel primary-panel">
       <div class="section-head">
         <div>
-          <p class="label">Executive overview</p>
-          <h2>Combined Paid-Media Numbers</h2>
+          <p class="label">Interactive chart</p>
+          <h2>Performance Explorer</h2>
+          <p>Choose channel, period, campaign, and metrics. Google supports daily, weekly, and monthly breakdowns from the exports; Meta supports the June campaign export.</p>
         </div>
       </div>
-      <div class="split">
-        <article class="insight-card "><h3>Best Google signal</h3><p><strong>TT_PPF _Search_April2026</strong> leads Google volume with 76.5 conversions at AED 189 CPL.</p></article>
-        <article class="insight-card "><h3>Best Meta signal</h3><p><strong>TTX_Dubai_ Washing Campaign_Messages_March2025_IG</strong> generated 252 messaging starts at AED 2.74 per start.</p></article>
-        <article class="insight-card "><h3>Respond.io quality</h3><p>Top captured service is <strong>Not set: 725 contacts</strong>. Quotation/customer movement is low in the current lifecycle export and should be audited.</p></article>
+      <div class="control-grid">
+        <label>Channel<select id="explorerChannel"><option value="google">Google Ads</option><option value="meta">Meta Ads</option></select></label>
+        <label>Breakdown<select id="explorerGranularity"><option value="day">Day</option><option value="week">Week</option><option value="month">Month</option></select></label>
+        <label>Campaign<select id="explorerCampaign"></select></label>
+        <label>Metric 1<select id="explorerMetric1"></select></label>
+        <label>Metric 2<select id="explorerMetric2"></select></label>
+      </div>
+      <div class="chart-shell tall"><svg id="explorerChart" role="img" aria-label="Interactive performance chart"></svg></div>
+    </section>
+<section id="google" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="label">Google Ads</p>
+          <h2>Campaign, Ad Group, and Time Performance</h2>
+        </div>
       </div>
       <div class="kpi-grid compact">
         
       <article class="kpi ">
-        <span>Google spend</span>
+        <span>Spend</span>
         <strong>AED 31,298</strong>
-        <small>187 conversions; AED 167 CPL</small>
+        <small>AED 11.92 avg CPC</small>
       </article>
     
         
       <article class="kpi ">
-        <span>Meta spend</span>
-        <strong>AED 1,818</strong>
-        <small>327 msg starts; AED 5.56 cost/msg</small>
+        <span>Clicks</span>
+        <strong>2,625</strong>
+        <small>5.3% CTR</small>
       </article>
     
         
       <article class="kpi ">
-        <span>CRM quoted value</span>
-        <strong>AED 0</strong>
-        <small>0 contacts with quote value</small>
+        <span>Conversions</span>
+        <strong>187</strong>
+        <small>7.1% CVR</small>
       </article>
     
         
       <article class="kpi ">
-        <span>CRM final sale value</span>
-        <strong>AED 28,293</strong>
-        <small>8 contacts with sale value</small>
+        <span>Cost / conversion</span>
+        <strong>AED 167</strong>
+        <small>23.1% lost IS budget</small>
       </article>
     
       </div>
-    </section>
-<section id="insights" class="panel">
-      <div class="section-head">
+      <div class="grid-two">
+        <div class="chart-shell"><svg id="googleMonthlyChart"></svg></div>
+        <div class="chart-shell"><svg id="googleCampaignChart"></svg></div>
+      </div>
+      <h3>Monthly detail</h3>
+      <div class="table-wrap "><table><thead><tr><th>Month</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CVR</th><th>CPL</th></tr></thead><tbody><tr><td class="">April 2026</td><td class="num">AED 14,755</td><td class="num">27,703</td><td class="num">1,544</td><td class="num">5.6%</td><td class="num">101</td><td class="num">6.5%</td><td class="num">AED 146</td></tr><tr><td class="">May 2026</td><td class="num">AED 12,285</td><td class="num">16,198</td><td class="num">828</td><td class="num">5.1%</td><td class="num">67</td><td class="num">8.1%</td><td class="num">AED 183</td></tr><tr><td class="">June 2026</td><td class="num">AED 4,258</td><td class="num">5,407</td><td class="num">253</td><td class="num">4.7%</td><td class="num">19</td><td class="num">7.5%</td><td class="num">AED 224</td></tr></tbody></table></div>
+      <h3>Campaign detail</h3>
+      <div class="table-wrap "><table><thead><tr><th>Campaign</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CVR</th><th>CPL</th><th>Lost Rank</th><th>Lost Budget</th></tr></thead><tbody><tr><td class="">TT_PPF _Search_April2026</td><td class="num">AED 14,492</td><td class="num">20,820</td><td class="num">1,024</td><td class="num">4.9%</td><td class="num">76.5</td><td class="num">7.5%</td><td class="num">AED 189</td><td class="num">64.0%</td><td class="num">20.2%</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="num">AED 13,152</td><td class="num">18,787</td><td class="num">1,008</td><td class="num">5.4%</td><td class="num">76</td><td class="num">7.5%</td><td class="num">AED 173</td><td class="num">54.2%</td><td class="num">27.8%</td></tr><tr><td class="">TT_Window Tinting_Search_April2026</td><td class="num">AED 2,156</td><td class="num">4,660</td><td class="num">242</td><td class="num">5.2%</td><td class="num">17</td><td class="num">7.0%</td><td class="num">AED 127</td><td class="num">65.6%</td><td class="num">19.9%</td></tr><tr><td class="">TT_Detailing&amp;Coating&amp;Dent _Search_April2026</td><td class="num">AED 1,498</td><td class="num">5,041</td><td class="num">351</td><td class="num">7.0%</td><td class="num">17.5</td><td class="num">5.0%</td><td class="num">AED 86</td><td class="num">71.9%</td><td class="num">19.8%</td></tr></tbody></table></div>
+      <h3>Ad group performance</h3>
+      <div class="table-wrap "><table><thead><tr><th>Campaign</th><th>Ad group</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CPL</th></tr></thead><tbody><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">wrapping Dubai</td><td class="num">AED 10,072</td><td class="num">13,755</td><td class="num">739</td><td class="num">5.4%</td><td class="num">63</td><td class="num">AED 160</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Dubai</td><td class="num">AED 6,898</td><td class="num">9,827</td><td class="num">469</td><td class="num">4.8%</td><td class="num">35.5</td><td class="num">AED 194</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Stek</td><td class="num">AED 4,353</td><td class="num">7,464</td><td class="num">343</td><td class="num">4.6%</td><td class="num">28</td><td class="num">AED 155</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Price and cost</td><td class="num">AED 3,241</td><td class="num">3,520</td><td class="num">212</td><td class="num">6.0%</td><td class="num">13</td><td class="num">AED 249</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">Price &amp; Cost</td><td class="num">AED 2,357</td><td class="num">2,969</td><td class="num">187</td><td class="num">6.3%</td><td class="num">13</td><td class="num">AED 181</td></tr><tr><td class="">TT_Window Tinting_Search_April2026</td><td class="">window tinting</td><td class="num">AED 2,156</td><td class="num">4,660</td><td class="num">242</td><td class="num">5.2%</td><td class="num">17</td><td class="num">AED 127</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">Near me</td><td class="num">AED 722</td><td class="num">2,063</td><td class="num">82</td><td class="num">4.0%</td><td class="num">0</td><td class="num">AED 0</td></tr><tr><td class="">TT_Detailing&amp;Coating&amp;Dent _Search_April2026</td><td class="">exterior car detailing</td><td class="num">AED 660</td><td class="num">2,932</td><td class="num">189</td><td class="num">6.4%</td><td class="num">7</td><td class="num">AED 94</td></tr><tr><td class="">TT_Detailing&amp;Coating&amp;Dent _Search_April2026</td><td class="">Interior Detailing</td><td class="num">AED 505</td><td class="num">1,156</td><td class="num">97</td><td class="num">8.4%</td><td class="num">3</td><td class="num">AED 168</td></tr><tr><td class="">TT_Detailing&amp;Coating&amp;Dent _Search_April2026</td><td class="">ceramic coating</td><td class="num">AED 178</td><td class="num">425</td><td class="num">27</td><td class="num">6.4%</td><td class="num">5.5</td><td class="num">AED 32</td></tr><tr><td class="">TT_Detailing&amp;Coating&amp;Dent _Search_April2026</td><td class="">Dent repair</td><td class="num">AED 155</td><td class="num">528</td><td class="num">38</td><td class="num">7.2%</td><td class="num">2</td><td class="num">AED 77</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="num">3M</td><td class="num">AED 0</td><td class="num">9</td><td class="num">0</td><td class="num">0.0%</td><td class="num">0</td><td class="num">AED 0</td></tr></tbody></table></div>
+      <div class="grid-two">
         <div>
-          <p class="label">Actions</p>
-          <h2>Useful Insights From the Current Files</h2>
+          <h3>Weekday performance</h3>
+          <div class="chart-shell"><svg id="weekdayChart"></svg></div>
+        </div>
+        <div>
+          <h3>Day × hour conversions</h3>
+          <div class="heatmap" id="conversionHeatmap"></div>
         </div>
       </div>
-      <div class="split">
-        <article class="insight-card "><h3>Scale the best Google pockets</h3><p>Prioritize budget and bid reviews for <strong>TT_PPF _Search_April2026</strong>, then protect low-CPL converting keywords from budget loss.</p></article>
-        <article class="insight-card "><h3>Fix CRM attribution</h3><p>Respond.io currently proves source-level volume, but the decisive report needs campaign/ad/keyword or UTM custom fields. Add those fields to forms and chat entry points so CRM quality can be tied back to spend.</p></article>
-        <article class="insight-card "><h3>Clean low-intent Google spend</h3><p>There are <strong>20</strong> keywords with AED 100+ spend and zero conversions. Review them as pause, bid-down, or negative-keyword candidates.</p></article>
-        <article class="insight-card "><h3>Meta is the volume engine</h3><p>Meta produced <strong>327</strong> message starts at AED 5.56 per start, but Respond.io lifecycle hygiene should prove how many become hot leads, quotations, show-ups, or customers.</p></article>
-      </div>
     </section>
-    <section id="pages" class="section">
-      <h2 class="section-title">Detailed Reports</h2>
-      <div class="kpis" style="grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-        <a href="respond.html" class="kpi" style="text-decoration:none; color:inherit;">
-          <span class="kpi-label">Respond.io</span>
-          <span class="kpi-value">Funnel &amp; Sources</span>
-          <span class="kpi-note">Source, lifecycle and service attribution</span>
-        </a>
-        <a href="paid.html" class="kpi" style="text-decoration:none; color:inherit;">
-          <span class="kpi-label">Paid Media</span>
-          <span class="kpi-value">Google + Meta</span>
-          <span class="kpi-note">Campaigns, keywords, creatives and explorer</span>
-        </a>
+<section id="keywords" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="label">Google keywords</p>
+          <h2>Best Keywords, Waste, and Match Types</h2>
+          <p>Best keyword signal: <strong>paint dent repair at AED 4 CPL</strong>.</p>
+        </div>
       </div>
+      <div class="grid-two">
+        <div>
+          <h3>Top converting keywords</h3>
+          <div class="table-wrap "><table><thead><tr><th>Keyword</th><th>Campaign</th><th>Match</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CPL</th><th>Action</th></tr></thead><tbody><tr><td class="">car wrap price dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 739</td><td class="num">944</td><td class="num">60</td><td class="num">6.4%</td><td class="num">7</td><td class="num">AED 106</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">car wrapping dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 943</td><td class="num">2,117</td><td class="num">86</td><td class="num">4.1%</td><td class="num">7</td><td class="num">AED 135</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">car wrapping dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Exact match</td><td class="num">AED 1,285</td><td class="num">445</td><td class="num">45</td><td class="num">10.1%</td><td class="num">6.5</td><td class="num">AED 199</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">dyno stek</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class="num">AED 902</td><td class="num">1,545</td><td class="num">59</td><td class="num">3.8%</td><td class="num">6</td><td class="num">AED 150</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">car foil dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 987</td><td class="num">1,517</td><td class="num">71</td><td class="num">4.7%</td><td class="num">6</td><td class="num">AED 165</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">xpel ppf dubai</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class="num">AED 1,061</td><td class="num">1,584</td><td class="num">81</td><td class="num">5.1%</td><td class="num">6</td><td class="num">AED 177</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">paint protection dubai</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class="num">AED 1,504</td><td class="num">2,353</td><td class="num">131</td><td class="num">5.6%</td><td class="num">6</td><td class="num">AED 251</td><td class=""><span class="badge action-keep">Keep</span></td></tr><tr><td class="">car vinyl wrap dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 291</td><td class="num">660</td><td class="num">20</td><td class="num">3.0%</td><td class="num">5.5</td><td class="num">AED 53</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">car wrapping price in dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 852</td><td class="num">994</td><td class="num">65</td><td class="num">6.5%</td><td class="num">5</td><td class="num">AED 170</td><td class=""><span class="badge action-scale">Scale</span></td></tr><tr><td class="">car ppf dubai</td><td class="">TT_PPF _Search_April2026</td><td class="">Phrase match</td><td class="num">AED 176</td><td class="num">89</td><td class="num">8</td><td class="num">9.0%</td><td class="num">4</td><td class="num">AED 44</td><td class=""><span class="badge action-keep">Keep</span></td></tr><tr><td class="">car wrapping al quoz</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 271</td><td class="num">703</td><td class="num">27</td><td class="num">3.8%</td><td class="num">4</td><td class="num">AED 68</td><td class=""><span class="badge action-keep">Keep</span></td></tr><tr><td class="">car wrapping price</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class="num">AED 318</td><td class="num">318</td><td class="num">22</td><td class="num">6.9%</td><td class="num">4</td><td class="num">AED 80</td><td class=""><span class="badge action-keep">Keep</span></td></tr></tbody></table></div>
+        </div>
+        <div>
+          <h3>High-spend no-conversion keywords</h3>
+          <div class="table-wrap "><table><thead><tr><th>Keyword</th><th>Campaign</th><th>Match</th><th>Status</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CPL</th><th>Action</th></tr></thead><tbody><tr><td class="">car wrapping price</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Phrase match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 250</td><td class="num">102</td><td class="num">10</td><td class="num">9.8%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">ppf in dubai</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 230</td><td class="num">457</td><td class="num">14</td><td class="num">3.1%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">car interior vinyl wrap near me</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 218</td><td class="num">298</td><td class="num">24</td><td class="num">8.1%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">ppf price for car</td><td class="">TT_PPF _Search_April2026</td><td class="">Phrase match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 205</td><td class="num">134</td><td class="num">8</td><td class="num">6.0%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">wrap my car dubai</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 199</td><td class="num">401</td><td class="num">19</td><td class="num">4.7%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">stek ppf price</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 184</td><td class="num">210</td><td class="num">11</td><td class="num">5.2%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">stek forged carbon</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 179</td><td class="num">347</td><td class="num">16</td><td class="num">4.6%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">stek carbon fiber ppf</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 149</td><td class="num">480</td><td class="num">14</td><td class="num">2.9%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">stek dynoshield ppf</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 146</td><td class="num">346</td><td class="num">10</td><td class="num">2.9%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">car paint protection film cost</td><td class="">TT_PPF _Search_April2026</td><td class="">Broad match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 146</td><td class="num">160</td><td class="num">11</td><td class="num">6.9%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">auto wrap price</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Phrase match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 145</td><td class="num">122</td><td class="num">8</td><td class="num">6.6%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr><tr><td class="">car wrap cost</td><td class="">TT_Wrapping _Search_April2026</td><td class="">Phrase match</td><td class=""><span class="badge muted">Paused</span></td><td class="num">AED 145</td><td class="num">75</td><td class="num">10</td><td class="num">13.3%</td><td class="num">0</td><td class="num">AED 0</td><td class=""><span class="badge action-monitor">Monitor</span></td></tr></tbody></table></div>
+        </div>
+      </div>
+      <h3>Match type performance</h3>
+      <div class="table-wrap "><table><thead><tr><th>Match type</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CVR</th><th>CPL</th></tr></thead><tbody><tr><td class="">Broad match</td><td class="num">AED 19,724</td><td class="num">38,427</td><td class="num">1,817</td><td class="num">4.7%</td><td class="num">117.5</td><td class="num">6.5%</td><td class="num">AED 168</td></tr><tr><td class="">Phrase match</td><td class="num">AED 6,921</td><td class="num">7,828</td><td class="num">574</td><td class="num">7.3%</td><td class="num">42.5</td><td class="num">7.4%</td><td class="num">AED 163</td></tr><tr><td class="">Exact match</td><td class="num">AED 4,636</td><td class="num">2,958</td><td class="num">231</td><td class="num">7.8%</td><td class="num">27.0</td><td class="num">11.7%</td><td class="num">AED 172</td></tr></tbody></table></div>
+      <h3>Ad performance</h3>
+      <div class="table-wrap "><table><thead><tr><th>Campaign</th><th>Ad group</th><th>Primary headline</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>Conv.</th><th>CPL</th></tr></thead><tbody><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">wrapping Dubai</td><td class="">Car Wrapping Dubai</td><td class="num">AED 4,812</td><td class="num">5,304</td><td class="num">281</td><td class="num">5.3%</td><td class="num">33</td><td class="num">AED 146</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">wrapping Dubai</td><td class="">{Keyword:Car Wrapping Dubai}BlueVerse</td><td class="num">AED 4,015</td><td class="num">6,333</td><td class="num">342</td><td class="num">5.4%</td><td class="num">23</td><td class="num">AED 175</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Dubai</td><td class="">{Keyword:Best ppf in Dubai}</td><td class="num">AED 2,583</td><td class="num">3,652</td><td class="num">187</td><td class="num">5.1%</td><td class="num">14.5</td><td class="num">AED 178</td></tr><tr><td class="">TT_Window Tinting_Search_April2026</td><td class="">window tinting</td><td class="">{Keyword:Car Window Tinting}</td><td class="num">AED 2,156</td><td class="num">4,660</td><td class="num">242</td><td class="num">5.2%</td><td class="num">17</td><td class="num">AED 127</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Price and cost</td><td class="">{Keyword:PPF Dubai Cost}</td><td class="num">AED 2,089</td><td class="num">2,221</td><td class="num">140</td><td class="num">6.3%</td><td class="num">9.5</td><td class="num">AED 220</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">Price &amp; Cost</td><td class="">{Keyword:Best Car Wrapping Price}</td><td class="num">AED 1,842</td><td class="num">2,272</td><td class="num">148</td><td class="num">6.5%</td><td class="num">13</td><td class="num">AED 142</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Dubai</td><td class="">{Keyword:Best ppf in Dubai}</td><td class="num">AED 1,698</td><td class="num">2,229</td><td class="num">116</td><td class="num">5.2%</td><td class="num">8.5</td><td class="num">AED 200</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Stek</td><td class="">Looking for {Keyword:Stek PPF}</td><td class="num">AED 1,691</td><td class="num">2,722</td><td class="num">107</td><td class="num">3.9%</td><td class="num">9.5</td><td class="num">AED 178</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Dubai</td><td class="">BlueVerse PPF Dubai</td><td class="num">AED 1,420</td><td class="num">1,304</td><td class="num">65</td><td class="num">5.0%</td><td class="num">8</td><td class="num">AED 177</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Stek</td><td class="">Looking for {Keyword:Stek PPF}</td><td class="num">AED 1,292</td><td class="num">2,344</td><td class="num">116</td><td class="num">5.0%</td><td class="num">8.5</td><td class="num">AED 152</td></tr><tr><td class="">TT_Wrapping _Search_April2026</td><td class="">wrapping Dubai</td><td class="">{Keyword:Car Wrapping Dubai}BlueVerse</td><td class="num">AED 1,246</td><td class="num">2,118</td><td class="num">116</td><td class="num">5.5%</td><td class="num">7</td><td class="num">AED 178</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Stek</td><td class="">Stek matte ppf</td><td class="num">AED 1,202</td><td class="num">1,975</td><td class="num">102</td><td class="num">5.2%</td><td class="num">9</td><td class="num">AED 134</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Price and cost</td><td class="">{Keyword:PPF Dubai Cost}</td><td class="num">AED 1,151</td><td class="num">1,299</td><td class="num">72</td><td class="num">5.5%</td><td class="num">3.5</td><td class="num">AED 329</td></tr><tr><td class="">TT_PPF _Search_April2026</td><td class="">Dubai</td><td class="">Premium PPF Dubai</td><td class="num">AED 631</td><td class="num">1,489</td><td class="num">57</td><td class="num">3.8%</td><td class="num">2.5</td><td class="num">AED 253</td></tr></tbody></table></div>
+    </section>
+<section id="meta" class="panel">
+      <div class="section-head">
+        <div>
+          <p class="label">Meta Ads</p>
+          <h2>Campaign, Platform, and Creative Performance</h2>
+        </div>
+      </div>
+      <div class="kpi-grid compact">
+        
+      <article class="kpi ">
+        <span>Spend</span>
+        <strong>AED 1,818</strong>
+        <small>AED 14.70 CPM</small>
+      </article>
+    
+        
+      <article class="kpi ">
+        <span>Reach</span>
+        <strong>75,464</strong>
+        <small>1.64 frequency</small>
+      </article>
+    
+        
+      <article class="kpi ">
+        <span>Message starts</span>
+        <strong>327</strong>
+        <small>AED 5.56 cost/message</small>
+      </article>
+    
+        
+      <article class="kpi ">
+        <span>Impressions</span>
+        <strong>123,708</strong>
+        <small>Facebook + Instagram + WhatsApp rows</small>
+      </article>
+    
+      </div>
+      <div class="grid-two">
+        <div class="chart-shell"><svg id="metaCampaignChart"></svg></div>
+        <div class="chart-shell"><svg id="metaPlatformChart"></svg></div>
+      </div>
+      <h3>Campaign detail</h3>
+      <div class="table-wrap "><table><thead><tr><th>Campaign</th><th>Spend</th><th>Impr.</th><th>Reach</th><th>Msg starts</th><th>Cost/msg</th><th>CPM</th><th>Freq.</th></tr></thead><tbody><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="num">AED 1,128</td><td class="num">59,888</td><td class="num">36,026</td><td class="num">75</td><td class="num">AED 15.04</td><td class="num">AED 18.84</td><td class="num">1.66</td></tr><tr><td class="">TTX_Dubai_ Washing Campaign_Messages_March2025_IG</td><td class="num">AED 690</td><td class="num">63,820</td><td class="num">39,438</td><td class="num">252</td><td class="num">AED 2.74</td><td class="num">AED 10.81</td><td class="num">1.62</td></tr></tbody></table></div>
+      <h3>Platform detail</h3>
+      <div class="table-wrap "><table><thead><tr><th>Platform</th><th>Spend</th><th>Impr.</th><th>Reach</th><th>Msg starts</th><th>Cost/msg</th><th>CPM</th><th>Freq.</th></tr></thead><tbody><tr><td class="">facebook</td><td class="num">AED 1,293</td><td class="num">104,082</td><td class="num">62,170</td><td class="num">302</td><td class="num">AED 4.28</td><td class="num">AED 12.42</td><td class="num">1.67</td></tr><tr><td class="">instagram</td><td class="num">AED 525</td><td class="num">19,625</td><td class="num">13,293</td><td class="num">25</td><td class="num">AED 20.99</td><td class="num">AED 26.74</td><td class="num">1.48</td></tr><tr><td class="">whatsapp</td><td class="num">AED 0</td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 0.00</td><td class="num">1.00</td></tr></tbody></table></div>
+      <h3>Creative detail</h3>
+      <div class="table-wrap "><table><thead><tr><th>Ad</th><th>Ad</th><th>Spend</th><th>Impr.</th><th>Reach</th><th>Msg starts</th><th>Cost/msg</th><th>CPM</th><th>Freq.</th></tr></thead><tbody><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 1 - Copy</td><td class="num">AED 895</td><td class="num">53,189</td><td class="num">31,036</td><td class="num">68</td><td class="num">AED 13.16</td><td class="num">AED 16.82</td><td class="num">1.71</td></tr><tr><td class="">TTX_Dubai_ Washing Campaign_Messages_March2025_IG</td><td class="">Creative 1</td><td class="num">AED 690</td><td class="num">63,820</td><td class="num">39,438</td><td class="num">252</td><td class="num">AED 2.74</td><td class="num">AED 10.81</td><td class="num">1.62</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 4 - Deitaling</td><td class="num">AED 163</td><td class="num">4,683</td><td class="num">3,481</td><td class="num">6</td><td class="num">AED 27.11</td><td class="num">AED 34.73</td><td class="num">1.35</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 6 - tinting</td><td class="num">AED 20</td><td class="num">690</td><td class="num">502</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 29.36</td><td class="num">1.37</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 3 - Restore shine</td><td class="num">AED 16</td><td class="num">418</td><td class="num">311</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 39.19</td><td class="num">1.34</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 1 - Rolls</td><td class="num">AED 11</td><td class="num">376</td><td class="num">254</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 29.60</td><td class="num">1.48</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 7 - any one</td><td class="num">AED 9</td><td class="num">214</td><td class="num">172</td><td class="num">1</td><td class="num">AED 9.41</td><td class="num">AED 43.97</td><td class="num">1.24</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 5 - Detailing Crafted</td><td class="num">AED 8</td><td class="num">103</td><td class="num">86</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 75.92</td><td class="num">1.20</td></tr><tr><td class="">Xn_Dubai_ Other services Campaign_Messages_June2025_IG</td><td class="">Creative 2 - Shine</td><td class="num">AED 6</td><td class="num">215</td><td class="num">184</td><td class="num">0</td><td class="num">AED 0.00</td><td class="num">AED 26.93</td><td class="num">1.17</td></tr></tbody></table></div>
     </section>
   </main>
 
   <div class="tooltip" id="tooltip"></div>
-
+  <script src="report-data.js"></script>
+  <script src="charts.js"></script>
+<script src="paid.js"></script>
 </body>
 </html>

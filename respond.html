@@ -343,86 +343,46 @@
       </div>
     </header>
 <nav class="toc">
-      <a href="#overview">Overview</a>
-      <a href="#insights">Insights</a>
-      <a href="respond.html">Respond.io</a>
+      <a href="index.html">Dashboard</a>
       <a href="paid.html">Paid Media</a>
+      <a href="#funnel">Respond.io</a>
+      <a href="#respondSources">Sources</a>
+      <a href="#respondServices">Services</a>
     </nav>
-<section id="overview" class="panel">
+<section id="funnel" class="panel">
       <div class="section-head">
         <div>
-          <p class="label">Executive overview</p>
-          <h2>Combined Paid-Media Numbers</h2>
+          <p class="label">Funnel</p>
+          <h2>Paid Ads to Respond.io</h2>
         </div>
       </div>
-      <div class="split">
-        <article class="insight-card "><h3>Best Google signal</h3><p><strong>TT_PPF _Search_April2026</strong> leads Google volume with 76.5 conversions at AED 189 CPL.</p></article>
-        <article class="insight-card "><h3>Best Meta signal</h3><p><strong>TTX_Dubai_ Washing Campaign_Messages_March2025_IG</strong> generated 252 messaging starts at AED 2.74 per start.</p></article>
-        <article class="insight-card "><h3>Respond.io quality</h3><p>Top captured service is <strong>Not set: 725 contacts</strong>. Quotation/customer movement is low in the current lifecycle export and should be audited.</p></article>
+      <div class="filter-row">
+        <div class="segmented" aria-label="Respond.io channel filter">
+          <button type="button" class="active" data-respond-channel="All">All</button>
+          <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
+          <button type="button" data-respond-channel="Google Ads">Google Ads</button>
+        </div>
+        <p class="data-note">Showing all-time paid contacts (1,065); 319 in June 2026. Respond.io MCP scan: 4,119 total contacts checked; generated 2026-06-23T11:08:16+00:00.</p>
       </div>
-      <div class="kpi-grid compact">
-        
-      <article class="kpi ">
-        <span>Google spend</span>
-        <strong>AED 31,298</strong>
-        <small>187 conversions; AED 167 CPL</small>
-      </article>
-    
-        
-      <article class="kpi ">
-        <span>Meta spend</span>
-        <strong>AED 1,818</strong>
-        <small>327 msg starts; AED 5.56 cost/msg</small>
-      </article>
-    
-        
-      <article class="kpi ">
-        <span>CRM quoted value</span>
-        <strong>AED 0</strong>
-        <small>0 contacts with quote value</small>
-      </article>
-    
-        
-      <article class="kpi ">
-        <span>CRM final sale value</span>
-        <strong>AED 28,293</strong>
-        <small>8 contacts with sale value</small>
-      </article>
-    
-      </div>
-    </section>
-<section id="insights" class="panel">
-      <div class="section-head">
+      <div class="funnel"></div>
+      <div class="grid-two">
         <div>
-          <p class="label">Actions</p>
-          <h2>Useful Insights From the Current Files</h2>
+          <h3>Contacts by source</h3>
+          <div class="table-wrap "><table><thead><tr><th>Source</th><th>Contacts</th><th>Quoted value</th><th>Final sale</th></tr></thead><tbody id="respondSourceRows"></tbody></table></div>
+        </div>
+        <div>
+          <h3>Lifecycle distribution</h3>
+          <div class="chart-shell"><svg id="respondLifecycleChart"></svg></div>
         </div>
       </div>
-      <div class="split">
-        <article class="insight-card "><h3>Scale the best Google pockets</h3><p>Prioritize budget and bid reviews for <strong>TT_PPF _Search_April2026</strong>, then protect low-CPL converting keywords from budget loss.</p></article>
-        <article class="insight-card "><h3>Fix CRM attribution</h3><p>Respond.io currently proves source-level volume, but the decisive report needs campaign/ad/keyword or UTM custom fields. Add those fields to forms and chat entry points so CRM quality can be tied back to spend.</p></article>
-        <article class="insight-card "><h3>Clean low-intent Google spend</h3><p>There are <strong>20</strong> keywords with AED 100+ spend and zero conversions. Review them as pause, bid-down, or negative-keyword candidates.</p></article>
-        <article class="insight-card "><h3>Meta is the volume engine</h3><p>Meta produced <strong>327</strong> message starts at AED 5.56 per start, but Respond.io lifecycle hygiene should prove how many become hot leads, quotations, show-ups, or customers.</p></article>
-      </div>
-    </section>
-    <section id="pages" class="section">
-      <h2 class="section-title">Detailed Reports</h2>
-      <div class="kpis" style="grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-        <a href="respond.html" class="kpi" style="text-decoration:none; color:inherit;">
-          <span class="kpi-label">Respond.io</span>
-          <span class="kpi-value">Funnel &amp; Sources</span>
-          <span class="kpi-note">Source, lifecycle and service attribution</span>
-        </a>
-        <a href="paid.html" class="kpi" style="text-decoration:none; color:inherit;">
-          <span class="kpi-label">Paid Media</span>
-          <span class="kpi-value">Google + Meta</span>
-          <span class="kpi-note">Campaigns, keywords, creatives and explorer</span>
-        </a>
-      </div>
+      <h3>Service counts</h3>
+      <div class="table-wrap "><table><thead><tr><th>Service</th><th>Contacts</th><th>Quoted value</th><th>Final sale</th></tr></thead><tbody id="respondServiceRows"></tbody></table></div>
     </section>
   </main>
 
   <div class="tooltip" id="tooltip"></div>
-
+  <script src="report-data.js"></script>
+  <script src="charts.js"></script>
+<script src="respond.js"></script>
 </body>
 </html>
