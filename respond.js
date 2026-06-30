@@ -37,6 +37,15 @@
   let filtered = contacts.slice();
   let visibleLimit = 25;
   let funnelView = 'all';
+  let cardFilter = 'all';
+  let cardSearch = '';
+
+  const CARD_LIFECYCLES = {
+    Quotation: ['Quotation'],
+    Lost: ['Lost'],
+    Showup: ['Show Up', 'Appointment'],
+    Customer: ['Customer']
+  };
 
   const els = {
     source: document.getElementById('filterSource'),
@@ -56,7 +65,9 @@
     serviceQuality: document.getElementById('serviceQualityRows'),
     healthMeter: document.getElementById('healthMeter'),
     healthIssues: document.getElementById('healthIssues'),
-    contactRows: document.getElementById('contactRows'),
+    contactCards: document.getElementById('contactCards'),
+    contactTabs: document.getElementById('contactTabs'),
+    contactSearch: document.getElementById('contactSearch'),
     loadMore: document.getElementById('loadMoreContacts')
   };
 
@@ -98,6 +109,9 @@
     [els.source, els.medium, els.service, els.lifecycle].forEach(s => s.value = '');
     els.from.value = '';
     els.to.value = '';
+    cardFilter = 'all';
+    cardSearch = '';
+    if (els.contactSearch) els.contactSearch.value = '';
     filtered = contacts.slice();
     visibleLimit = 25;
     render();
@@ -255,20 +269,102 @@
     }).join('');
   }
 
-  function renderContacts() {
-    if (!els.contactRows) return;
-    const visible = filtered.slice(0, visibleLimit);
-    els.contactRows.innerHTML = visible.map(c => `
-      <tr>
-        <td class="contact-col">${esc(c.contactEntry || '')}</td>
-        <td class="contact-col">${esc(c.conversationBrief || '')}</td>
-        <td class="contact-col gap-cell">${esc(c.salesComments || 'Not available')}</td>
-        <td class="contact-col">${esc(c.notes || '')}</td>
-      </tr>
-    `).join('') || '<tr><td colspan="4" class="empty-state">No contacts match the current filters.</td></tr>';
+  function lifecycleBadgeClass(lc) {
+    const l = String(lc || '').toLowerCase();
+    if (l === 'customer') return 'lifecycle-customer';
+    if (l === 'quotation') return 'lifecycle-quotation';
+    if (l === 'lost' || l === 'bad lead') return 'lifecycle-lost';
+    if (l === 'show up' || l === 'appointment') return 'lifecycle-showup';
+    return '';
+  }
 
-    els.loadMore.style.display = visibleLimit >= filtered.length ? 'none' : 'inline-flex';
-    els.summary.textContent = `Showing ${fmtNum(visible.length, 0)} of ${fmtNum(filtered.length, 0)} paid contacts${filtered.length !== contacts.length ? ' (filtered)' : ''}.`;
+  function cardMatchesSearch(c, q) {
+    if (!q) return true;
+    const hay = [
+      c.name, c.firstName, c.lastName, c.service, c.lifecycle,
+      c.salesComments, c.conversationBrief, c.notes, c.source, c.medium, c.assignee
+    ].filter(Boolean).join(' ').toLowerCase();
+    return hay.includes(q.toLowerCase());
+  }
+
+  function cardFiltered() {
+    const q = cardSearch.trim();
+    if (cardFilter === 'all' && !q) return filtered;
+    const lcs = cardFilter === 'all' ? null : CARD_LIFECYCLES[cardFilter];
+    return filtered.filter(c => {
+      const lcMatch = !lcs || lcs.includes(c.lifecycle);
+      return lcMatch && cardMatchesSearch(c, q);
+    });
+  }
+
+  function renderCard(c) {
+    const name = esc(c.name || 'Unnamed contact');
+    const date = c.date ? esc(c.date) : 'No date';
+    const lcClass = lifecycleBadgeClass(c.lifecycle);
+    const valueBadge = Number(c.finalSaleValue || 0) > 0
+      ? `<span class="badge value">Sale ${fmtMoney(c.finalSaleValue)}</span>`
+      : Number(c.quotedValue || 0) > 0
+        ? `<span class="badge value">Quote ${fmtMoney(c.quotedValue)}</span>`
+        : '';
+    const tags = (c.tags || []).slice(0, 4).map(t => `<span class="badge">${esc(t)}</span>`).join('');
+    const assignee = c.assignee ? `<span>👤 ${esc(c.assignee)}</span>` : '';
+    const sourceMeta = [esc(c.source), esc(c.medium)].filter(Boolean).join(' · ') || 'Source not set';
+
+    return `
+      <article class="contact-card" data-lifecycle="${esc(c.lifecycle || '')}">
+        <div class="card-header">
+          <div>
+            <div class="card-name">${name}</div>
+            <div class="card-meta">${sourceMeta} · ${date}</div>
+          </div>
+          <span class="badge ${lcClass}">${esc(c.lifecycle || 'Not set')}</span>
+        </div>
+        <div class="card-badges">${valueBadge}${tags}</div>
+        <div class="card-field">
+          <div class="card-field-label">Service</div>
+          <div class="card-field-value">${esc(c.service || 'Not set')}</div>
+        </div>
+        <div class="card-field">
+          <div class="card-field-label">Sales comment</div>
+          <div class="card-field-value">${esc(c.salesComments || 'Not available')}</div>
+        </div>
+        <div class="card-field">
+          <div class="card-field-label">Conversation brief</div>
+          <div class="card-field-value">${esc(c.conversationBrief || '')}</div>
+        </div>
+        <div class="card-footer">
+          ${assignee}
+          <span>ID: ${esc(String(c.id || '').slice(-8))}</span>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderContacts() {
+    if (!els.contactCards) return;
+    const rows = cardFiltered();
+    const visible = rows.slice(0, visibleLimit);
+    els.contactCards.innerHTML = visible.map(renderCard).join('') || '<p class="empty-state">No contacts match the current filters.</p>';
+
+    els.loadMore.style.display = visibleLimit >= rows.length ? 'none' : 'inline-flex';
+    els.summary.textContent = `Showing ${fmtNum(visible.length, 0)} of ${fmtNum(rows.length, 0)} paid contacts${filtered.length !== contacts.length ? ' (global filters applied)' : ''}.`;
+  }
+
+  function updateTabCounts() {
+    if (!els.contactTabs) return;
+    const counts = {
+      all: filtered.length,
+      Quotation: filtered.filter(c => CARD_LIFECYCLES.Quotation.includes(c.lifecycle)).length,
+      Lost: filtered.filter(c => CARD_LIFECYCLES.Lost.includes(c.lifecycle)).length,
+      Showup: filtered.filter(c => CARD_LIFECYCLES.Showup.includes(c.lifecycle)).length,
+      Customer: filtered.filter(c => CARD_LIFECYCLES.Customer.includes(c.lifecycle)).length
+    };
+    Array.from(els.contactTabs.children).forEach(btn => {
+      const key = btn.dataset.lifecycle;
+      const badge = btn.querySelector('.count');
+      if (badge) badge.textContent = fmtNum(counts[key] || 0, 0);
+      btn.classList.toggle('active', key === cardFilter);
+    });
   }
 
   function render() {
@@ -276,6 +372,7 @@
     renderFunnel();
     renderQuality();
     renderHealth();
+    updateTabCounts();
     renderContacts();
   }
 
@@ -306,6 +403,25 @@
       visibleLimit += 25;
       renderContacts();
     });
+
+    if (els.contactTabs) {
+      els.contactTabs.addEventListener('click', e => {
+        const btn = e.target.closest('button[data-lifecycle]');
+        if (!btn) return;
+        cardFilter = btn.dataset.lifecycle;
+        visibleLimit = 25;
+        updateTabCounts();
+        renderContacts();
+      });
+    }
+
+    if (els.contactSearch) {
+      els.contactSearch.addEventListener('input', e => {
+        cardSearch = e.target.value || '';
+        visibleLimit = 25;
+        renderContacts();
+      });
+    }
 
     if (els.funnelToggle) {
       Array.from(els.funnelToggle.children).forEach(btn => {

@@ -153,25 +153,26 @@
   <section id="contacts" class="panel">
     <div class="section-head">
       <div>
-        <p class="label">Contact sample</p>
+        <p class="label">Contact cards</p>
         <h2>Paid contact details</h2>
-        <p class="muted">Columns show the closest available data from Respond.io. Conversation transcripts and dedicated sales-comment fields are not exported, so those cells are synthesized or marked unavailable.</p>
+        <p class="muted">Cards show the closest available data from Respond.io. Conversation transcripts and dedicated sales-comment fields are not exported, so those fields are synthesized from lifecycle, service, and value data.</p>
       </div>
     </div>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Contact entry</th>
-            <th>Conversation brief</th>
-            <th>Sales comments</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody id="contactRows"></tbody>
-      </table>
+
+    <div class="contact-tabs" id="contactTabs" aria-label="Lifecycle filters">
+      <button class="active" data-lifecycle="all">All <span class="count">0</span></button>
+      <button data-lifecycle="Quotation">Quotation <span class="count">0</span></button>
+      <button data-lifecycle="Lost">Lost <span class="count">0</span></button>
+      <button data-lifecycle="Showup">Showup <span class="count">0</span></button>
+      <button data-lifecycle="Customer">Customer <span class="count">0</span></button>
     </div>
-    <div class="filter-actions" style="margin-top:12px">
+
+    <div class="contact-toolbar">
+      <input type="search" class="contact-search" id="contactSearch" placeholder="Search name, service, comment, brief…" aria-label="Search contacts">
+    </div>
+
+    <div class="contact-cards" id="contactCards"></div>
+    <div class="filter-actions" style="margin-top:18px">
       <button class="btn" id="loadMoreContacts">Load more</button>
     </div>
   </section>

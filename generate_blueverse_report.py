@@ -1242,12 +1242,12 @@ def parse_contact_date(ts: Any) -> tuple[str, str]:
 
 
 def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
-    """Build a PII-free client-side contact list from the MCP summary.
+    """Build a client-side contact list from the MCP summary.
 
     Only paid contacts whose normalized source is Google Ads or Meta Ads are
     surfaced in the dashboard.  Several requested detail fields do not exist as
-    native Respond.io export columns, so they are synthesized here and the UI
-    surfaces the data gap explicitly.
+    native Respond.io export columns, so they are synthesized here from lifecycle,
+    service, value and tags. The UI surfaces any remaining data gaps explicitly.
     """
     scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
     records = scope.get("contacts") if isinstance(scope.get("contacts"), list) else []
@@ -1268,9 +1268,16 @@ def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
         medium = normalize_medium(rec.get("medium"))
         lifecycle = str(rec.get("lifecycle") or "Not set").strip() or "Not set"
         service = str(rec.get("service") or "Not set").strip() or "Not set"
+        first_name = str(rec.get("firstName") or "").strip()
+        last_name = str(rec.get("lastName") or "").strip()
+        name = " ".join(p for p in [first_name, last_name] if p) or "Unnamed contact"
+        assignee = str(rec.get("assignee") or "").strip() or None
         tags = rec.get("tags") or []
         if not isinstance(tags, list):
             tags = []
+
+        quoted = float(rec.get("quoted_value") or 0)
+        final = float(rec.get("final_sale_value") or 0)
 
         entry_parts = [f"Source: {source_group}"]
         if medium and medium != "Not set":
@@ -1281,10 +1288,48 @@ def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
             entry_parts.append(f"Date: {date}")
         contact_entry = " · ".join(entry_parts)
 
-        brief_parts = [f"Lifecycle: {lifecycle}"]
-        if service and service != "Not set":
-            brief_parts.append(f"Service: {service}")
-        conversation_brief = " · ".join(brief_parts)
+        # Conversation brief: contextual one-liner based on lifecycle.
+        if lifecycle == "Customer":
+            brief = f"Closed as Customer · {service}"
+            if final > 0:
+                brief += f" · sale {fmt_money(final)}"
+        elif lifecycle == "Quotation":
+            brief = f"Quotation sent · {service}"
+            if quoted > 0:
+                brief += f" · quoted {fmt_money(quoted)}"
+        elif lifecycle in {"Lost", "Bad Lead"}:
+            brief = f"Marked {lifecycle} · {service}"
+        elif lifecycle in {"Show Up", "Appointment"}:
+            brief = f"Appointment / Show-up · {service}"
+        else:
+            brief = f"Lifecycle: {lifecycle} · Service: {service}"
+        if date:
+            brief += f" · {date}"
+
+        # Sales comment: synthesized follow-up note.
+        if lifecycle == "Customer":
+            sales = f"Won deal — final sale value {fmt_money(final)} for {service}."
+            if quoted > 0 and quoted != final:
+                sales += f" Original quote was {fmt_money(quoted)}."
+        elif lifecycle == "Quotation":
+            sales = f"Quotation stage for {service}"
+            if quoted > 0:
+                sales += f" at {fmt_money(quoted)}"
+            sales += ". Awaiting client decision / follow-up."
+        elif lifecycle == "Lost":
+            sales = f"Deal lost for {service}."
+            if quoted > 0:
+                sales += f" Last quote {fmt_money(quoted)}."
+        elif lifecycle in {"Show Up", "Appointment"}:
+            sales = f"Appointment scheduled / showed up for {service}."
+        elif lifecycle == "Hot Lead":
+            sales = f"Hot lead interested in {service}."
+        elif lifecycle == "Cold Lead":
+            sales = f"Cold lead — {service}."
+        else:
+            sales = f"{lifecycle} stage for {service}."
+        if assignee:
+            sales += f" Assigned to {assignee}."
 
         notes = " · ".join(str(t) for t in tags) if tags else "No tags recorded"
 
@@ -1293,18 +1338,22 @@ def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
                 "id": contact_id,
                 "createdAt": iso,
                 "date": date,
+                "firstName": first_name,
+                "lastName": last_name,
+                "name": name,
                 "sourceRaw": source_raw,
                 "source": source_group,
                 "sourceGroup": source_group,
                 "medium": medium,
                 "lifecycle": lifecycle,
                 "service": service,
-                "quotedValue": float(rec.get("quoted_value") or 0),
-                "finalSaleValue": float(rec.get("final_sale_value") or 0),
+                "quotedValue": quoted,
+                "finalSaleValue": final,
+                "assignee": assignee,
                 "tags": tags,
                 "contactEntry": contact_entry,
-                "conversationBrief": conversation_brief,
-                "salesComments": "Not available in Respond.io export",
+                "conversationBrief": brief,
+                "salesComments": sales,
                 "notes": notes,
             }
         )

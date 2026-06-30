@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Collect aggregate paid-contact counts from Respond.io through the local MCP server.
 
-This script intentionally writes aggregate counts only. It does not persist names,
-phones, emails, or full raw contact payloads.
+This script writes aggregate counts plus a lightweight contact summary (id, name,
+phone, email, lifecycle, service, source, value, tags) for dashboard card views.
 """
 
 from __future__ import annotations
@@ -230,6 +230,10 @@ def summarize_records(records: list[dict[str, Any]]) -> dict[str, Any]:
         {
             "id": r.get("id"),
             "created_at": r.get("created_at"),
+            "firstName": r.get("firstName"),
+            "lastName": r.get("lastName"),
+            "phone": r.get("phone"),
+            "email": r.get("email"),
             "source": r.get("source"),
             "source_raw": r.get("source_raw"),
             "medium": r.get("medium"),
@@ -238,6 +242,7 @@ def summarize_records(records: list[dict[str, Any]]) -> dict[str, Any]:
             "quoted_value": r.get("quoted_value"),
             "final_sale_value": r.get("final_sale_value"),
             "tags": r.get("tags") or [],
+            "assignee": r.get("assignee"),
         }
         for r in records
     ]
@@ -334,9 +339,14 @@ def main() -> None:
             all_source_medium_counts[(source, medium)] += 1
             if not (is_paid_medium(medium) or is_paid_source(source_raw) or source in {"Google Ads", "Meta Ads"}):
                 continue
+            assignee = contact.get("assignee") or {}
             paid_records.append(
                 {
                     "id": contact.get("id"),
+                    "firstName": clean_text(contact.get("firstName"), fallback=None),
+                    "lastName": clean_text(contact.get("lastName"), fallback=None),
+                    "phone": contact.get("phone") or None,
+                    "email": contact.get("email") or None,
                     "source": source,
                     "source_raw": source_raw,
                     "medium": medium,
@@ -346,6 +356,14 @@ def main() -> None:
                     "quoted_value": to_float(field(contact, "quoted_value")),
                     "final_sale_value": to_float(field(contact, "final_sale_value")),
                     "tags": tag_names(contact),
+                    "assignee": clean_text(
+                        " ".join(
+                            str(p)
+                            for p in [assignee.get("firstName"), assignee.get("lastName")]
+                            if p
+                        ),
+                        fallback=None,
+                    ),
                     "paid_by_medium": is_paid_medium(medium),
                     "paid_by_source": is_paid_source(source_raw),
                 }
