@@ -134,6 +134,14 @@ def clean_text(value: Any, fallback: str = "Not set") -> str:
     return text if text and text.lower() not in {"nan", "none", "null"} else fallback
 
 
+def normalize_medium(value: Any) -> str:
+    """Return a canonical medium label, case-normalized to avoid duplicate buckets."""
+    text = clean_text(value, "Not set")
+    if text.lower() == "not set":
+        return "Not set"
+    return text.title()
+
+
 def _canonical_tokens(value: Any) -> str:
     """Return a compact lower-case token string suitable for alias matching."""
     text = clean_text(value, "").strip()
@@ -289,6 +297,7 @@ def main() -> None:
                     source = inferred
             lifecycle = clean_text(contact.get("lifecycle"))
             service = clean_text(field(contact, "service"))
+            medium = normalize_medium(medium)
             created_at = contact.get("created_at")
             source_counts[source] += 1
             medium_counts[medium] += 1

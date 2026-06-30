@@ -36,6 +36,7 @@ OUT_DIR.mkdir(exist_ok=True)
 OUT_HTML = OUT_DIR / "google_ads_report.html"
 ROOT_HTML = ROOT / "index.html"
 OUT_JSON = OUT_DIR / "blueverse_paid_media_data.json"
+OUT_JS = ROOT / "report-data.js"
 RESPOND_SUMMARY_JSON = OUT_DIR / "respondio_paid_contacts_summary.json"
 LOGO_PATH = ROOT / "assets" / "blueverse-logo.png"
 
@@ -43,6 +44,17 @@ DAY_ORDER = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
 DAY_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 GOOGLE_METRICS = ["Cost", "Impressions", "Clicks", "Conversions", "CTR", "CPC", "CPL", "CPM", "CVR"]
 META_METRICS = ["Spend", "Impressions", "Reach", "Conversations", "CPM", "CPMC", "Frequency"]
+REPORT_JS_COLORS = {
+    "blue": "#0867c9",
+    "cyan": "#0a9bb0",
+    "green": "#11845b",
+    "orange": "#d46b08",
+    "violet": "#6b4fd8",
+    "red": "#c43d3d",
+    "muted": "#66758b",
+    "line": "#d8e2ee",
+}
+
 LIFECYCLE_ORDER = [
     "New Lead",
     "Hot Lead",
@@ -114,6 +126,54 @@ def image_data_uri(path: Path) -> str:
         return ""
     encoded = base64.b64encode(path.read_bytes()).decode("ascii")
     return f"data:image/png;base64,{encoded}"
+
+
+def normalize_medium(value: Any) -> str:
+    """Return a canonical medium label, case-normalized to avoid duplicate buckets."""
+    text = str(value).strip()
+    if not text or text.lower() in {"nan", "none", "null", "not set"}:
+        return "Not set"
+    return text.title()
+
+
+def normalize_medium_counts(medium_map: dict[str, int] | None) -> dict[str, int]:
+    """Merge medium buckets that differ only by case."""
+    if not medium_map:
+        return {}
+    out: dict[str, int] = {}
+    for key, count in medium_map.items():
+        canonical = normalize_medium(key)
+        out[canonical] = out.get(canonical, 0) + count
+    return out
+
+
+def normalize_source_medium(source_medium_map: dict[str, dict[str, int]] | None) -> dict[str, dict[str, int]]:
+    """Normalize medium keys within each source bucket."""
+    if not source_medium_map:
+        return {}
+    return {src: normalize_medium_counts(counts) for src, counts in source_medium_map.items()}
+
+
+def normalize_scope_mediums(scope: dict[str, Any]) -> None:
+    """In-place normalize medium keys in a scope dict."""
+    scope["by_medium"] = normalize_medium_counts(scope.get("by_medium", {}))
+    scope["source_medium"] = normalize_source_medium(scope.get("source_medium", {}))
+
+
+def normalize_source_medium_top(rows: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
+    """Normalize medium values in a source/medium top-N list and merge duplicate buckets."""
+    if not rows:
+        return []
+    merged: dict[tuple[str, str], int] = {}
+    for row in rows:
+        source = str(row.get("source") or "Not set").strip() or "Not set"
+        medium = normalize_medium(row.get("medium"))
+        count = int(row.get("count") or 0)
+        merged[(source, medium)] = merged.get((source, medium), 0) + count
+    return [
+        {"source": source, "medium": medium, "count": count}
+        for (source, medium), count in sorted(merged.items(), key=lambda x: -x[1])
+    ]
 
 
 def json_ready(value: Any) -> Any:
@@ -251,7 +311,7 @@ def load_data() -> SourceData:
             contacts[col] = 0.0
         contacts[col] = pd.to_numeric(contacts[col], errors="coerce").fillna(0.0)
     contacts["source"] = contacts.get("source", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set"})
-    contacts["medium"] = contacts.get("medium", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set", "": "Not set"})
+    contacts["medium"] = contacts.get("medium", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set", "": "Not set"}).apply(normalize_medium)
     contacts["service"] = contacts.get("service", "Not set").fillna("Not set").astype(str).replace({"nan": "Not set", "NaN": "Not set", "": "Not set"})
     contacts["lifecycle"] = contacts.get("lifecycle", "Not set").fillna("Not set").astype(str).replace({"nan": "NaN", "": "Not set"})
     if "created_at" in contacts.columns:
@@ -776,6 +836,8 @@ def respond_df_from_records(records: list[dict[str, Any]], key_name: str, df_key
 def summarize_respond_mcp(summary: dict[str, Any], contacts: pd.DataFrame) -> dict[str, Any]:
     all_scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
     june_scope = summary.get("paid_june_2026") if isinstance(summary.get("paid_june_2026"), dict) else {}
+    normalize_scope_mediums(all_scope)
+    normalize_scope_mediums(june_scope)
     filters = build_respond_filters(all_scope)
     all_filter = filters["All"]
     source = respond_df_from_records(all_filter["sources"], "source", "source")
@@ -814,6 +876,8 @@ def summarize_respond_mcp(summary: dict[str, Any], contacts: pd.DataFrame) -> di
         "contacts_with_quote": int(june_scope.get("contacts_with_quote") or 0),
         "contacts_with_sale": int(june_scope.get("contacts_with_sale") or 0),
     }
+    source_medium_top = normalize_source_medium_top(summary.get("all_contacts_source_medium_top", []))
+    medium_counts_top = normalize_medium_counts(summary.get("all_contacts_medium_counts_top", {}))
     return {
         "totals": totals,
         "june_totals": june_totals,
@@ -827,12 +891,12 @@ def summarize_respond_mcp(summary: dict[str, Any], contacts: pd.DataFrame) -> di
         "filters": filters,
         "summary_meta": {
             "generated_at": summary.get("generated_at"),
-            "mcp_tool": summary.get("mcp_tool", "respond-io-mcp:list_contacts"),
+            "mcp_tool": summary.get("mcp_tool", "respond-io-mcp: list_contacts"),
             "total_contacts_scanned": int(summary.get("total_contacts_scanned") or 0),
             "filter_definition": summary.get("filter_definition", {}),
-            "all_contacts_source_medium_top": summary.get("all_contacts_source_medium_top", []),
+            "all_contacts_source_medium_top": source_medium_top,
             "all_contacts_source_counts_top": summary.get("all_contacts_source_counts_top", {}),
-            "all_contacts_medium_counts_top": summary.get("all_contacts_medium_counts_top", {}),
+            "all_contacts_medium_counts_top": medium_counts_top,
         },
     }
 
@@ -2174,9 +2238,17 @@ def build_report() -> dict[str, Any]:
     google = summarize_google(data)
     meta = summarize_meta(data.meta_raw)
     respond = summarize_respond(data.contacts)
-    html_report = render_report(data, google, meta, respond)
-    OUT_HTML.write_text(html_report, encoding="utf-8")
-    ROOT_HTML.write_text(html_report, encoding="utf-8")
+    chart_payload = build_chart_payloads(google, meta, respond)
+
+    js_body = (
+        "const REPORT_DATA = "
+        + json.dumps(chart_payload, ensure_ascii=False, default=str, indent=2)
+        + ";\n\nconst COLORS = "
+        + json.dumps(REPORT_JS_COLORS, ensure_ascii=False, indent=2)
+        + ";\n"
+    )
+    OUT_JS.write_text(js_body, encoding="utf-8")
+
     data_out = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "google_totals": google["totals"],
@@ -2190,8 +2262,8 @@ def build_report() -> dict[str, Any]:
 
 def main() -> None:
     data_out = build_report()
-    print(f"Wrote {OUT_HTML}")
-    print(f"Wrote {ROOT_HTML}")
+    print(f"Wrote {OUT_JS}")
+    print(f"Wrote {OUT_JSON}")
     print(json.dumps(data_out, indent=2, ensure_ascii=False, default=str))
 
 
