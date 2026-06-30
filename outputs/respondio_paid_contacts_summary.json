@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-30T10:24:44+00:00",
+  "generated_at": "2026-06-30T13:26:46+00:00",
   "mcp_tool": "respond-io-mcp:list_contacts",
   "filter_definition": {
     "paid_contact": "custom field medium contains paid/cpc/ppc/sem/search ads/social ads OR source normalizes to Google Ads / Meta Ads",
     "source_field": "custom_fields.source",
     "medium_field": "custom_fields.medium"
   },
-  "total_contacts_scanned": 4423,
+  "total_contacts_scanned": 4424,
   "all_contacts_source_counts_top": {
-    "Not set": 2382,
+    "Not set": 2381,
     "Meta Ads": 1223,
     "Max": 589,
-    "Google Ads": 134,
+    "Google Ads": 136,
     "Dubai Hills": 95
   },
   "all_contacts_medium_counts_top": {
-    "Not set": 3066,
-    "Paid Ads": 1357
+    "Not set": 3065,
+    "Paid Ads": 1359
   },
   "all_contacts_source_medium_top": [
     {
       "source": "Not set",
       "medium": "Not set",
-      "count": 2382
+      "count": 2381
     },
     {
       "source": "Meta Ads",
@@ -37,7 +37,7 @@
     {
       "source": "Google Ads",
       "medium": "Paid Ads",
-      "count": 134
+      "count": 136
     },
     {
       "source": "Dubai Hills",
@@ -46,22 +46,22 @@
     }
   ],
   "paid_all_time": {
-    "total": 1357,
-    "quoted_value": 41997.0,
+    "total": 1359,
+    "quoted_value": 49345.0,
     "final_sale_value": 28293.0,
-    "contacts_with_quote": 5,
+    "contacts_with_quote": 6,
     "contacts_with_sale": 8,
     "by_source": {
       "Meta Ads": 1223,
-      "Google Ads": 134
+      "Google Ads": 136
     },
     "by_medium": {
-      "Paid Ads": 1357
+      "Paid Ads": 1359
     },
     "by_lifecycle": {
       "New Lead": 1213,
-      "Cold Lead": 41,
-      "Hot Lead": 25,
+      "Cold Lead": 42,
+      "Hot Lead": 26,
       "Bad Lead": 24,
       "Quotation": 18,
       "Lost": 14,
@@ -70,29 +70,35 @@
       "Appointment": 2
     },
     "by_service": {
-      "Not set": 718,
+      "Not set": 717,
       "Express Wash": 457,
       "Tinting": 151,
-      "Paint Protection Film (PPF)": 19,
+      "Paint Protection Film (PPF)": 22,
       "Wrap": 6,
       "Detailing": 5,
       "Ceramic Coating": 1
     },
     "source_financials": {
+      "Google Ads": {
+        "quoted_value": 35846.0,
+        "final_sale_value": 25033.0,
+        "contacts_with_quote": 4,
+        "contacts_with_sale": 5
+      },
       "Meta Ads": {
         "quoted_value": 13499.0,
         "final_sale_value": 3260.0,
         "contacts_with_quote": 2,
         "contacts_with_sale": 3
-      },
-      "Google Ads": {
-        "quoted_value": 28498.0,
-        "final_sale_value": 25033.0,
-        "contacts_with_quote": 3,
-        "contacts_with_sale": 5
       }
     },
     "service_financials": {
+      "Paint Protection Film (PPF)": {
+        "quoted_value": 35846.0,
+        "final_sale_value": 10500.0,
+        "contacts_with_quote": 4,
+        "contacts_with_sale": 1
+      },
       "Tinting": {
         "quoted_value": 13499.0,
         "final_sale_value": 0.0,
@@ -104,12 +110,6 @@
         "final_sale_value": 0.0,
         "contacts_with_quote": 0,
         "contacts_with_sale": 0
-      },
-      "Paint Protection Film (PPF)": {
-        "quoted_value": 28498.0,
-        "final_sale_value": 10500.0,
-        "contacts_with_quote": 3,
-        "contacts_with_sale": 1
       },
       "Not set": {
         "quoted_value": 0.0,
@@ -139,10 +139,10 @@
     "source_lifecycle": {
       "Google Ads": {
         "New Lead": 61,
-        "Cold Lead": 27,
+        "Cold Lead": 28,
         "Bad Lead": 19,
         "Lost": 11,
-        "Hot Lead": 5,
+        "Hot Lead": 6,
         "Customer": 5,
         "Quotation": 3,
         "Not set": 2,
@@ -162,7 +162,7 @@
     },
     "source_medium": {
       "Google Ads": {
-        "Paid Ads": 134
+        "Paid Ads": 136
       },
       "Meta Ads": {
         "Paid Ads": 1223
@@ -170,8 +170,8 @@
     },
     "source_service": {
       "Google Ads": {
-        "Not set": 101,
-        "Paint Protection Film (PPF)": 19,
+        "Not set": 100,
+        "Paint Protection Film (PPF)": 22,
         "Wrap": 6,
         "Detailing": 4,
         "Tinting": 3,
@@ -185,6 +185,17 @@
       }
     },
     "contacts": [
+      {
+        "id": 478325384,
+        "created_at": 1782734267,
+        "source": "Google Ads",
+        "source_raw": "Google Ads",
+        "medium": "Paid Ads",
+        "lifecycle": "Hot Lead",
+        "service": "Paint Protection Film (PPF)",
+        "quoted_value": 7348.0,
+        "final_sale_value": 0.0
+      },
       {
         "id": 478292679,
         "created_at": 1782729397,
@@ -3629,6 +3640,17 @@
         "final_sale_value": 0.0
       },
       {
+        "id": 473013109,
+        "created_at": 1782053506,
+        "source": "Google Ads",
+        "source_raw": "Google Ads",
+        "medium": "Paid Ads",
+        "lifecycle": "Cold Lead",
+        "service": "Paint Protection Film (PPF)",
+        "quoted_value": 0.0,
+        "final_sale_value": 0.0
+      },
+      {
         "id": 473007333,
         "created_at": 1782052601,
         "source": "Meta Ads",
@@ -6869,7 +6891,7 @@
         "source_raw": "Google Ads",
         "medium": "Paid Ads",
         "lifecycle": "New Lead",
-        "service": "Not set",
+        "service": "Paint Protection Film (PPF)",
         "quoted_value": 0.0,
         "final_sale_value": 0.0
       },
@@ -15115,24 +15137,24 @@
     ]
   },
   "paid_june_2026": {
-    "total": 609,
-    "quoted_value": 41997.0,
+    "total": 611,
+    "quoted_value": 49345.0,
     "final_sale_value": 0.0,
-    "contacts_with_quote": 5,
+    "contacts_with_quote": 6,
     "contacts_with_sale": 0,
     "by_source": {
       "Meta Ads": 593,
-      "Google Ads": 16
+      "Google Ads": 18
     },
     "by_medium": {
-      "Paid Ads": 609
+      "Paid Ads": 611
     },
     "by_lifecycle": {
       "New Lead": 570,
-      "Hot Lead": 13,
+      "Hot Lead": 14,
       "Quotation": 8,
+      "Cold Lead": 7,
       "Not set": 6,
-      "Cold Lead": 6,
       "Lost": 4,
       "Bad Lead": 1,
       "Customer": 1
@@ -15140,24 +15162,29 @@
     "by_service": {
       "Express Wash": 447,
       "Tinting": 146,
-      "Paint Protection Film (PPF)": 15,
-      "Not set": 1
+      "Paint Protection Film (PPF)": 18
     },
     "source_financials": {
+      "Google Ads": {
+        "quoted_value": 35846.0,
+        "final_sale_value": 0.0,
+        "contacts_with_quote": 4,
+        "contacts_with_sale": 0
+      },
       "Meta Ads": {
         "quoted_value": 13499.0,
         "final_sale_value": 0.0,
         "contacts_with_quote": 2,
         "contacts_with_sale": 0
-      },
-      "Google Ads": {
-        "quoted_value": 28498.0,
-        "final_sale_value": 0.0,
-        "contacts_with_quote": 3,
-        "contacts_with_sale": 0
       }
     },
     "service_financials": {
+      "Paint Protection Film (PPF)": {
+        "quoted_value": 35846.0,
+        "final_sale_value": 0.0,
+        "contacts_with_quote": 4,
+        "contacts_with_sale": 0
+      },
       "Tinting": {
         "quoted_value": 13499.0,
         "final_sale_value": 0.0,
@@ -15169,27 +15196,15 @@
         "final_sale_value": 0.0,
         "contacts_with_quote": 0,
         "contacts_with_sale": 0
-      },
-      "Paint Protection Film (PPF)": {
-        "quoted_value": 28498.0,
-        "final_sale_value": 0.0,
-        "contacts_with_quote": 3,
-        "contacts_with_sale": 0
-      },
-      "Not set": {
-        "quoted_value": 0.0,
-        "final_sale_value": 0.0,
-        "contacts_with_quote": 0,
-        "contacts_with_sale": 0
       }
     },
     "source_lifecycle": {
       "Google Ads": {
         "New Lead": 10,
+        "Hot Lead": 2,
+        "Cold Lead": 2,
         "Not set": 2,
-        "Hot Lead": 1,
         "Lost": 1,
-        "Cold Lead": 1,
         "Bad Lead": 1
       },
       "Meta Ads": {
@@ -15204,7 +15219,7 @@
     },
     "source_medium": {
       "Google Ads": {
-        "Paid Ads": 16
+        "Paid Ads": 18
       },
       "Meta Ads": {
         "Paid Ads": 593
@@ -15212,8 +15227,7 @@
     },
     "source_service": {
       "Google Ads": {
-        "Paint Protection Film (PPF)": 15,
-        "Not set": 1
+        "Paint Protection Film (PPF)": 18
       },
       "Meta Ads": {
         "Express Wash": 447,
@@ -15221,6 +15235,17 @@
       }
     },
     "contacts": [
+      {
+        "id": 478325384,
+        "created_at": 1782734267,
+        "source": "Google Ads",
+        "source_raw": "Google Ads",
+        "medium": "Paid Ads",
+        "lifecycle": "Hot Lead",
+        "service": "Paint Protection Film (PPF)",
+        "quoted_value": 7348.0,
+        "final_sale_value": 0.0
+      },
       {
         "id": 478292679,
         "created_at": 1782729397,
@@ -18665,6 +18690,17 @@
         "final_sale_value": 0.0
       },
       {
+        "id": 473013109,
+        "created_at": 1782053506,
+        "source": "Google Ads",
+        "source_raw": "Google Ads",
+        "medium": "Paid Ads",
+        "lifecycle": "Cold Lead",
+        "service": "Paint Protection Film (PPF)",
+        "quoted_value": 0.0,
+        "final_sale_value": 0.0
+      },
+      {
         "id": 473007333,
         "created_at": 1782052601,
         "source": "Meta Ads",
@@ -21905,7 +21941,7 @@
         "source_raw": "Google Ads",
         "medium": "Paid Ads",
         "lifecycle": "New Lead",
-        "service": "Not set",
+        "service": "Paint Protection Film (PPF)",
         "quoted_value": 0.0,
         "final_sale_value": 0.0
       },

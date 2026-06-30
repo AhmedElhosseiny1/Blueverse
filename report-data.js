@@ -3429,11 +3429,11 @@ const REPORT_DATA = {
     ],
     "values": [
       1213,
-      25,
+      26,
       18,
       2,
       12,
-      41,
+      42,
       14,
       24,
       8
@@ -3446,7 +3446,7 @@ const REPORT_DATA = {
     ],
     "values": [
       1223,
-      134
+      136
     ]
   },
   "respondService": {
@@ -3460,10 +3460,10 @@ const REPORT_DATA = {
       "Ceramic Coating"
     ],
     "values": [
-      718,
+      717,
       457,
       151,
-      19,
+      22,
       6,
       5,
       1
@@ -3472,12 +3472,12 @@ const REPORT_DATA = {
   "respondFilters": {
     "All": {
       "label": "All",
-      "total": 1357,
-      "quotedValue": 41997.0,
+      "total": 1359,
+      "quotedValue": 49345.0,
       "revenue": 28293.0,
-      "contactsWithQuote": 5,
+      "contactsWithQuote": 6,
       "contactsWithSale": 8,
-      "hotOrQuote": 43,
+      "hotOrQuote": 44,
       "customerLike": 12,
       "sources": [
         {
@@ -3490,10 +3490,10 @@ const REPORT_DATA = {
         },
         {
           "source": "Google Ads",
-          "contacts": 134,
-          "quotedValue": 28498.0,
+          "contacts": 136,
+          "quotedValue": 35846.0,
           "revenue": 25033.0,
-          "contactsWithQuote": 3,
+          "contactsWithQuote": 4,
           "contactsWithSale": 5
         }
       ],
@@ -3504,7 +3504,7 @@ const REPORT_DATA = {
         },
         {
           "lifecycle": "Hot Lead",
-          "contacts": 25
+          "contacts": 26
         },
         {
           "lifecycle": "Quotation",
@@ -3520,7 +3520,7 @@ const REPORT_DATA = {
         },
         {
           "lifecycle": "Cold Lead",
-          "contacts": 41
+          "contacts": 42
         },
         {
           "lifecycle": "Lost",
@@ -3538,7 +3538,7 @@ const REPORT_DATA = {
       "services": [
         {
           "service": "Not set",
-          "contacts": 718,
+          "contacts": 717,
           "quotedValue": 0.0,
           "revenue": 16213.0,
           "contactsWithQuote": 0,
@@ -3562,10 +3562,10 @@ const REPORT_DATA = {
         },
         {
           "service": "Paint Protection Film (PPF)",
-          "contacts": 19,
-          "quotedValue": 28498.0,
+          "contacts": 22,
+          "quotedValue": 35846.0,
           "revenue": 10500.0,
-          "contactsWithQuote": 3,
+          "contactsWithQuote": 4,
           "contactsWithSale": 1
         },
         {
@@ -3596,7 +3596,7 @@ const REPORT_DATA = {
       "mediums": [
         {
           "medium": "Paid Ads",
-          "contacts": 1357
+          "contacts": 1359
         }
       ],
       "sourceServices": [
@@ -3618,12 +3618,12 @@ const REPORT_DATA = {
         {
           "source": "Google Ads",
           "service": "Not set",
-          "contacts": 101
+          "contacts": 100
         },
         {
           "source": "Google Ads",
           "service": "Paint Protection Film (PPF)",
-          "contacts": 19
+          "contacts": 22
         },
         {
           "source": "Google Ads",
@@ -3660,7 +3660,7 @@ const REPORT_DATA = {
         {
           "source": "Google Ads",
           "medium": "Paid Ads",
-          "contacts": 134
+          "contacts": 136
         }
       ],
       "funnel": [
@@ -3676,12 +3676,12 @@ const REPORT_DATA = {
         },
         {
           "label": "Respond.io contacts",
-          "value": "1,357",
-          "note": "264.0% of platform events"
+          "value": "1,359",
+          "note": "264.4% of platform events"
         },
         {
           "label": "Hot / quotation",
-          "value": "43",
+          "value": "44",
           "note": "CRM quality signal available now"
         },
         {
@@ -3831,20 +3831,20 @@ const REPORT_DATA = {
     },
     "Google Ads": {
       "label": "Google Ads",
-      "total": 134,
-      "quotedValue": 28498.0,
+      "total": 136,
+      "quotedValue": 35846.0,
       "revenue": 25033.0,
-      "contactsWithQuote": 3,
+      "contactsWithQuote": 4,
       "contactsWithSale": 5,
-      "hotOrQuote": 8,
+      "hotOrQuote": 9,
       "customerLike": 5,
       "sources": [
         {
           "source": "Google Ads",
-          "contacts": 134,
-          "quotedValue": 28498.0,
+          "contacts": 136,
+          "quotedValue": 35846.0,
           "revenue": 25033.0,
-          "contactsWithQuote": 3,
+          "contactsWithQuote": 4,
           "contactsWithSale": 5
         }
       ],
@@ -3855,7 +3855,7 @@ const REPORT_DATA = {
         },
         {
           "lifecycle": "Hot Lead",
-          "contacts": 5
+          "contacts": 6
         },
         {
           "lifecycle": "Quotation",
@@ -3871,7 +3871,7 @@ const REPORT_DATA = {
         },
         {
           "lifecycle": "Cold Lead",
-          "contacts": 27
+          "contacts": 28
         },
         {
           "lifecycle": "Lost",
@@ -3889,11 +3889,11 @@ const REPORT_DATA = {
       "services": [
         {
           "service": "Not set",
-          "contacts": 101
+          "contacts": 100
         },
         {
           "service": "Paint Protection Film (PPF)",
-          "contacts": 19
+          "contacts": 22
         },
         {
           "service": "Wrap",
@@ -3915,19 +3915,19 @@ const REPORT_DATA = {
       "mediums": [
         {
           "medium": "Paid Ads",
-          "contacts": 134
+          "contacts": 136
         }
       ],
       "sourceServices": [
         {
           "source": "Google Ads",
           "service": "Not set",
-          "contacts": 101
+          "contacts": 100
         },
         {
           "source": "Google Ads",
           "service": "Paint Protection Film (PPF)",
-          "contacts": 19
+          "contacts": 22
         },
         {
           "source": "Google Ads",
@@ -3954,7 +3954,7 @@ const REPORT_DATA = {
         {
           "source": "Google Ads",
           "medium": "Paid Ads",
-          "contacts": 134
+          "contacts": 136
         }
       ],
       "funnel": [
@@ -3970,12 +3970,12 @@ const REPORT_DATA = {
         },
         {
           "label": "Respond.io contacts",
-          "value": "134",
-          "note": "71.7% of platform events"
+          "value": "136",
+          "note": "72.7% of platform events"
         },
         {
           "label": "Hot / quotation",
-          "value": "8",
+          "value": "9",
           "note": "CRM quality signal available now"
         },
         {
@@ -3987,9 +3987,9 @@ const REPORT_DATA = {
     }
   },
   "respondMeta": {
-    "generated_at": "2026-06-30T10:24:44+00:00",
+    "generated_at": "2026-06-30T13:26:46+00:00",
     "mcp_tool": "respond-io-mcp:list_contacts",
-    "total_contacts_scanned": 4423,
+    "total_contacts_scanned": 4424,
     "filter_definition": {
       "paid_contact": "custom field medium contains paid/cpc/ppc/sem/search ads/social ads OR source normalizes to Google Ads / Meta Ads",
       "source_field": "custom_fields.source",
@@ -3999,7 +3999,7 @@ const REPORT_DATA = {
       {
         "source": "Not set",
         "medium": "Not set",
-        "count": 2382
+        "count": 2381
       },
       {
         "source": "Meta Ads",
@@ -4014,7 +4014,7 @@ const REPORT_DATA = {
       {
         "source": "Google Ads",
         "medium": "Paid Ads",
-        "count": 134
+        "count": 136
       },
       {
         "source": "Dubai Hills",
@@ -4023,18 +4023,31 @@ const REPORT_DATA = {
       }
     ],
     "all_contacts_source_counts_top": {
-      "Not set": 2382,
+      "Not set": 2381,
       "Meta Ads": 1223,
       "Max": 589,
-      "Google Ads": 134,
+      "Google Ads": 136,
       "Dubai Hills": 95
     },
     "all_contacts_medium_counts_top": {
-      "Not set": 3066,
-      "Paid Ads": 1357
+      "Not set": 3065,
+      "Paid Ads": 1359
     }
   },
   "respondContacts": [
+    {
+      "id": 478325384,
+      "createdAt": "2026-06-29T11:57:47Z",
+      "date": "2026-06-29",
+      "sourceRaw": "Google Ads",
+      "source": "Google Ads",
+      "sourceGroup": "Google Ads",
+      "medium": "Paid Ads",
+      "lifecycle": "Hot Lead",
+      "service": "Paint Protection Film (PPF)",
+      "quotedValue": 7348.0,
+      "finalSaleValue": 0.0
+    },
     {
       "id": 478292679,
       "createdAt": "2026-06-29T10:36:37Z",
@@ -8105,6 +8118,19 @@ const REPORT_DATA = {
       "finalSaleValue": 0.0
     },
     {
+      "id": 473013109,
+      "createdAt": "2026-06-21T14:51:46Z",
+      "date": "2026-06-21",
+      "sourceRaw": "Google Ads",
+      "source": "Google Ads",
+      "sourceGroup": "Google Ads",
+      "medium": "Paid Ads",
+      "lifecycle": "Cold Lead",
+      "service": "Paint Protection Film (PPF)",
+      "quotedValue": 0.0,
+      "finalSaleValue": 0.0
+    },
+    {
       "id": 473007333,
       "createdAt": "2026-06-21T14:36:41Z",
       "date": "2026-06-21",
@@ -11935,7 +11961,7 @@ const REPORT_DATA = {
       "sourceGroup": "Google Ads",
       "medium": "Paid Ads",
       "lifecycle": "New Lead",
-      "service": "Not set",
+      "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
       "finalSaleValue": 0.0
     },
@@ -21711,18 +21737,18 @@ const REPORT_DATA = {
   "respondLifecycleFunnel": [
     {
       "stage": "Response",
-      "contacts": 1357,
+      "contacts": 1359,
       "rate": 100.0
     },
     {
       "stage": "Leads",
       "contacts": 1213,
-      "rate": 89.4
+      "rate": 89.3
     },
     {
       "stage": "Hot leads",
-      "contacts": 25,
-      "rate": 1.8
+      "contacts": 26,
+      "rate": 1.9
     },
     {
       "stage": "Quotation",
@@ -21741,8 +21767,8 @@ const REPORT_DATA = {
     },
     {
       "stage": "Old leads",
-      "contacts": 41,
-      "rate": 3.0
+      "contacts": 42,
+      "rate": 3.1
     },
     {
       "stage": "Bad leads",
@@ -21767,8 +21793,8 @@ const REPORT_DATA = {
       },
       {
         "source": "Google Ads",
-        "contacts": 134,
-        "hotOrQuote": 8,
+        "contacts": 136,
+        "hotOrQuote": 9,
         "customers": 5,
         "revenue": 25033.0,
         "conversionRate": 3.7
@@ -21777,10 +21803,10 @@ const REPORT_DATA = {
     "serviceQuality": [
       {
         "service": "Not set",
-        "contacts": 718,
+        "contacts": 717,
         "revenue": 16213.0,
         "avgSale": 2702.17,
-        "revenuePerContact": 22.58
+        "revenuePerContact": 22.61
       },
       {
         "service": "Express Wash",
@@ -21798,10 +21824,10 @@ const REPORT_DATA = {
       },
       {
         "service": "Paint Protection Film (PPF)",
-        "contacts": 19,
+        "contacts": 22,
         "revenue": 10500.0,
         "avgSale": 10500.0,
-        "revenuePerContact": 552.63
+        "revenuePerContact": 477.27
       },
       {
         "service": "Wrap",
@@ -21827,15 +21853,15 @@ const REPORT_DATA = {
     ]
   },
   "respondDataHealth": {
-    "total": 1357,
+    "total": 1359,
     "missingSource": 0,
     "missingMedium": 0,
     "missingLifecycle": 8,
-    "missingService": 718,
+    "missingService": 717,
     "missingDate": 0,
-    "missingValue": 1344,
+    "missingValue": 1345,
     "duplicateIds": 0,
-    "pctComplete": 46.5
+    "pctComplete": 46.7
   },
   "nctValidation": {
     "connected": false,
@@ -21846,7 +21872,7 @@ const REPORT_DATA = {
     "message": "NCT integration is not connected. Connect NCT to validate phone numbers against the UAE TRA registry."
   },
   "crmNotes": [
-    "718 paid contacts have no service filled in, so revenue cannot be attributed to a service line.",
+    "717 paid contacts have no service filled in, so revenue cannot be attributed to a service line.",
     "Express Wash drove 457 paid contacts but shows AED 0 in final sale value — check quoting workflow.",
     "Meta Ads reports 327 message starts in June while Respond.io records 945+ Meta Ads contacts; this reflects message starts vs. all contacts captured by the CRM."
   ]
