@@ -212,6 +212,20 @@ def summarize_records(records: list[dict[str, Any]]) -> dict[str, Any]:
     by_medium = Counter(r["medium"] for r in records)
     by_lifecycle = Counter(r["lifecycle"] for r in records)
     by_service = Counter(r["service"] for r in records)
+    contact_summaries = [
+        {
+            "id": r.get("id"),
+            "created_at": r.get("created_at"),
+            "source": r.get("source"),
+            "source_raw": r.get("source_raw"),
+            "medium": r.get("medium"),
+            "lifecycle": r.get("lifecycle"),
+            "service": r.get("service"),
+            "quoted_value": r.get("quoted_value"),
+            "final_sale_value": r.get("final_sale_value"),
+        }
+        for r in records
+    ]
     source_financials: dict[str, dict[str, float | int]] = defaultdict(
         lambda: {"quoted_value": 0.0, "final_sale_value": 0.0, "contacts_with_quote": 0, "contacts_with_sale": 0}
     )
@@ -261,6 +275,7 @@ def summarize_records(records: list[dict[str, Any]]) -> dict[str, Any]:
         "source_lifecycle": {k: dict(v.most_common()) for k, v in sorted(source_lifecycle.items())},
         "source_medium": {k: dict(v.most_common()) for k, v in sorted(source_medium.items())},
         "source_service": {k: dict(v.most_common()) for k, v in sorted(source_service.items())},
+        "contacts": contact_summaries,
     }
 
 
@@ -306,6 +321,7 @@ def main() -> None:
                 continue
             paid_records.append(
                 {
+                    "id": contact.get("id"),
                     "source": source,
                     "source_raw": source_raw,
                     "medium": medium,

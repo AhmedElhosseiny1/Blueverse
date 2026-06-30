@@ -60,13 +60,49 @@ LIFECYCLE_ORDER = [
     "Hot Lead",
     "Quotation",
     "Show Up",
+    "Appointment",
     "Customer",
     "Won",
     "Cold Lead",
     "Lost",
+    "Bad Lead",
     "NaN",
     "Not set",
 ]
+
+# Reporting-layer funnel used on the CRM dashboard.
+CRM_FUNNEL_ORDER = [
+    "Response",
+    "Leads",
+    "Hot leads",
+    "Quotation",
+    "Follow-up",
+    "Customers",
+    "Old leads",
+    "Bad leads",
+    "Unknown",
+]
+
+CRM_FUNNEL_MAP = {
+    "New Lead": "Leads",
+    "Hot Lead": "Hot leads",
+    "Quotation": "Quotation",
+    "Show Up": "Follow-up",
+    "Appointment": "Follow-up",
+    "Customer": "Customers",
+    "Won": "Customers",
+    "Cold Lead": "Old leads",
+    "Lost": "Bad leads",
+    "Bad Lead": "Bad leads",
+    "NaN": "Unknown",
+    "Not set": "Unknown",
+}
+
+# Canonical paid-source groups and the raw strings that roll into them.
+SOURCE_GROUP_ALIASES = {
+    "Meta Ads": ["Meta Ads", "Facebook", "Instagram", "FB", "IG", "Meta"],
+    "Google Ads": ["Google Ads", "Google", "Google Adwords", "Adwords", "GAds"],
+}
 
 
 def clean_number(value: Any) -> float:
@@ -174,6 +210,78 @@ def normalize_source_medium_top(rows: list[dict[str, Any]] | None) -> list[dict[
         {"source": source, "medium": medium, "count": count}
         for (source, medium), count in sorted(merged.items(), key=lambda x: -x[1])
     ]
+
+
+def source_group_for(value: Any) -> str:
+    """Map a raw source string to the reporting source group."""
+    text = str(value).strip()
+    if not text or text.lower() in {"nan", "none", "null", "not set", ""}:
+        return "Not set"
+    lower = text.lower()
+    for group, aliases in SOURCE_GROUP_ALIASES.items():
+        if lower in {a.lower() for a in aliases}:
+            return group
+    return text.title()
+
+
+def normalize_source_reporting(value: Any) -> str:
+    """Alias for source_group_for."""
+    return source_group_for(value)
+
+
+def coerce_count_map(value: Any) -> dict[str, int]:
+    """Return a dict[str,int] from various summary shapes."""
+    if isinstance(value, dict):
+        return {str(k): int(v or 0) for k, v in value.items()}
+    if isinstance(value, list):
+        out: dict[str, int] = {}
+        for row in value:
+            if isinstance(row, dict):
+                key = str(row.get("name") or row.get("key") or row.get("service") or row.get("source") or "")
+                count = int(row.get("count") or row.get("value") or 0)
+                if key:
+                    out[key] = out.get(key, 0) + count
+        return out
+    return {}
+
+
+def coerce_nested_count_map(value: Any) -> dict[str, dict[str, int]]:
+    """Return a nested dict for source->lifecycle etc."""
+    if isinstance(value, dict):
+        return {
+            str(k): {str(kk): int(vv or 0) for kk, vv in (v.items() if isinstance(v, dict) else {})}
+            for k, v in value.items()
+        }
+    return {}
+
+
+def financial_value(fin_map: Any, key: str, field: str) -> float:
+    """Extract a numeric financial value from a financials map."""
+    if not isinstance(fin_map, dict):
+        return 0.0
+    data = fin_map.get(key, {})
+    if isinstance(data, dict):
+        return float(data.get(field) or data.get("value") or 0)
+    if isinstance(data, list) and len(data) == 2:
+        return float(data[1] if field != "count" else data[0])
+    return 0.0
+
+
+def financial_count(fin_map: Any, key: str, field: str) -> int:
+    """Extract a count from a financials map."""
+    if not isinstance(fin_map, dict):
+        return 0
+    data = fin_map.get(key, {})
+    if isinstance(data, dict):
+        return int(data.get(field) or 0)
+    if isinstance(data, list) and len(data) == 2:
+        return int(data[0])
+    return 0
+
+
+def sorted_count_items(count_map: dict[str, int]) -> list[tuple[str, int]]:
+    """Return count items sorted descending by count, then alphabetically."""
+    return sorted(count_map.items(), key=lambda x: (-x[1], x[0]))
 
 
 def json_ready(value: Any) -> Any:
@@ -1119,6 +1227,193 @@ def build_explorer_payload(google: dict[str, Any], meta: dict[str, Any]) -> dict
     return {"google": {"day": google_day, "week": google_week, "month": google_month}, "meta": {"month": meta_month}}
 
 
+def parse_contact_date(ts: Any) -> tuple[str, str]:
+    """Return (iso_utc, date_utc) from a Unix timestamp or ISO string."""
+    try:
+        if isinstance(ts, (int, float, np.number)) and not pd.isna(ts):
+            dt = datetime.utcfromtimestamp(float(ts))
+        else:
+            dt = pd.to_datetime(ts, utc=True, errors="coerce")
+            if pd.isna(dt):
+                return ("", "")
+        return (dt.strftime("%Y-%m-%dT%H:%M:%SZ"), dt.strftime("%Y-%m-%d"))
+    except Exception:
+        return ("", "")
+
+
+def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
+    """Build a PII-free client-side contact list from the MCP summary."""
+    scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
+    records = scope.get("contacts") if isinstance(scope.get("contacts"), list) else []
+    out: list[dict[str, Any]] = []
+    seen: set[Any] = set()
+    for rec in records:
+        contact_id = rec.get("id")
+        if contact_id in seen:
+            continue
+        seen.add(contact_id)
+        iso, date = parse_contact_date(rec.get("created_at"))
+        source_raw = str(rec.get("source_raw") or rec.get("source") or "Not set").strip() or "Not set"
+        source = str(rec.get("source_normalized") or rec.get("source") or "Not set").strip() or "Not set"
+        out.append(
+            {
+                "id": contact_id,
+                "createdAt": iso,
+                "date": date,
+                "sourceRaw": source_raw,
+                "source": source_group_for(source),
+                "sourceGroup": source_group_for(source),
+                "medium": normalize_medium(rec.get("medium")),
+                "lifecycle": str(rec.get("lifecycle") or "Not set").strip() or "Not set",
+                "service": str(rec.get("service") or "Not set").strip() or "Not set",
+                "quotedValue": float(rec.get("quoted_value") or 0),
+                "finalSaleValue": float(rec.get("final_sale_value") or 0),
+            }
+        )
+    return out
+
+
+def build_filter_options(contacts: list[dict[str, Any]]) -> dict[str, Any]:
+    """Return unique filter values and date bounds."""
+    dates = [c["date"] for c in contacts if c.get("date")]
+    return {
+        "sources": sorted({c["source"] for c in contacts if c.get("source")}),
+        "mediums": sorted({c["medium"] for c in contacts if c.get("medium")}),
+        "services": sorted({c["service"] for c in contacts if c.get("service")}),
+        "lifecycles": sorted({c["lifecycle"] for c in contacts if c.get("lifecycle")}),
+        "minDate": min(dates) if dates else "",
+        "maxDate": max(dates) if dates else "",
+    }
+
+
+def build_lifecycle_funnel(contacts: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Aggregate contacts into the reporting-layer lifecycle funnel."""
+    counts: dict[str, int] = {stage: 0 for stage in CRM_FUNNEL_ORDER}
+    for c in contacts:
+        stage = CRM_FUNNEL_MAP.get(c.get("lifecycle", "Not set"), "Unknown")
+        counts[stage] = counts.get(stage, 0) + 1
+    counts["Response"] = len(contacts)
+    total = len(contacts)
+    rows = []
+    for stage in CRM_FUNNEL_ORDER:
+        count = counts.get(stage, 0)
+        rows.append(
+            {
+                "stage": stage,
+                "contacts": count,
+                "rate": round((count / total) * 100, 1) if total else 0.0,
+            }
+        )
+    return rows
+
+
+def build_crm_quality(contacts: list[dict[str, Any]], summary: dict[str, Any]) -> dict[str, Any]:
+    """Compute quality tables for the CRM dashboard."""
+    scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
+    source_lifecycle = coerce_nested_count_map(scope.get("source_lifecycle"))
+    source_financials = scope.get("source_financials") if isinstance(scope.get("source_financials"), dict) else {}
+    service_financials = scope.get("service_financials") if isinstance(scope.get("service_financials"), dict) else {}
+    by_service = coerce_count_map(scope.get("by_service"))
+
+    by_source_quality = []
+    for source in sorted(source_lifecycle.keys()):
+        lifecycle_counts = source_lifecycle.get(source, {})
+        contacts_total = sum(lifecycle_counts.values())
+        hot_or_quote = sum(
+            lifecycle_counts.get(k, 0) for k in ("Hot Lead", "Quotation")
+        )
+        customers = sum(
+            lifecycle_counts.get(k, 0) for k in ("Customer", "Won")
+        )
+        revenue = financial_value(source_financials, source, "final_sale_value")
+        conversion_rate = round((customers / contacts_total) * 100, 1) if contacts_total else 0.0
+        by_source_quality.append(
+            {
+                "source": source,
+                "contacts": contacts_total,
+                "hotOrQuote": hot_or_quote,
+                "customers": customers,
+                "revenue": revenue,
+                "conversionRate": conversion_rate,
+            }
+        )
+    by_source_quality.sort(key=lambda r: -r["contacts"])
+
+    by_service_quality = []
+    for service, count in sorted_count_items(by_service):
+        revenue = financial_value(service_financials, service, "final_sale_value")
+        contacts_with_sale = financial_count(service_financials, service, "contacts_with_sale")
+        avg_sale = round(revenue / contacts_with_sale, 2) if contacts_with_sale else 0.0
+        by_service_quality.append(
+            {
+                "service": service,
+                "contacts": count,
+                "revenue": revenue,
+                "avgSale": avg_sale,
+                "revenuePerContact": round(revenue / count, 2) if count else 0.0,
+            }
+        )
+    by_service_quality.sort(key=lambda r: -r["contacts"])
+
+    return {"leadQualityBySource": by_source_quality, "serviceQuality": by_service_quality}
+
+
+def build_data_health(contacts: list[dict[str, Any]]) -> dict[str, Any]:
+    """Count records with missing CRM fields."""
+    total = len(contacts)
+    missing_source = sum(1 for c in contacts if c.get("source") in {"Not set", "", None})
+    missing_medium = sum(1 for c in contacts if c.get("medium") in {"Not set", "", None})
+    missing_lifecycle = sum(1 for c in contacts if c.get("lifecycle") in {"Not set", "NaN", "", None})
+    missing_service = sum(1 for c in contacts if c.get("service") in {"Not set", "", None})
+    missing_date = sum(1 for c in contacts if not c.get("date"))
+    missing_value = sum(1 for c in contacts if not c.get("quotedValue") and not c.get("finalSaleValue"))
+    duplicate_ids = total - len({c.get("id") for c in contacts})
+    return {
+        "total": total,
+        "missingSource": missing_source,
+        "missingMedium": missing_medium,
+        "missingLifecycle": missing_lifecycle,
+        "missingService": missing_service,
+        "missingDate": missing_date,
+        "missingValue": missing_value,
+        "duplicateIds": duplicate_ids,
+        "pctComplete": round(
+            ((total - missing_source - missing_medium - missing_lifecycle - missing_service - missing_date) / total) * 100,
+            1,
+        ) if total else 0.0,
+    }
+
+
+def build_nct_placeholder() -> dict[str, Any]:
+    return {
+        "connected": False,
+        "lastSync": None,
+        "contacts": 0,
+        "matched": 0,
+        "status": "pending",
+        "message": "NCT integration is not connected. Connect NCT to validate phone numbers against the UAE TRA registry.",
+    }
+
+
+def build_crm_notes(summary: dict[str, Any]) -> list[str]:
+    """Explanatory notes about known CRM data gaps."""
+    scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
+    service_financials = scope.get("service_financials") if isinstance(scope.get("service_financials"), dict) else {}
+    by_service = coerce_count_map(scope.get("by_service"))
+    notes = []
+    not_set_count = by_service.get("Not set", 0)
+    if not_set_count:
+        notes.append(f"{not_set_count} paid contacts have no service filled in, so revenue cannot be attributed to a service line.")
+    express_count = by_service.get("Express Wash", 0)
+    express_revenue = financial_value(service_financials, "Express Wash", "final_sale_value")
+    if express_count and not express_revenue:
+        notes.append(f"Express Wash drove {express_count} paid contacts but shows AED 0 in final sale value — check quoting workflow.")
+    if scope.get("quoted_value", 0) == 0:
+        notes.append("No quoted_value is populated in the source export; revenue analysis uses final_sale_value only.")
+    notes.append("Meta Ads reports 327 message starts in June while Respond.io records 945+ Meta Ads contacts; this reflects message starts vs. all contacts captured by the CRM.")
+    return notes
+
+
 def build_chart_payloads(google: dict[str, Any], meta: dict[str, Any], respond: dict[str, Any]) -> dict[str, Any]:
     monthly = google["monthly"].copy()
     campaigns = google["campaigns"].copy()
@@ -1142,6 +1437,14 @@ def build_chart_payloads(google: dict[str, Any], meta: dict[str, Any], respond: 
         .reindex(DAY_ORDER)
         .fillna(0)
     )
+
+    respond_summary = load_respond_mcp_summary() or {}
+    respond_contacts = build_respond_contacts(respond_summary)
+    filter_options = build_filter_options(respond_contacts)
+    quality = build_crm_quality(respond_contacts, respond_summary)
+    data_health = build_data_health(respond_contacts)
+    crm_notes = build_crm_notes(respond_summary)
+    nct = build_nct_placeholder()
 
     return {
         "explorer": build_explorer_payload(google, meta),
@@ -1205,6 +1508,13 @@ def build_chart_payloads(google: dict[str, Any], meta: dict[str, Any], respond: 
             for label, fdata in respond.get("filters", {}).items()
         }),
         "respondMeta": json_ready(respond.get("summary_meta", {})),
+        "respondContacts": json_ready(respond_contacts),
+        "respondFilterOptions": json_ready(filter_options),
+        "respondLifecycleFunnel": json_ready(build_lifecycle_funnel(respond_contacts)),
+        "respondQuality": json_ready(quality),
+        "respondDataHealth": json_ready(data_health),
+        "nctValidation": json_ready(nct),
+        "crmNotes": json_ready(crm_notes),
     }
 
 

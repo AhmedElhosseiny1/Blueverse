@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:55:09",
+  "generated_at": "2026-06-30T13:30:46",
   "google_totals": {
     "spend": 31297.999999999996,
     "impressions": 49308.0,
@@ -27,10 +27,10 @@
     "frequency": 1.6392982084172585
   },
   "respond_totals": {
-    "contacts": 1065,
-    "quoted_value": 0.0,
+    "contacts": 1357,
+    "quoted_value": 41997.0,
     "revenue": 28293.0,
-    "contacts_with_quote": 0,
+    "contacts_with_quote": 5,
     "contacts_with_sale": 8
   }
 }

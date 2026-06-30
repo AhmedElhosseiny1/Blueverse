@@ -3,392 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blueverse Respond.io Report</title>
-  <style>
-    :root {
-      --bg: #f4f7fb;
-      --surface: #ffffff;
-      --surface-2: #eef5ff;
-      --ink: #102033;
-      --muted: #66758b;
-      --line: #d8e2ee;
-      --blue: #0867c9;
-      --cyan: #0a9bb0;
-      --green: #11845b;
-      --orange: #d46b08;
-      --violet: #6b4fd8;
-      --red: #c43d3d;
-      --shadow: 0 18px 46px rgba(15, 37, 66, 0.09);
-      --radius: 8px;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
-    }
-    .page { width: min(1440px, calc(100% - 36px)); margin: 0 auto; padding: 24px 0 60px; }
-    .hero, .panel {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    .hero {
-      padding: 26px;
-      min-height: 440px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background:
-        linear-gradient(118deg, rgba(8,103,201,0.11), rgba(10,155,176,0.05) 42%, rgba(255,255,255,0.94) 70%),
-        var(--surface);
-    }
-    .brand-row { display: flex; align-items: flex-start; gap: 18px; flex-direction: column; }
-    .brand-mark {
-      width: 54px; height: 54px; border-radius: 14px;
-      display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
-      color: white; font-weight: 800; font-size: 26px;
-      box-shadow: 0 12px 28px rgba(8,103,201,0.24);
-    }
-    .brand-logo {
-      display: block;
-      width: min(330px, 72vw);
-      height: auto;
-      object-fit: contain;
-      margin-bottom: 2px;
-    }
-    .eyeline, .label {
-      margin: 0 0 5px;
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
-    h1, h2, h3 { letter-spacing: 0; }
-    h1 { margin: 0; font-size: clamp(34px, 5vw, 64px); line-height: .98; max-width: 980px; }
-    .hero-copy { max-width: 960px; color: #40516a; font-size: 18px; margin: 18px 0 28px; }
-    .hero-grid, .kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 12px;
-    }
-    .kpi {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 16px;
-      background: rgba(255,255,255,.84);
-      min-width: 0;
-    }
-    .kpi span { display: block; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
-    .kpi strong { display: block; margin-top: 5px; font-size: clamp(20px, 2.4vw, 31px); line-height: 1.05; word-break: break-word; }
-    .kpi small { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; }
-    .kpi.blue { border-top: 4px solid var(--blue); }
-    .kpi.cyan { border-top: 4px solid var(--cyan); }
-    .kpi.green { border-top: 4px solid var(--green); }
-    .kpi.orange { border-top: 4px solid var(--orange); }
-    .kpi.violet { border-top: 4px solid var(--violet); }
-    .toc {
-      position: sticky; top: 10px; z-index: 10;
-      display: flex; flex-wrap: wrap; gap: 8px;
-      padding: 10px 0 18px;
-      background: rgba(244,247,251,.92);
-      backdrop-filter: blur(10px);
-    }
-    .toc a {
-      text-decoration: none;
-      color: #33445c;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      padding: 8px 12px;
-      border-radius: 7px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-    .toc a:hover { border-color: var(--blue); color: var(--blue); }
-    .panel { padding: 24px; margin-top: 18px; }
-    .primary-panel { border-top: 4px solid var(--blue); }
-    .warning-panel { border-top: 4px solid var(--orange); }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 20px;
-      margin-bottom: 18px;
-    }
-    h2 { margin: 0; font-size: clamp(24px, 3vw, 38px); line-height: 1.08; }
-    h3 { margin: 22px 0 10px; font-size: 16px; }
-    .section-head p:not(.label), .panel > p { color: var(--muted); margin: 8px 0 0; max-width: 880px; }
-    .compact { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
-    .split { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
-    .hero-grid > *, .kpi-grid > *, .split > *, .grid-two > *, .control-grid > * { min-width: 0; }
-    .insight-card {
-      background: #f8fbff;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 16px;
-      min-width: 0;
-    }
-    .insight-card h3 { margin: 0 0 8px; }
-    .insight-card p { margin: 0; color: #40516a; }
-    .grid-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
-    .filter-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin: 8px 0 18px;
-      flex-wrap: wrap;
-    }
-    .segmented {
-      display: inline-flex;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #f7faff;
-      padding: 3px;
-      gap: 3px;
-    }
-    .segmented button {
-      appearance: none;
-      border: 0;
-      border-radius: 6px;
-      background: transparent;
-      color: #40516a;
-      padding: 8px 12px;
-      min-height: 36px;
-      font: inherit;
-      font-size: 13px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-    .segmented button.active {
-      background: var(--blue);
-      color: white;
-      box-shadow: 0 5px 14px rgba(8,103,201,0.18);
-    }
-    .data-note {
-      margin: 0;
-      color: var(--muted);
-      font-size: 12px;
-      max-width: 760px;
-    }
-    .control-grid {
-      display: grid;
-      grid-template-columns: 1fr 150px 1.4fr 160px 160px;
-      gap: 10px;
-      margin: 12px 0 16px;
-    }
-    label { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
-    select {
-      display: block;
-      width: 100%;
-      margin-top: 5px;
-      border: 1px solid var(--line);
-      border-radius: 7px;
-      padding: 10px;
-      background: white;
-      color: var(--ink);
-      font: inherit;
-      font-size: 14px;
-      text-transform: none;
-    }
-    .chart-shell {
-      width: 100%;
-      min-height: 310px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, #fff, #f9fbfe);
-      border-radius: var(--radius);
-      padding: 12px;
-      overflow: hidden;
-    }
-    .chart-shell.tall { min-height: 430px; }
-    svg { display: block; width: 100%; height: 100%; min-height: 280px; }
-    .chart-shell.tall svg { min-height: 390px; }
-    .table-wrap { width: 100%; max-width: 100%; min-width: 0; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 760px; }
-    th, td { padding: 10px 9px; border-bottom: 1px solid #e8eef5; text-align: left; vertical-align: top; }
-    th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; background: #f7faff; white-space: nowrap; }
-    td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
-    tbody tr:hover td { background: #f8fbff; }
-    .badge {
-      display: inline-flex; align-items: center;
-      min-height: 22px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-    .badge.good, .action-scale { background: #dcf7eb; color: #096344; }
-    .badge.muted { background: #eef2f6; color: #576679; }
-    .action-keep { background: #e5f1ff; color: #08539b; }
-    .action-monitor { background: #fff2d8; color: #805002; }
-    .action-pause { background: #ffe1e1; color: #982626; }
-    .action-negative-candidate { background: #f0e9ff; color: #5634aa; }
-    .funnel { display: grid; gap: 10px; margin: 10px 0 22px; }
-    .funnel-step {
-      width: var(--w);
-      min-width: min(100%, 320px);
-      background: linear-gradient(90deg, rgba(8,103,201,.12), rgba(10,155,176,.08));
-      border: 1px solid var(--line);
-      border-left: 5px solid var(--blue);
-      border-radius: var(--radius);
-      padding: 12px 16px;
-    }
-    .funnel-step span { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
-    .funnel-step strong { display: block; font-size: 26px; line-height: 1.1; }
-    .funnel-step small { color: var(--muted); }
-    .heatmap {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 12px;
-      background: white;
-      min-height: 310px;
-      display: grid;
-      align-content: center;
-      overflow-x: auto;
-    }
-    .heat-row { display: grid; grid-template-columns: 44px repeat(24, 24px); gap: 3px; align-items: center; margin-bottom: 4px; }
-    .heat-label { color: var(--muted); font-size: 11px; font-weight: 800; }
-    .heat-cell { width: 24px; height: 20px; border-radius: 4px; background: rgba(8,103,201,.1); }
-    .heat-axis { display: grid; grid-template-columns: 44px repeat(24, 24px); gap: 3px; margin-top: 8px; color: var(--muted); font-size: 9px; }
-    .gap-list { margin: 0; padding-left: 20px; color: #3e4e64; }
-    .gap-list li { margin-bottom: 10px; }
-    .tooltip {
-      position: fixed;
-      pointer-events: none;
-      z-index: 50;
-      background: #0f2035;
-      color: white;
-      padding: 7px 9px;
-      border-radius: 6px;
-      font-size: 12px;
-      opacity: 0;
-      transform: translate(-50%, -120%);
-      transition: opacity .12s ease;
-      max-width: 260px;
-    }
-    @media (max-width: 1120px) {
-      .hero-grid, .kpi-grid, .compact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 760px) {
-      .page { width: min(100% - 20px, 1440px); padding-top: 10px; }
-      .hero, .panel { padding: 16px; }
-      .hero { min-height: auto; }
-      .hero-grid, .kpi-grid, .compact, .split, .grid-two, .control-grid { grid-template-columns: 1fr; }
-      .brand-mark { width: 46px; height: 46px; }
-      .toc { top: 0; padding-bottom: 10px; }
-      .chart-shell, .chart-shell.tall { min-height: 340px; }
-      .funnel-step { width: 100%; }
-      .segmented { width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .segmented button { padding-inline: 6px; }
-    }
-  </style>
+  <title>Blueverse CRM Report</title>
+  <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
 <main class="page">
-<header class="hero">
-      <div class="brand-row">
-        <img class="brand-logo" src="./assets/blueverse-logo.png" alt="BlueVerse logo">
-        <div>
-          <p class="eyeline">Blueverse performance command center</p>
-          <h1>Paid Media + Respond.io Report</h1>
-        </div>
+  <header class="hero">
+    <div class="brand-row">
+      <img class="brand-logo" src="./assets/blueverse-logo.png" alt="BlueVerse logo">
+      <div>
+        <p class="eyeline">CRM quality command center</p>
+        <h1>Respond.io CRM Dashboard</h1>
       </div>
-      <p class="hero-copy">Comprehensive Google Ads, Meta Ads, and CRM quality dashboard generated from the source files in this repo. Periods: Google 2026-04-15 to 2026-06-23; Meta 2026-06-01 to 2026-06-22; Respond.io paid contacts are verified all-time via MCP, with June 2026 shown separately.</p>
-      <div class="hero-grid">
-        
-      <article class="kpi blue">
-        <span>Total paid spend</span>
-        <strong>AED 33,116</strong>
-        <small>Google + Meta</small>
-      </article>
-    
-        
-      <article class="kpi cyan">
-        <span>Total impressions</span>
-        <strong>173,016</strong>
-        <small>Cross-channel reach signal</small>
-      </article>
-    
-        
-      <article class="kpi green">
-        <span>Platform lead events</span>
-        <strong>514</strong>
-        <small>Google conv. + Meta msg starts</small>
-      </article>
-    
-        
-      <article class="kpi orange">
-        <span>Respond.io paid contacts</span>
-        <strong>1,065</strong>
-        <small>319 in June 2026</small>
-      </article>
-    
-        
-      <article class="kpi violet">
-        <span>Blended cost / event</span>
-        <strong>AED 64</strong>
-        <small>Spend divided by platform lead events</small>
-      </article>
-    
-      </div>
-    </header>
-<nav class="toc">
-      <a href="index.html">Dashboard</a>
-      <a href="paid.html">Paid Media</a>
-      <a href="#funnel">Respond.io</a>
-      <a href="#respondSources">Sources</a>
-      <a href="#respondServices">Services</a>
-    </nav>
-<section id="funnel" class="panel">
-      <div class="section-head">
-        <div>
-          <p class="label">Funnel</p>
-          <h2>Paid Ads to Respond.io</h2>
-        </div>
-      </div>
-      <div class="filter-row">
-        <div class="segmented" aria-label="Respond.io channel filter">
-          <button type="button" class="active" data-respond-channel="All">All</button>
-          <button type="button" data-respond-channel="Meta Ads">Meta Ads</button>
-          <button type="button" data-respond-channel="Google Ads">Google Ads</button>
-        </div>
-        <p class="data-note">Showing all-time paid contacts (1,065); 319 in June 2026. Respond.io MCP scan: 4,119 total contacts checked; generated 2026-06-23T11:08:16+00:00.</p>
-      </div>
-      <div class="kpi-grid compact" style="margin:8px 0 18px;">
-        <article class="kpi blue"><span>Paid contacts</span><strong id="respondPaidContacts">-</strong></article>
-        <article class="kpi orange"><span>Hot or quote</span><strong id="respondHotQuote">-</strong></article>
-        <article class="kpi green"><span>Customer-like</span><strong id="respondCustomerLike">-</strong></article>
-        <article class="kpi violet"><span>Top service</span><strong id="respondTopService">-</strong></article>
-      </div>
-      <div class="funnel"></div>
-      <div class="grid-two">
-        <div>
-          <h3>Contacts by source</h3>
-          <div class="table-wrap "><table><thead><tr><th>Source</th><th>Contacts</th><th>Quoted value</th><th>Final sale</th></tr></thead><tbody id="respondSourceRows"></tbody></table></div>
-        </div>
-        <div>
-          <h3>Lifecycle distribution</h3>
-          <div class="chart-shell"><svg id="respondLifecycleChart"></svg></div>
-        </div>
-      </div>
-      <h3>Service counts</h3>
-      <div class="table-wrap "><table><thead><tr><th>Service</th><th>Contacts</th><th>Quoted value</th><th>Final sale</th></tr></thead><tbody id="respondServiceRows"></tbody></table></div>
-    </section>
-  </main>
+    </div>
+    <p class="hero-copy">Lifecycle, source quality, service attribution, and data-health insights from Respond.io paid contacts.</p>
+    <div class="hero-grid compact" id="crmHeroKpis">
+      <article class="kpi blue"><span>Paid contacts</span><strong>—</strong><small>—</small></article>
+      <article class="kpi cyan"><span>Google Ads contacts</span><strong>—</strong><small>—</small></article>
+      <article class="kpi violet"><span>Meta Ads contacts</span><strong>—</strong><small>—</small></article>
+      <article class="kpi green"><span>Customers</span><strong>—</strong><small>—</small></article>
+      <article class="kpi orange"><span>Final sale value</span><strong>—</strong><small>—</small></article>
+    </div>
+  </header>
 
-  <div class="tooltip" id="tooltip"></div>
-  <script src="report-data.js"></script>
-  <script src="charts.js"></script>
+  <nav class="toc">
+    <a href="index.html">Home</a>
+    <a href="paid.html">Paid Media</a>
+    <a href="#filters">Filters</a>
+    <a href="#funnel">Lifecycle</a>
+    <a href="#quality">Quality</a>
+    <a href="#health">Data Health</a>
+    <a href="#nct">NCT</a>
+    <a href="#notes">Notes</a>
+    <a href="#contacts">Contacts</a>
+  </nav>
+
+  <section id="filters" class="panel primary-panel">
+    <div class="section-head">
+      <div>
+        <p class="label">Global filters</p>
+        <h2>Slice the CRM dataset</h2>
+      </div>
+    </div>
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label for="filterSource">Source</label>
+        <select id="filterSource"><option value="">All sources</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="filterMedium">Medium</label>
+        <select id="filterMedium"><option value="">All mediums</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="filterService">Service</label>
+        <select id="filterService"><option value="">All services</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="filterLifecycle">Lifecycle</label>
+        <select id="filterLifecycle"><option value="">All lifecycles</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="filterDateFrom">From</label>
+        <input type="date" id="filterDateFrom">
+      </div>
+      <div class="filter-group">
+        <label for="filterDateTo">To</label>
+        <input type="date" id="filterDateTo">
+      </div>
+      <div class="filter-group filter-actions">
+        <button class="btn btn-primary" id="applyFilters">Apply filters</button>
+        <button class="btn" id="resetFilters">Reset</button>
+      </div>
+    </div>
+    <p class="filter-note" id="filterSummary">Loading contacts…</p>
+  </section>
+
+  <section id="funnel" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">Lifecycle funnel</p>
+        <h2>Paid contacts through lifecycle</h2>
+      </div>
+    </div>
+    <div class="funnel-bar-list" id="lifecycleFunnel"></div>
+  </section>
+
+  <section id="quality" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">Quality</p>
+        <h2>Lead quality by source &amp; service</h2>
+      </div>
+    </div>
+    <div class="grid-two">
+      <div>
+        <h3>Source quality</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Source</th>
+                <th class="num">Contacts</th>
+                <th class="num">Hot / Quote</th>
+                <th class="num">Customers</th>
+                <th class="num">Revenue</th>
+                <th class="num">Conv. rate</th>
+              </tr>
+            </thead>
+            <tbody id="sourceQualityRows"></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3>Service quality</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th class="num">Contacts</th>
+                <th class="num">Revenue</th>
+                <th class="num">Avg sale</th>
+                <th class="num">Revenue / contact</th>
+              </tr>
+            </thead>
+            <tbody id="serviceQualityRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="health" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">Data health</p>
+        <h2>CRM completeness meter</h2>
+      </div>
+    </div>
+    <div class="health-meter" id="healthMeter"></div>
+    <h3>Top issues</h3>
+    <div class="health-issues" id="healthIssues"></div>
+  </section>
+
+  <section id="nct" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">NCT validation</p>
+        <h2>UAE TRA number verification</h2>
+      </div>
+    </div>
+    <div id="nctCard"></div>
+  </section>
+
+  <section id="notes" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">CRM notes</p>
+        <h2>Actionable observations</h2>
+      </div>
+    </div>
+    <ul class="note-list" id="crmNotes"></ul>
+  </section>
+
+  <section id="contacts" class="panel">
+    <div class="section-head">
+      <div>
+        <p class="label">Contact sample</p>
+        <h2>Filtered contacts</h2>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Source</th>
+            <th>Medium</th>
+            <th>Lifecycle</th>
+            <th>Service</th>
+            <th class="num">Quoted</th>
+            <th class="num">Final sale</th>
+          </tr>
+        </thead>
+        <tbody id="contactRows"></tbody>
+      </table>
+    </div>
+    <div class="filter-actions" style="margin-top:12px">
+      <button class="btn" id="loadMoreContacts">Load more</button>
+    </div>
+  </section>
+</main>
+
+<div class="tooltip" id="tooltip"></div>
+<script src="report-data.js"></script>
+<script src="charts.js"></script>
 <script src="respond.js"></script>
 </body>
 </html>
