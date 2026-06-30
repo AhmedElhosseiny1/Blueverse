@@ -26,7 +26,7 @@
     { stage: 'Leads', test: c => c.lifecycle === 'New Lead' },
     { stage: 'Hot leads', test: c => c.lifecycle === 'Hot Lead' },
     { stage: 'Quotation', test: c => c.lifecycle === 'Quotation' },
-    { stage: 'Follow-up', test: c => ['Appointment', 'Show Up'].includes(c.lifecycle) },
+    { stage: 'Showup', test: c => ['Appointment', 'Show Up'].includes(c.lifecycle) },
     { stage: 'Customers', test: c => c.lifecycle === 'Customer' },
     { stage: 'Old leads', test: c => c.lifecycle === 'Cold Lead' },
     { stage: 'Bad leads', test: c => ['Bad Lead', 'Lost'].includes(c.lifecycle) },
@@ -147,12 +147,18 @@
 
   function computeFunnel(rows) {
     const total = rows.length || 1;
+    const leadsCount = rows.filter(c => c.lifecycle === 'New Lead').length || 0;
     return STAGES.map(({ stage, test }, idx) => {
       const contacts = rows.filter(test).length;
+      let cvr = null;
+      if (leadsCount && stage !== 'Response') {
+        cvr = stage === 'Leads' ? 100 : (contacts / leadsCount * 100);
+      }
       return {
         stage,
         contacts,
         rate: rows.length ? (contacts / rows.length * 100) : 0,
+        cvr,
         color: FUNNEL_COLORS[idx % FUNNEL_COLORS.length]
       };
     });
@@ -160,11 +166,12 @@
 
   function funnelBarHTML(step, max, sizeClass = '') {
     const w = max ? (step.contacts / max * 100).toFixed(1) : 0;
+    const cvrText = step.cvr != null ? ` · ${fmtPct(step.cvr)} CVR` : '';
     return `
-      <div class="funnel-bar ${sizeClass}" style="--w:${w}%" title="${step.stage}: ${fmtNum(step.contacts, 0)} contacts (${fmtPct(step.rate)} of total)">
+      <div class="funnel-bar ${sizeClass}" style="--w:${w}%" title="${step.stage}: ${fmtNum(step.contacts, 0)} contacts${cvrText} (${fmtPct(step.rate)} of total)">
         <div class="meta">
           <span class="name">${step.stage}</span>
-          <span class="count">${fmtNum(step.contacts, 0)} <span class="rate">(${fmtPct(step.rate)})</span></span>
+          <span class="count">${fmtNum(step.contacts, 0)}${step.cvr != null ? ' <span class="rate">' + fmtPct(step.cvr) + ' CVR</span>' : ''}</span>
         </div>
         <div class="track">
           <div class="fill" style="background:${step.color}"></div>

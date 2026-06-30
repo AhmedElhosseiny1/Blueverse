@@ -585,6 +585,10 @@ tbody tr:hover td { background: #f8fbff; }
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
 }
+.options-grid.two-col {
+  max-width: 760px;
+  margin: 0 auto;
+}
 .option-card {
   display: flex;
   flex-direction: column;
