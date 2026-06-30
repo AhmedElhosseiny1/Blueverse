@@ -18,8 +18,22 @@
     return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
   };
 
+  const STAGES = [
+    { stage: 'Response', test: () => true },
+    { stage: 'Leads', test: c => c.lifecycle === 'New Lead' },
+    { stage: 'Hot leads', test: c => c.lifecycle === 'Hot Lead' },
+    { stage: 'Quotation', test: c => c.lifecycle === 'Quotation' },
+    { stage: 'Follow-up', test: c => c.lifecycle === 'Appointment' },
+    { stage: 'Customers', test: c => c.lifecycle === 'Customer' },
+    { stage: 'Old leads', test: c => c.lifecycle === 'Cold Lead' },
+    { stage: 'Bad leads', test: c => ['Bad Lead', 'Lost'].includes(c.lifecycle) },
+    { stage: 'Unknown', test: c => !c.lifecycle || c.lifecycle === 'Not set' }
+  ];
+  const FUNNEL_COLORS = ['#0867c9', '#0a84c9', '#0a9bb0', '#11845b', '#d46b08', '#6b4fd8', '#66758b', '#c43d3d', '#9aa5b5'];
+
   let filtered = contacts.slice();
   let visibleLimit = 25;
+  let funnelView = 'all';
 
   const els = {
     source: document.getElementById('filterSource'),
@@ -33,6 +47,8 @@
     summary: document.getElementById('filterSummary'),
     hero: document.getElementById('crmHeroKpis'),
     funnel: document.getElementById('lifecycleFunnel'),
+    funnelBreakdown: document.getElementById('funnelBreakdown'),
+    funnelToggle: document.getElementById('funnelViewToggle'),
     sourceQuality: document.getElementById('sourceQualityRows'),
     serviceQuality: document.getElementById('serviceQualityRows'),
     healthMeter: document.getElementById('healthMeter'),
@@ -114,24 +130,63 @@
     });
   }
 
+  function computeFunnel(rows) {
+    const total = rows.length || 1;
+    return STAGES.map(({ stage, test }, idx) => {
+      const contacts = rows.filter(test).length;
+      return {
+        stage,
+        contacts,
+        rate: rows.length ? (contacts / rows.length * 100) : 0,
+        color: FUNNEL_COLORS[idx % FUNNEL_COLORS.length]
+      };
+    });
+  }
+
+  function funnelBarHTML(step, max, sizeClass = '') {
+    const w = max ? (step.contacts / max * 100).toFixed(1) : 0;
+    return `
+      <div class="funnel-bar ${sizeClass}" style="--w:${w}%" title="${step.stage}: ${fmtNum(step.contacts, 0)} contacts (${fmtPct(step.rate)} of total)">
+        <div class="meta">
+          <span class="name">${step.stage}</span>
+          <span class="count">${fmtNum(step.contacts, 0)} <span class="rate">(${fmtPct(step.rate)})</span></span>
+        </div>
+        <div class="track">
+          <div class="fill" style="background:${step.color}"></div>
+        </div>
+      </div>`;
+  }
+
   function renderFunnel() {
     if (!els.funnel) return;
-    const max = Math.max(...funnel.map(s => s.contacts || 0), 1);
-    const colors = ['#0867c9', '#0a84c9', '#0a9bb0', '#11845b', '#d46b08', '#6b4fd8', '#66758b', '#c43d3d', '#9aa5b5'];
-    els.funnel.innerHTML = funnel.map((step, idx) => {
-      const w = (step.contacts / max * 100).toFixed(1);
-      const color = colors[idx % colors.length];
+    const data = computeFunnel(filtered);
+    const max = Math.max(...data.map(s => s.contacts || 0), 1);
+    els.funnel.innerHTML = data.map(step => funnelBarHTML(step, max)).join('');
+
+    if (!els.funnelBreakdown) return;
+    if (funnelView === 'all') {
+      els.funnelBreakdown.style.display = 'none';
+      els.funnelBreakdown.innerHTML = '';
+      return;
+    }
+
+    els.funnelBreakdown.style.display = 'grid';
+    const dim = funnelView === 'channel' ? 'source' : 'service';
+    const groups = groupBy(filtered, dim);
+    const keys = Object.keys(groups).sort((a, b) => groups[b].length - groups[a].length);
+    const globalMax = Math.max(...keys.map(k => Math.max(...computeFunnel(groups[k]).map(s => s.contacts), 1)), 1);
+
+    els.funnelBreakdown.innerHTML = keys.map(key => {
+      const list = groups[key];
+      const f = computeFunnel(list);
       return `
-        <div class="funnel-bar" style="--w:${w}%" title="${step.stage}: ${fmtNum(step.contacts, 0)} contacts (${fmtPct(step.rate)} of total)">
-          <div class="meta">
-            <span class="name">${step.stage}</span>
-            <span class="count">${fmtNum(step.contacts, 0)} <span class="rate">(${fmtPct(step.rate)})</span></span>
-          </div>
-          <div class="track">
-            <div class="fill" style="background:${color}"></div>
+        <div class="mini-funnel">
+          <h4>${key} <span class="subdue">${fmtNum(list.length, 0)} contacts</span></h4>
+          <div class="funnel-bar-list">
+            ${f.map(step => funnelBarHTML(step, globalMax, 'compact')).join('')}
           </div>
         </div>`;
-    }).join('');
+    }).join('') || '<p class="empty-state">No data for this breakdown.</p>';
   }
 
   function groupBy(arr, key) {
@@ -275,6 +330,20 @@
       visibleLimit += 25;
       renderContacts();
     });
+
+    if (els.funnelToggle) {
+      Array.from(els.funnelToggle.children).forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.view === funnelView);
+      });
+      els.funnelToggle.addEventListener('click', e => {
+        if (e.target.tagName !== 'BUTTON') return;
+        funnelView = e.target.dataset.view;
+        Array.from(els.funnelToggle.children).forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.view === funnelView);
+        });
+        renderFunnel();
+      });
+    }
 
     render();
   }
