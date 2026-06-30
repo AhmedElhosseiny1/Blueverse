@@ -33,8 +33,6 @@
     <a href="#funnel">Lifecycle</a>
     <a href="#quality">Quality</a>
     <a href="#health">Data Health</a>
-    <a href="#nct">NCT</a>
-    <a href="#notes">Notes</a>
     <a href="#contacts">Contacts</a>
   </nav>
 
@@ -152,44 +150,22 @@
     <div class="health-issues" id="healthIssues"></div>
   </section>
 
-  <section id="nct" class="panel">
-    <div class="section-head">
-      <div>
-        <p class="label">NCT validation</p>
-        <h2>UAE TRA number verification</h2>
-      </div>
-    </div>
-    <div id="nctCard"></div>
-  </section>
-
-  <section id="notes" class="panel">
-    <div class="section-head">
-      <div>
-        <p class="label">CRM notes</p>
-        <h2>Actionable observations</h2>
-      </div>
-    </div>
-    <ul class="note-list" id="crmNotes"></ul>
-  </section>
-
   <section id="contacts" class="panel">
     <div class="section-head">
       <div>
         <p class="label">Contact sample</p>
-        <h2>Filtered contacts</h2>
+        <h2>Paid contact details</h2>
+        <p class="muted">Columns show the closest available data from Respond.io. Conversation transcripts and dedicated sales-comment fields are not exported, so those cells are synthesized or marked unavailable.</p>
       </div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Source</th>
-            <th>Medium</th>
-            <th>Lifecycle</th>
-            <th>Service</th>
-            <th class="num">Quoted</th>
-            <th class="num">Final sale</th>
+            <th>Contact entry</th>
+            <th>Conversation brief</th>
+            <th>Sales comments</th>
+            <th>Notes</th>
           </tr>
         </thead>
         <tbody id="contactRows"></tbody>

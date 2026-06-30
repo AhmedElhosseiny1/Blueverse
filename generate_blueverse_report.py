@@ -1242,9 +1242,16 @@ def parse_contact_date(ts: Any) -> tuple[str, str]:
 
 
 def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
-    """Build a PII-free client-side contact list from the MCP summary."""
+    """Build a PII-free client-side contact list from the MCP summary.
+
+    Only paid contacts whose normalized source is Google Ads or Meta Ads are
+    surfaced in the dashboard.  Several requested detail fields do not exist as
+    native Respond.io export columns, so they are synthesized here and the UI
+    surfaces the data gap explicitly.
+    """
     scope = summary.get("paid_all_time") if isinstance(summary.get("paid_all_time"), dict) else {}
     records = scope.get("contacts") if isinstance(scope.get("contacts"), list) else []
+    allowed_sources = set(SOURCE_GROUP_ALIASES.keys())
     out: list[dict[str, Any]] = []
     seen: set[Any] = set()
     for rec in records:
@@ -1255,19 +1262,50 @@ def build_respond_contacts(summary: dict[str, Any]) -> list[dict[str, Any]]:
         iso, date = parse_contact_date(rec.get("created_at"))
         source_raw = str(rec.get("source_raw") or rec.get("source") or "Not set").strip() or "Not set"
         source = str(rec.get("source_normalized") or rec.get("source") or "Not set").strip() or "Not set"
+        source_group = source_group_for(source)
+        if source_group not in allowed_sources:
+            continue
+        medium = normalize_medium(rec.get("medium"))
+        lifecycle = str(rec.get("lifecycle") or "Not set").strip() or "Not set"
+        service = str(rec.get("service") or "Not set").strip() or "Not set"
+        tags = rec.get("tags") or []
+        if not isinstance(tags, list):
+            tags = []
+
+        entry_parts = [f"Source: {source_group}"]
+        if medium and medium != "Not set":
+            entry_parts.append(f"Medium: {medium}")
+        if service and service != "Not set":
+            entry_parts.append(f"Service: {service}")
+        if date:
+            entry_parts.append(f"Date: {date}")
+        contact_entry = " · ".join(entry_parts)
+
+        brief_parts = [f"Lifecycle: {lifecycle}"]
+        if service and service != "Not set":
+            brief_parts.append(f"Service: {service}")
+        conversation_brief = " · ".join(brief_parts)
+
+        notes = " · ".join(str(t) for t in tags) if tags else "No tags recorded"
+
         out.append(
             {
                 "id": contact_id,
                 "createdAt": iso,
                 "date": date,
                 "sourceRaw": source_raw,
-                "source": source_group_for(source),
-                "sourceGroup": source_group_for(source),
-                "medium": normalize_medium(rec.get("medium")),
-                "lifecycle": str(rec.get("lifecycle") or "Not set").strip() or "Not set",
-                "service": str(rec.get("service") or "Not set").strip() or "Not set",
+                "source": source_group,
+                "sourceGroup": source_group,
+                "medium": medium,
+                "lifecycle": lifecycle,
+                "service": service,
                 "quotedValue": float(rec.get("quoted_value") or 0),
                 "finalSaleValue": float(rec.get("final_sale_value") or 0),
+                "tags": tags,
+                "contactEntry": contact_entry,
+                "conversationBrief": conversation_brief,
+                "salesComments": "Not available in Respond.io export",
+                "notes": notes,
             }
         )
     return out

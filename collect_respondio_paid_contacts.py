@@ -127,6 +127,20 @@ def field(contact: dict[str, Any], name: str) -> Any:
     return None
 
 
+def tag_names(contact: dict[str, Any]) -> list[str]:
+    """Return a sorted list of tag names attached to a contact."""
+    tags = contact.get("tags") or []
+    names = []
+    for tag in tags:
+        if isinstance(tag, dict):
+            name = tag.get("name")
+        else:
+            name = str(tag)
+        if name:
+            names.append(str(name))
+    return sorted(set(names))
+
+
 def clean_text(value: Any, fallback: str = "Not set") -> str:
     if value is None:
         return fallback
@@ -223,6 +237,7 @@ def summarize_records(records: list[dict[str, Any]]) -> dict[str, Any]:
             "service": r.get("service"),
             "quoted_value": r.get("quoted_value"),
             "final_sale_value": r.get("final_sale_value"),
+            "tags": r.get("tags") or [],
         }
         for r in records
     ]
@@ -330,6 +345,7 @@ def main() -> None:
                     "created_at": int(created_at) if created_at else 0,
                     "quoted_value": to_float(field(contact, "quoted_value")),
                     "final_sale_value": to_float(field(contact, "final_sale_value")),
+                    "tags": tag_names(contact),
                     "paid_by_medium": is_paid_medium(medium),
                     "paid_by_source": is_paid_source(source_raw),
                 }

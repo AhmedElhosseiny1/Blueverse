@@ -3987,9 +3987,9 @@ const REPORT_DATA = {
     }
   },
   "respondMeta": {
-    "generated_at": "2026-06-30T13:26:46+00:00",
+    "generated_at": "2026-06-30T14:13:25+00:00",
     "mcp_tool": "respond-io-mcp:list_contacts",
-    "total_contacts_scanned": 4424,
+    "total_contacts_scanned": 4425,
     "filter_definition": {
       "paid_contact": "custom field medium contains paid/cpc/ppc/sem/search ads/social ads OR source normalizes to Google Ads / Meta Ads",
       "source_field": "custom_fields.source",
@@ -3999,7 +3999,7 @@ const REPORT_DATA = {
       {
         "source": "Not set",
         "medium": "Not set",
-        "count": 2381
+        "count": 2382
       },
       {
         "source": "Meta Ads",
@@ -4023,14 +4023,14 @@ const REPORT_DATA = {
       }
     ],
     "all_contacts_source_counts_top": {
-      "Not set": 2381,
+      "Not set": 2382,
       "Meta Ads": 1223,
       "Max": 589,
       "Google Ads": 136,
       "Dubai Hills": 95
     },
     "all_contacts_medium_counts_top": {
-      "Not set": 3065,
+      "Not set": 3066,
       "Paid Ads": 1359
     }
   },
@@ -4046,7 +4046,14 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 7348.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 478292679,
@@ -4059,7 +4066,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478288741,
@@ -4072,7 +4086,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478276920,
@@ -4085,7 +4104,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478275914,
@@ -4098,7 +4122,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: Not set · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478274194,
@@ -4111,7 +4142,15 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 7999.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 478238600,
@@ -4124,7 +4163,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478225487,
@@ -4137,7 +4183,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478218306,
@@ -4150,7 +4201,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478216217,
@@ -4163,7 +4219,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478175910,
@@ -4176,7 +4237,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478173062,
@@ -4189,7 +4257,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478166069,
@@ -4202,7 +4277,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478157386,
@@ -4215,7 +4295,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478155123,
@@ -4228,7 +4313,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478154644,
@@ -4241,7 +4331,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 478147212,
@@ -4254,7 +4351,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478140749,
@@ -4267,7 +4369,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478129756,
@@ -4280,7 +4387,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478128627,
@@ -4293,7 +4405,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478120900,
@@ -4306,7 +4423,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478109091,
@@ -4319,7 +4441,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478099338,
@@ -4332,7 +4459,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478078920,
@@ -4345,7 +4477,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478064665,
@@ -4358,7 +4495,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 478000066,
@@ -4371,7 +4513,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477981412,
@@ -4384,7 +4531,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477978423,
@@ -4397,7 +4549,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477969195,
@@ -4410,7 +4567,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477954458,
@@ -4423,7 +4585,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477941569,
@@ -4436,7 +4605,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477889476,
@@ -4449,7 +4623,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477865072,
@@ -4462,7 +4641,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 477803227,
@@ -4475,7 +4662,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477725776,
@@ -4488,7 +4680,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477712448,
@@ -4501,7 +4700,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477709561,
@@ -4514,7 +4718,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477702991,
@@ -4527,7 +4736,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477690936,
@@ -4540,7 +4756,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477671181,
@@ -4553,7 +4774,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477661643,
@@ -4566,7 +4792,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477589833,
@@ -4579,7 +4810,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477569151,
@@ -4592,7 +4830,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477566312,
@@ -4605,7 +4850,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477559555,
@@ -4618,7 +4868,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477551476,
@@ -4631,7 +4886,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477547160,
@@ -4644,7 +4906,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477539903,
@@ -4657,7 +4926,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477538011,
@@ -4670,7 +4944,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477535388,
@@ -4683,7 +4962,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477532211,
@@ -4696,7 +4982,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477483184,
@@ -4709,7 +5000,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477447669,
@@ -4722,7 +5018,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-28",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477425758,
@@ -4735,7 +5036,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477420352,
@@ -4748,7 +5054,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477413550,
@@ -4761,7 +5074,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477407457,
@@ -4774,7 +5094,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477401967,
@@ -4787,7 +5112,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477401622,
@@ -4800,7 +5130,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477381400,
@@ -4813,7 +5148,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477357490,
@@ -4826,7 +5166,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477355341,
@@ -4839,7 +5184,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477334764,
@@ -4852,7 +5202,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477321219,
@@ -4865,7 +5220,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477319777,
@@ -4878,7 +5238,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477317155,
@@ -4891,7 +5258,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477303293,
@@ -4904,7 +5276,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477263072,
@@ -4917,7 +5294,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477254769,
@@ -4930,7 +5312,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477241730,
@@ -4943,7 +5330,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477221639,
@@ -4956,7 +5348,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477216411,
@@ -4969,7 +5366,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477208483,
@@ -4982,7 +5384,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477207341,
@@ -4995,7 +5402,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477196400,
@@ -5008,7 +5420,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477172542,
@@ -5021,7 +5438,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477171589,
@@ -5034,7 +5458,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477170728,
@@ -5047,7 +5476,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477137437,
@@ -5060,7 +5494,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477135975,
@@ -5073,7 +5514,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477103598,
@@ -5086,7 +5532,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477087944,
@@ -5099,7 +5550,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477086939,
@@ -5112,7 +5570,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477077756,
@@ -5125,7 +5590,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477070482,
@@ -5138,7 +5610,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477069292,
@@ -5151,7 +5628,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477060815,
@@ -5164,7 +5646,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477057688,
@@ -5177,7 +5666,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477053570,
@@ -5190,7 +5684,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477049196,
@@ -5203,7 +5704,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 477048595,
@@ -5216,7 +5724,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477027931,
@@ -5229,7 +5742,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 477012245,
@@ -5242,7 +5760,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476993867,
@@ -5255,7 +5778,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476964004,
@@ -5268,7 +5798,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-27",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476944437,
@@ -5281,7 +5818,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476944306,
@@ -5294,7 +5836,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476825158,
@@ -5307,7 +5856,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476817619,
@@ -5320,7 +5874,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476770873,
@@ -5333,7 +5892,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476755746,
@@ -5346,7 +5912,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476739554,
@@ -5359,7 +5932,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476730891,
@@ -5372,7 +5952,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476727761,
@@ -5385,7 +5972,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476724219,
@@ -5398,7 +5990,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476709505,
@@ -5411,7 +6008,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476648452,
@@ -5424,7 +6026,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476620590,
@@ -5437,7 +6044,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476596073,
@@ -5450,7 +6062,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476550036,
@@ -5463,7 +6082,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476539186,
@@ -5476,7 +6100,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476522538,
@@ -5489,7 +6118,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476503676,
@@ -5502,7 +6136,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476496212,
@@ -5515,7 +6154,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476491114,
@@ -5528,7 +6172,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476442142,
@@ -5541,7 +6190,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 499.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476431879,
@@ -5554,7 +6210,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476430236,
@@ -5567,7 +6228,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476429125,
@@ -5580,7 +6246,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476388691,
@@ -5593,7 +6264,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476384537,
@@ -5606,7 +6282,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476358589,
@@ -5619,7 +6300,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476358357,
@@ -5632,7 +6318,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476329730,
@@ -5645,7 +6336,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476257343,
@@ -5658,7 +6354,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476187621,
@@ -5671,7 +6372,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476171247,
@@ -5684,7 +6390,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476112494,
@@ -5697,7 +6408,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476105272,
@@ -5710,7 +6426,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476094225,
@@ -5723,7 +6444,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476092259,
@@ -5736,7 +6462,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476084892,
@@ -5749,7 +6480,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476079179,
@@ -5762,7 +6498,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476076111,
@@ -5775,7 +6516,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476070127,
@@ -5788,7 +6534,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476069891,
@@ -5801,7 +6552,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476069081,
@@ -5814,7 +6570,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476069022,
@@ -5827,7 +6588,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476067919,
@@ -5840,7 +6606,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476067647,
@@ -5853,7 +6624,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476046586,
@@ -5866,7 +6642,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476045851,
@@ -5879,7 +6660,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476044450,
@@ -5892,7 +6678,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476043542,
@@ -5905,7 +6696,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476041592,
@@ -5918,7 +6714,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476038189,
@@ -5931,7 +6732,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476037947,
@@ -5944,7 +6750,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476037874,
@@ -5957,7 +6768,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476037619,
@@ -5970,7 +6786,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476035752,
@@ -5983,7 +6804,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476034368,
@@ -5996,7 +6822,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476023611,
@@ -6009,7 +6840,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 476018040,
@@ -6022,7 +6858,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 476000148,
@@ -6035,7 +6878,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475995914,
@@ -6048,7 +6896,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475904974,
@@ -6061,7 +6914,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475900461,
@@ -6074,7 +6934,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475897788,
@@ -6087,7 +6952,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475834547,
@@ -6100,7 +6970,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475829108,
@@ -6113,7 +6988,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475804221,
@@ -6126,7 +7006,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475765192,
@@ -6139,7 +7024,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475765125,
@@ -6152,7 +7044,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475679011,
@@ -6165,7 +7062,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475678055,
@@ -6178,7 +7080,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475624628,
@@ -6191,7 +7098,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475613965,
@@ -6204,7 +7116,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475581528,
@@ -6217,7 +7134,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475564677,
@@ -6230,7 +7152,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475564461,
@@ -6243,7 +7170,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475557354,
@@ -6256,7 +7188,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475535431,
@@ -6269,7 +7206,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475504629,
@@ -6282,7 +7224,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475499935,
@@ -6295,7 +7242,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475478781,
@@ -6308,7 +7262,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475455564,
@@ -6321,7 +7280,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475441741,
@@ -6334,7 +7298,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475437656,
@@ -6347,7 +7316,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475427343,
@@ -6360,7 +7334,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475400558,
@@ -6373,7 +7352,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475325403,
@@ -6386,7 +7370,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475279245,
@@ -6399,7 +7390,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475267876,
@@ -6412,7 +7410,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475260519,
@@ -6425,7 +7430,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475256503,
@@ -6438,7 +7448,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475246825,
@@ -6451,7 +7468,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475241457,
@@ -6464,7 +7486,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475235826,
@@ -6477,7 +7506,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475208786,
@@ -6490,7 +7524,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475197211,
@@ -6503,7 +7542,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475167809,
@@ -6516,7 +7560,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475166026,
@@ -6529,7 +7578,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 475143106,
@@ -6542,7 +7598,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475125494,
@@ -6555,7 +7616,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475124397,
@@ -6568,7 +7634,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 475123851,
@@ -6581,7 +7652,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474961570,
@@ -6594,7 +7672,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474875310,
@@ -6607,7 +7690,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474866752,
@@ -6620,7 +7708,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474850312,
@@ -6633,7 +7728,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474848336,
@@ -6646,7 +7748,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474845145,
@@ -6659,7 +7766,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474807198,
@@ -6672,7 +7784,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474783603,
@@ -6685,7 +7802,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474768851,
@@ -6698,7 +7822,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474755393,
@@ -6711,7 +7840,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 13000.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474754258,
@@ -6724,7 +7860,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474750088,
@@ -6737,7 +7878,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 14000.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: Lost · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 474747398,
@@ -6750,7 +7898,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474738859,
@@ -6763,7 +7916,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474705484,
@@ -6776,7 +7936,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474697182,
@@ -6789,7 +7956,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474692538,
@@ -6802,7 +7976,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474688456,
@@ -6815,7 +7994,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474677711,
@@ -6828,7 +8012,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474676578,
@@ -6841,7 +8032,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474665745,
@@ -6854,7 +8050,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474663379,
@@ -6867,7 +8068,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474650765,
@@ -6880,7 +8086,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-24",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474554498,
@@ -6893,7 +8104,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474548970,
@@ -6906,7 +8124,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: Lost · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474548623,
@@ -6919,7 +8144,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474547727,
@@ -6932,7 +8164,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474508352,
@@ -6945,7 +8182,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474506411,
@@ -6958,7 +8200,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474505321,
@@ -6971,7 +8220,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474491314,
@@ -6984,7 +8238,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474450184,
@@ -6997,7 +8258,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474449017,
@@ -7010,7 +8276,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474444368,
@@ -7023,7 +8294,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474412911,
@@ -7036,7 +8312,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474408145,
@@ -7049,7 +8330,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474398150,
@@ -7062,7 +8348,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474393302,
@@ -7075,7 +8366,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474392808,
@@ -7088,7 +8384,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474392304,
@@ -7101,7 +8402,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474378424,
@@ -7114,7 +8420,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474358207,
@@ -7127,7 +8438,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474351554,
@@ -7140,7 +8456,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474342940,
@@ -7153,7 +8474,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474327081,
@@ -7166,7 +8492,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474310056,
@@ -7179,7 +8512,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 474242932,
@@ -7192,7 +8532,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474212055,
@@ -7205,7 +8552,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474180135,
@@ -7218,7 +8570,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474169841,
@@ -7231,7 +8588,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474159033,
@@ -7244,7 +8606,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474157595,
@@ -7257,7 +8626,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 474147876,
@@ -7270,7 +8646,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474136587,
@@ -7283,7 +8664,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474132481,
@@ -7296,7 +8682,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474110270,
@@ -7309,7 +8700,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 474108071,
@@ -7322,7 +8720,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474103004,
@@ -7335,7 +8738,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474098671,
@@ -7348,7 +8756,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474065321,
@@ -7361,7 +8774,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 474055587,
@@ -7374,7 +8792,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473993301,
@@ -7387,7 +8810,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473983802,
@@ -7400,7 +8828,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473966370,
@@ -7413,7 +8846,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473838969,
@@ -7426,7 +8864,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473820198,
@@ -7439,7 +8882,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473753331,
@@ -7452,7 +8902,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473742665,
@@ -7465,7 +8920,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473732121,
@@ -7478,7 +8940,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473719862,
@@ -7491,7 +8960,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473713294,
@@ -7504,7 +8978,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473707366,
@@ -7517,7 +8998,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473696510,
@@ -7530,7 +9016,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473695972,
@@ -7543,7 +9034,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473636109,
@@ -7556,7 +9054,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473629074,
@@ -7569,7 +9072,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473614494,
@@ -7582,7 +9092,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473614432,
@@ -7595,7 +9110,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473608418,
@@ -7608,7 +9128,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473565320,
@@ -7621,7 +9146,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473513071,
@@ -7634,7 +9164,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473462124,
@@ -7647,7 +9182,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473453355,
@@ -7660,7 +9200,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473445774,
@@ -7673,7 +9218,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 473412725,
@@ -7686,7 +9238,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473407302,
@@ -7699,7 +9256,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473400366,
@@ -7712,7 +9274,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473396321,
@@ -7725,7 +9292,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473356536,
@@ -7738,7 +9312,15 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Ceramic Coating"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: Lost · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Ceramic Coating"
     },
     {
       "id": 473355889,
@@ -7751,7 +9333,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473343300,
@@ -7764,7 +9351,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473337526,
@@ -7777,7 +9369,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473334470,
@@ -7790,7 +9387,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473332355,
@@ -7803,7 +9405,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473332134,
@@ -7816,7 +9423,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473314424,
@@ -7829,7 +9441,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473310037,
@@ -7842,7 +9459,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473299998,
@@ -7855,7 +9477,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473294653,
@@ -7868,7 +9495,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473287503,
@@ -7881,7 +9513,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473280891,
@@ -7894,7 +9531,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473279035,
@@ -7907,7 +9551,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473275331,
@@ -7920,7 +9569,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473265654,
@@ -7933,7 +9589,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473265014,
@@ -7946,7 +9607,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473255069,
@@ -7959,7 +9625,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473207273,
@@ -7972,7 +9643,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473149154,
@@ -7985,7 +9661,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473137903,
@@ -7998,7 +9679,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473132495,
@@ -8011,7 +9697,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473108564,
@@ -8024,7 +9715,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473108134,
@@ -8037,7 +9733,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473107497,
@@ -8050,7 +9753,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473107250,
@@ -8063,7 +9771,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473056980,
@@ -8076,7 +9789,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473048919,
@@ -8089,7 +9809,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473043539,
@@ -8102,7 +9827,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473037639,
@@ -8115,7 +9847,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473013109,
@@ -8128,7 +9865,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 473007333,
@@ -8141,7 +9885,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473005762,
@@ -8154,7 +9903,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 473003583,
@@ -8167,7 +9923,15 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 6499.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Car Wrapping"
     },
     {
       "id": 473003490,
@@ -8180,7 +9944,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 473000458,
@@ -8193,7 +9962,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472985568,
@@ -8206,7 +9980,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472967079,
@@ -8219,7 +9998,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472939363,
@@ -8232,7 +10016,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472923613,
@@ -8245,7 +10034,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472914652,
@@ -8258,7 +10052,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472913684,
@@ -8271,7 +10070,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472909296,
@@ -8284,7 +10090,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472902403,
@@ -8297,7 +10110,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: Not set · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 472900923,
@@ -8310,7 +10130,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472883944,
@@ -8323,7 +10148,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472876584,
@@ -8336,7 +10166,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472875926,
@@ -8349,7 +10184,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472874001,
@@ -8362,7 +10202,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472872375,
@@ -8375,7 +10222,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472870468,
@@ -8388,7 +10240,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472827474,
@@ -8401,7 +10260,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472822807,
@@ -8414,7 +10278,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472815693,
@@ -8427,7 +10296,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472812854,
@@ -8440,7 +10314,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472773173,
@@ -8453,7 +10332,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472768699,
@@ -8466,7 +10350,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472765685,
@@ -8479,7 +10368,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472760366,
@@ -8492,7 +10388,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472758043,
@@ -8505,7 +10406,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472751479,
@@ -8518,7 +10424,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472749955,
@@ -8531,7 +10442,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472692288,
@@ -8544,7 +10460,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472685160,
@@ -8557,7 +10478,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472680003,
@@ -8570,7 +10496,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472675392,
@@ -8583,7 +10514,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472671034,
@@ -8596,7 +10532,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472652632,
@@ -8609,7 +10550,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472620190,
@@ -8622,7 +10570,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472610526,
@@ -8635,7 +10590,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472558174,
@@ -8648,7 +10610,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472533209,
@@ -8661,7 +10630,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472528139,
@@ -8674,7 +10648,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472522791,
@@ -8687,7 +10666,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472520289,
@@ -8700,7 +10684,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472513526,
@@ -8713,7 +10702,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472512527,
@@ -8726,7 +10720,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472503389,
@@ -8739,7 +10738,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472498359,
@@ -8752,7 +10758,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472492036,
@@ -8765,7 +10778,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472488662,
@@ -8778,7 +10796,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472469345,
@@ -8791,7 +10814,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472459909,
@@ -8804,7 +10832,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472448773,
@@ -8817,7 +10850,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472389087,
@@ -8830,7 +10868,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472373361,
@@ -8843,7 +10886,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472361587,
@@ -8856,7 +10906,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472355005,
@@ -8869,7 +10924,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472344805,
@@ -8882,7 +10942,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472338322,
@@ -8895,7 +10962,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472327022,
@@ -8908,7 +10980,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472281433,
@@ -8921,7 +11000,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472275427,
@@ -8934,7 +11020,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472271181,
@@ -8947,7 +11038,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472255800,
@@ -8960,7 +11058,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472252486,
@@ -8973,7 +11078,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472249587,
@@ -8986,7 +11096,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472249441,
@@ -8999,7 +11116,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472249334,
@@ -9012,7 +11134,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472240794,
@@ -9025,7 +11154,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472231636,
@@ -9038,7 +11172,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472223647,
@@ -9051,7 +11190,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472223579,
@@ -9064,7 +11210,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472220236,
@@ -9077,7 +11230,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472203432,
@@ -9090,7 +11250,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472197332,
@@ -9103,7 +11270,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472191817,
@@ -9116,7 +11290,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472191357,
@@ -9129,7 +11310,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472190306,
@@ -9142,7 +11328,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472188542,
@@ -9155,7 +11348,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472171910,
@@ -9168,7 +11368,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 472145626,
@@ -9181,7 +11386,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 472003439,
@@ -9194,7 +11406,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471954112,
@@ -9207,7 +11424,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471951874,
@@ -9220,7 +11442,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471806642,
@@ -9233,7 +11460,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471805659,
@@ -9246,7 +11478,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: Quotation · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471787390,
@@ -9259,7 +11498,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471786318,
@@ -9272,7 +11516,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471779544,
@@ -9285,7 +11536,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471774589,
@@ -9298,7 +11554,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471770068,
@@ -9311,7 +11572,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471759002,
@@ -9324,7 +11590,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471758050,
@@ -9337,7 +11608,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471757411,
@@ -9350,7 +11628,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471742955,
@@ -9363,7 +11648,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471736589,
@@ -9376,7 +11666,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471729321,
@@ -9389,7 +11684,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471724974,
@@ -9402,7 +11704,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471721584,
@@ -9415,7 +11724,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471709035,
@@ -9428,7 +11744,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471704364,
@@ -9441,7 +11762,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471697212,
@@ -9454,7 +11780,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471692326,
@@ -9467,7 +11798,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471688176,
@@ -9480,7 +11816,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471687756,
@@ -9493,7 +11834,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471675470,
@@ -9506,7 +11852,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471669024,
@@ -9519,7 +11872,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471658524,
@@ -9532,7 +11890,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471644657,
@@ -9545,7 +11908,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471644253,
@@ -9558,7 +11926,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471634534,
@@ -9571,7 +11946,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471634074,
@@ -9584,7 +11966,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471628874,
@@ -9597,7 +11984,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471628543,
@@ -9610,7 +12002,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471625698,
@@ -9623,7 +12020,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471612455,
@@ -9636,7 +12038,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471580156,
@@ -9649,7 +12058,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471569120,
@@ -9662,7 +12076,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471569007,
@@ -9675,7 +12096,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471565965,
@@ -9688,7 +12116,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471550854,
@@ -9701,7 +12134,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 471546718,
@@ -9714,7 +12154,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471546111,
@@ -9727,7 +12172,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471544562,
@@ -9740,7 +12190,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471543645,
@@ -9753,7 +12208,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471541209,
@@ -9766,7 +12228,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471541062,
@@ -9779,7 +12248,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471536879,
@@ -9792,7 +12266,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471536500,
@@ -9805,7 +12284,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471513615,
@@ -9818,7 +12302,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471510298,
@@ -9831,7 +12320,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471498390,
@@ -9844,7 +12338,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471488679,
@@ -9857,7 +12358,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471479306,
@@ -9870,7 +12376,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471468855,
@@ -9883,7 +12394,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471468679,
@@ -9896,7 +12412,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471458655,
@@ -9909,7 +12430,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471449473,
@@ -9922,7 +12448,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471441219,
@@ -9935,7 +12466,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: Not set · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471419829,
@@ -9948,7 +12486,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471419760,
@@ -9961,7 +12504,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471403545,
@@ -9974,7 +12522,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471401763,
@@ -9987,7 +12540,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471395561,
@@ -10000,7 +12558,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471375914,
@@ -10013,7 +12578,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471366885,
@@ -10026,7 +12596,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471364817,
@@ -10039,7 +12614,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471358886,
@@ -10052,7 +12634,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471358723,
@@ -10065,7 +12652,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471180812,
@@ -10078,7 +12670,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471160519,
@@ -10091,7 +12688,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471134941,
@@ -10104,7 +12708,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471132119,
@@ -10117,7 +12728,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471124300,
@@ -10130,7 +12746,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471115066,
@@ -10143,7 +12764,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471081177,
@@ -10156,7 +12784,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471058166,
@@ -10169,7 +12802,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471052872,
@@ -10182,7 +12820,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 471045630,
@@ -10195,7 +12840,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471044857,
@@ -10208,7 +12858,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 471010671,
@@ -10221,7 +12876,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470975627,
@@ -10234,7 +12894,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: Not set · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470975094,
@@ -10247,7 +12914,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470945236,
@@ -10260,7 +12934,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470940681,
@@ -10273,7 +12952,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470934466,
@@ -10286,7 +12970,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470928208,
@@ -10299,7 +12988,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470891964,
@@ -10312,7 +13006,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470882879,
@@ -10325,7 +13024,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470879316,
@@ -10338,7 +13042,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470878395,
@@ -10351,7 +13060,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470797881,
@@ -10364,7 +13078,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470762863,
@@ -10377,7 +13096,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470748895,
@@ -10390,7 +13114,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470735616,
@@ -10403,7 +13132,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470722168,
@@ -10416,7 +13152,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470686371,
@@ -10429,7 +13170,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470684698,
@@ -10442,7 +13188,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470678115,
@@ -10455,7 +13206,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470674257,
@@ -10468,7 +13224,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470671005,
@@ -10481,7 +13244,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470666737,
@@ -10494,7 +13264,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470657112,
@@ -10507,7 +13282,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470655280,
@@ -10520,7 +13300,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470645237,
@@ -10533,7 +13318,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470644297,
@@ -10546,7 +13338,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470640428,
@@ -10559,7 +13356,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470635979,
@@ -10572,7 +13374,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470621708,
@@ -10585,7 +13392,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470620076,
@@ -10598,7 +13410,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470615084,
@@ -10611,7 +13428,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470613002,
@@ -10624,7 +13448,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470612146,
@@ -10637,7 +13466,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470609402,
@@ -10650,7 +13484,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470608904,
@@ -10663,7 +13502,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470602722,
@@ -10676,7 +13520,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470602293,
@@ -10689,7 +13540,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470600160,
@@ -10702,7 +13558,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470599291,
@@ -10715,7 +13576,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470598557,
@@ -10728,7 +13594,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470595968,
@@ -10741,7 +13612,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470593249,
@@ -10754,7 +13630,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470582813,
@@ -10767,7 +13648,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470576587,
@@ -10780,7 +13668,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470573691,
@@ -10793,7 +13688,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470550599,
@@ -10806,7 +13706,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470530164,
@@ -10819,7 +13724,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470516266,
@@ -10832,7 +13742,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470513881,
@@ -10845,7 +13760,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470493991,
@@ -10858,7 +13778,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470459846,
@@ -10871,7 +13796,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470446330,
@@ -10884,7 +13814,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470438002,
@@ -10897,7 +13832,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470435418,
@@ -10910,7 +13852,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470433763,
@@ -10923,7 +13872,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470421428,
@@ -10936,7 +13890,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470419486,
@@ -10949,7 +13910,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470402071,
@@ -10962,7 +13928,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470390305,
@@ -10975,7 +13946,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470388082,
@@ -10988,7 +13964,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470373626,
@@ -11001,7 +13984,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470368934,
@@ -11014,7 +14004,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470329693,
@@ -11027,7 +14022,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470245305,
@@ -11040,7 +14040,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470228552,
@@ -11053,7 +14058,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470225326,
@@ -11066,7 +14076,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470172887,
@@ -11079,7 +14094,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470171256,
@@ -11092,7 +14112,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470159043,
@@ -11105,7 +14130,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470153807,
@@ -11118,7 +14148,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: Lost · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 470079464,
@@ -11131,7 +14168,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470033938,
@@ -11144,7 +14186,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470022071,
@@ -11157,7 +14204,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 470010899,
@@ -11170,7 +14222,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469982144,
@@ -11183,7 +14240,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469973033,
@@ -11196,7 +14258,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469877510,
@@ -11209,7 +14276,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469875198,
@@ -11222,7 +14294,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469871878,
@@ -11235,7 +14312,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469866759,
@@ -11248,7 +14330,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469861134,
@@ -11261,7 +14348,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469855028,
@@ -11274,7 +14366,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469837812,
@@ -11287,7 +14384,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469809395,
@@ -11300,7 +14402,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469807816,
@@ -11313,7 +14420,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469807402,
@@ -11326,7 +14438,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing"
     },
     {
       "id": 469804916,
@@ -11339,7 +14458,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469798153,
@@ -11352,7 +14476,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469794879,
@@ -11365,7 +14494,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469789616,
@@ -11378,7 +14512,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469785587,
@@ -11391,7 +14530,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469780245,
@@ -11404,7 +14548,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469779216,
@@ -11417,7 +14566,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469778607,
@@ -11430,7 +14584,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469775064,
@@ -11443,7 +14602,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469770306,
@@ -11456,7 +14620,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469735835,
@@ -11469,7 +14638,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469727437,
@@ -11482,7 +14656,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469701662,
@@ -11495,7 +14674,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469686810,
@@ -11508,7 +14692,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469678705,
@@ -11521,7 +14710,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469660213,
@@ -11534,7 +14728,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469656656,
@@ -11547,7 +14746,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469619553,
@@ -11560,7 +14764,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469599084,
@@ -11573,7 +14782,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469593908,
@@ -11586,7 +14800,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469591298,
@@ -11599,7 +14818,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469590616,
@@ -11612,7 +14836,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469589095,
@@ -11625,7 +14854,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469584216,
@@ -11638,7 +14872,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469580010,
@@ -11651,7 +14890,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469544214,
@@ -11664,7 +14908,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469542029,
@@ -11677,7 +14926,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469537522,
@@ -11690,7 +14944,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469527205,
@@ -11703,7 +14962,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469520314,
@@ -11716,7 +14980,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469519106,
@@ -11729,7 +14998,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469513011,
@@ -11742,7 +15016,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469505867,
@@ -11755,7 +15034,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469496194,
@@ -11768,7 +15052,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469482952,
@@ -11781,7 +15070,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469482950,
@@ -11794,7 +15088,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469479258,
@@ -11807,7 +15106,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469422206,
@@ -11820,7 +15124,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469372925,
@@ -11833,7 +15142,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469368899,
@@ -11846,7 +15160,16 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping",
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping · Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 469365099,
@@ -11859,7 +15182,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469364967,
@@ -11872,7 +15200,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 469305891,
@@ -11885,7 +15218,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 469156108,
@@ -11898,7 +15238,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-16",
+      "conversationBrief": "Lifecycle: Bad Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 466957273,
@@ -11911,7 +15258,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-12",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping · PPF (Paint Protection Film)"
     },
     {
       "id": 466432604,
@@ -11924,7 +15279,15 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Max"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-06-11",
+      "conversationBrief": "Lifecycle: Not set · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Max"
     },
     {
       "id": 464811871,
@@ -11937,7 +15300,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-09",
+      "conversationBrief": "Lifecycle: Not set · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 464116326,
@@ -11950,7 +15320,16 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping",
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-08",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping · Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 463565570,
@@ -11963,7 +15342,16 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "Detailing",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-06-07",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · Detailing · PPF (Paint Protection Film)"
     },
     {
       "id": 460010358,
@@ -11976,7 +15364,12 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-06-01",
+      "conversationBrief": "Lifecycle: Customer · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458599404,
@@ -11989,7 +15382,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458581992,
@@ -12002,7 +15400,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458580111,
@@ -12015,7 +15418,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458562831,
@@ -12028,7 +15436,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458557558,
@@ -12041,7 +15454,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458553078,
@@ -12054,7 +15472,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458540648,
@@ -12067,7 +15490,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458508208,
@@ -12080,7 +15508,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458493815,
@@ -12093,7 +15526,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458493540,
@@ -12106,7 +15544,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458472392,
@@ -12119,7 +15562,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458466528,
@@ -12132,7 +15580,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458463805,
@@ -12145,7 +15598,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458462408,
@@ -12158,7 +15616,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458460719,
@@ -12171,7 +15634,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458460584,
@@ -12184,7 +15652,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458438969,
@@ -12197,7 +15670,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458414090,
@@ -12210,7 +15688,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458386828,
@@ -12223,7 +15706,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458220737,
@@ -12236,7 +15724,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458205737,
@@ -12249,7 +15742,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458187363,
@@ -12262,7 +15760,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458185783,
@@ -12275,7 +15778,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458174765,
@@ -12288,7 +15796,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458170031,
@@ -12301,7 +15814,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458162427,
@@ -12314,7 +15832,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458162295,
@@ -12327,7 +15850,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458134698,
@@ -12340,7 +15868,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458071931,
@@ -12353,7 +15886,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: Cold Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458035407,
@@ -12366,7 +15904,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 458006027,
@@ -12379,7 +15922,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457981424,
@@ -12392,7 +15940,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457980485,
@@ -12405,7 +15958,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457972892,
@@ -12418,7 +15976,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457956720,
@@ -12431,7 +15994,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457945259,
@@ -12444,7 +16012,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457929571,
@@ -12457,7 +16030,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457924023,
@@ -12470,7 +16048,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457905338,
@@ -12483,7 +16066,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457903290,
@@ -12496,7 +16084,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457852777,
@@ -12509,7 +16102,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457814897,
@@ -12522,7 +16120,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457814015,
@@ -12535,7 +16138,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457813293,
@@ -12548,7 +16156,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457793307,
@@ -12561,7 +16174,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457787612,
@@ -12574,7 +16192,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457786277,
@@ -12587,7 +16210,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457785005,
@@ -12600,7 +16228,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457780137,
@@ -12613,7 +16246,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457776254,
@@ -12626,7 +16264,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457771365,
@@ -12639,7 +16282,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457770905,
@@ -12652,7 +16300,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457757376,
@@ -12665,7 +16318,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457756570,
@@ -12678,7 +16336,12 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457751626,
@@ -12691,7 +16354,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457747706,
@@ -12704,7 +16372,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457741353,
@@ -12717,7 +16390,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457736026,
@@ -12730,7 +16408,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457734764,
@@ -12743,7 +16426,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457734631,
@@ -12756,7 +16444,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457732062,
@@ -12769,7 +16462,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457730803,
@@ -12782,7 +16480,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457717578,
@@ -12795,7 +16498,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457712709,
@@ -12808,7 +16516,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457658736,
@@ -12821,7 +16534,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457626971,
@@ -12834,7 +16552,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457610623,
@@ -12847,7 +16570,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457603241,
@@ -12860,7 +16588,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457585847,
@@ -12873,7 +16606,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457541471,
@@ -12886,7 +16624,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457535105,
@@ -12899,7 +16642,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457519040,
@@ -12912,7 +16660,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457515716,
@@ -12925,7 +16678,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457503261,
@@ -12938,7 +16696,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457497929,
@@ -12951,7 +16714,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457496425,
@@ -12964,7 +16732,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457478451,
@@ -12977,7 +16750,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457460197,
@@ -12990,7 +16768,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457452376,
@@ -13003,7 +16786,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457327288,
@@ -13016,7 +16804,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457306266,
@@ -13029,7 +16822,12 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 70.0
+      "finalSaleValue": 70.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457302834,
@@ -13042,7 +16840,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457301192,
@@ -13055,7 +16858,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457294038,
@@ -13068,7 +16876,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457286519,
@@ -13081,7 +16894,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457258584,
@@ -13094,7 +16912,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457256837,
@@ -13107,7 +16930,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457256663,
@@ -13120,7 +16948,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457253723,
@@ -13133,7 +16966,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457242220,
@@ -13146,7 +16984,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457240520,
@@ -13159,7 +17002,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457217032,
@@ -13172,7 +17020,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457167099,
@@ -13185,7 +17038,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457156434,
@@ -13198,7 +17056,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457142592,
@@ -13211,7 +17074,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457141621,
@@ -13224,7 +17092,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457137695,
@@ -13237,7 +17110,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457069492,
@@ -13250,7 +17128,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457067973,
@@ -13263,7 +17146,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457058430,
@@ -13276,7 +17164,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457044550,
@@ -13289,7 +17182,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457032169,
@@ -13302,7 +17200,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457031650,
@@ -13315,7 +17218,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457029559,
@@ -13328,7 +17236,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457015000,
@@ -13341,7 +17254,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457012268,
@@ -13354,7 +17272,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 457007380,
@@ -13367,7 +17290,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456995350,
@@ -13380,7 +17308,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456993528,
@@ -13393,7 +17326,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456986118,
@@ -13406,7 +17344,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456974661,
@@ -13419,7 +17362,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456974557,
@@ -13432,7 +17380,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456955998,
@@ -13445,7 +17398,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456949169,
@@ -13458,7 +17416,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456947866,
@@ -13471,7 +17434,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456925247,
@@ -13484,7 +17452,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456909929,
@@ -13497,7 +17470,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456907487,
@@ -13510,7 +17488,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456896911,
@@ -13523,7 +17506,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456888240,
@@ -13536,7 +17524,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456855184,
@@ -13549,7 +17542,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456852388,
@@ -13562,7 +17560,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456851926,
@@ -13575,7 +17578,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456825966,
@@ -13588,7 +17596,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456822161,
@@ -13601,7 +17614,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456819656,
@@ -13614,7 +17632,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456799908,
@@ -13627,7 +17650,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456791101,
@@ -13640,7 +17668,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456736298,
@@ -13653,7 +17686,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456731710,
@@ -13666,7 +17704,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456719548,
@@ -13679,7 +17722,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456676553,
@@ -13692,7 +17740,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456643171,
@@ -13705,7 +17758,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456634559,
@@ -13718,7 +17776,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456549018,
@@ -13731,7 +17794,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456546806,
@@ -13744,7 +17812,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456536784,
@@ -13757,7 +17830,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456513741,
@@ -13770,7 +17848,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-26",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456416024,
@@ -13783,7 +17866,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456408324,
@@ -13796,7 +17884,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456403393,
@@ -13809,7 +17902,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456382382,
@@ -13822,7 +17920,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456380187,
@@ -13835,7 +17938,12 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456378333,
@@ -13848,7 +17956,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456353622,
@@ -13861,7 +17974,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456351776,
@@ -13874,7 +17992,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456324122,
@@ -13887,7 +18010,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456315291,
@@ -13900,7 +18028,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456314764,
@@ -13913,7 +18046,12 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456284512,
@@ -13926,7 +18064,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456254027,
@@ -13939,7 +18082,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456215657,
@@ -13952,7 +18100,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456212903,
@@ -13965,7 +18118,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456206325,
@@ -13978,7 +18136,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456197335,
@@ -13991,7 +18154,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456115188,
@@ -14004,7 +18172,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456113021,
@@ -14017,7 +18190,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456112282,
@@ -14030,7 +18210,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456110312,
@@ -14043,7 +18230,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456107850,
@@ -14056,7 +18250,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456102712,
@@ -14069,7 +18270,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456099707,
@@ -14082,7 +18290,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456098268,
@@ -14095,7 +18308,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456096590,
@@ -14108,7 +18328,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456090521,
@@ -14121,7 +18348,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456089726,
@@ -14134,7 +18368,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456088860,
@@ -14147,7 +18386,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456087256,
@@ -14160,7 +18404,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456084260,
@@ -14173,7 +18424,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456083846,
@@ -14186,7 +18444,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456079214,
@@ -14199,7 +18464,12 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456076836,
@@ -14212,7 +18482,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456075206,
@@ -14225,7 +18502,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 456072000,
@@ -14238,7 +18522,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456071378,
@@ -14251,7 +18540,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456069999,
@@ -14264,7 +18558,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456068312,
@@ -14277,7 +18576,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456067690,
@@ -14290,7 +18594,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456066683,
@@ -14303,7 +18612,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456065304,
@@ -14316,7 +18630,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 456063894,
@@ -14329,7 +18648,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454406197,
@@ -14342,7 +18666,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454200919,
@@ -14355,7 +18684,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454173041,
@@ -14368,7 +18702,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454150002,
@@ -14381,7 +18720,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: Not set",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 454148339,
@@ -14394,7 +18740,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 454141333,
@@ -14407,7 +18760,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454097142,
@@ -14420,7 +18778,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454093086,
@@ -14433,7 +18796,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454087234,
@@ -14446,7 +18814,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 454074748,
@@ -14459,7 +18834,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 454011350,
@@ -14472,7 +18852,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453957234,
@@ -14485,7 +18870,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453925794,
@@ -14498,7 +18890,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453922567,
@@ -14511,7 +18908,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453918969,
@@ -14524,7 +18926,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453900202,
@@ -14537,7 +18944,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453892288,
@@ -14550,7 +18962,14 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 2520.0
+      "finalSaleValue": 2520.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453863964,
@@ -14563,7 +18982,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453840361,
@@ -14576,7 +19000,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453839079,
@@ -14589,7 +19018,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453797801,
@@ -14602,7 +19036,14 @@ const REPORT_DATA = {
       "lifecycle": "Appointment",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: Appointment",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453786944,
@@ -14615,7 +19056,14 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453783189,
@@ -14628,7 +19076,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453780013,
@@ -14641,7 +19096,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453779283,
@@ -14654,7 +19114,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453765184,
@@ -14667,7 +19132,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453762741,
@@ -14680,7 +19150,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453761267,
@@ -14693,7 +19168,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453758212,
@@ -14706,7 +19186,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453741176,
@@ -14719,7 +19204,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453733280,
@@ -14732,7 +19222,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453730661,
@@ -14745,7 +19240,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453707523,
@@ -14758,7 +19260,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453542287,
@@ -14771,7 +19278,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453541984,
@@ -14784,7 +19296,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453538608,
@@ -14797,7 +19314,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453531698,
@@ -14810,7 +19332,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453484855,
@@ -14823,7 +19352,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453461125,
@@ -14836,7 +19370,15 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 6193.0
+      "finalSaleValue": 6193.0,
+      "tags": [
+        "Car Tinting",
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Car Wrapping"
     },
     {
       "id": 453444317,
@@ -14849,7 +19391,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453381448,
@@ -14862,7 +19409,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453363006,
@@ -14875,7 +19427,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453350232,
@@ -14888,7 +19445,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453348378,
@@ -14901,7 +19465,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 453304092,
@@ -14914,7 +19483,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453294110,
@@ -14927,7 +19503,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453279958,
@@ -14940,7 +19523,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 453068949,
@@ -14953,7 +19543,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452945387,
@@ -14966,7 +19563,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452935996,
@@ -14979,7 +19583,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452935530,
@@ -14992,7 +19603,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452906795,
@@ -15005,7 +19621,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452898835,
@@ -15018,7 +19639,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452856989,
@@ -15031,7 +19659,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452844273,
@@ -15044,7 +19679,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 452841478,
@@ -15057,7 +19699,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452838265,
@@ -15070,7 +19719,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452835821,
@@ -15083,7 +19737,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452808713,
@@ -15096,7 +19755,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452808523,
@@ -15109,7 +19775,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452805390,
@@ -15122,7 +19795,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452801961,
@@ -15135,7 +19815,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452797992,
@@ -15148,7 +19833,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452796570,
@@ -15161,7 +19853,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452793774,
@@ -15174,7 +19873,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452782038,
@@ -15187,7 +19893,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452778399,
@@ -15200,7 +19913,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452772426,
@@ -15213,7 +19933,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452759797,
@@ -15226,7 +19951,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452745029,
@@ -15239,7 +19969,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452737966,
@@ -15252,7 +19989,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452728636,
@@ -15265,7 +20007,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452728268,
@@ -15278,7 +20025,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452714380,
@@ -15291,7 +20045,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452703066,
@@ -15304,7 +20063,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452697807,
@@ -15317,7 +20081,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452697755,
@@ -15330,7 +20099,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452695693,
@@ -15343,7 +20117,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452689969,
@@ -15356,7 +20135,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452626449,
@@ -15369,7 +20155,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452604625,
@@ -15382,7 +20175,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452601179,
@@ -15395,7 +20193,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452593754,
@@ -15408,7 +20213,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452553186,
@@ -15421,7 +20231,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452546327,
@@ -15434,7 +20249,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452524305,
@@ -15447,7 +20269,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 452445597,
@@ -15460,7 +20289,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452443170,
@@ -15473,7 +20307,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452441855,
@@ -15486,7 +20325,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452435762,
@@ -15499,7 +20343,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452425428,
@@ -15512,7 +20361,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452425164,
@@ -15525,7 +20379,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452408631,
@@ -15538,7 +20399,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452406324,
@@ -15551,7 +20417,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452387484,
@@ -15564,7 +20435,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452382324,
@@ -15577,7 +20453,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452350526,
@@ -15590,7 +20473,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452327403,
@@ -15603,7 +20493,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452289144,
@@ -15616,7 +20511,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 452283333,
@@ -15629,7 +20531,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452278999,
@@ -15642,7 +20549,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452266165,
@@ -15655,7 +20569,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452193675,
@@ -15668,7 +20587,14 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 670.0
+      "finalSaleValue": 670.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452150695,
@@ -15681,7 +20607,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452145710,
@@ -15694,7 +20625,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 452136759,
@@ -15707,7 +20645,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452132521,
@@ -15720,7 +20663,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452040581,
@@ -15733,7 +20681,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 452036986,
@@ -15746,7 +20699,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film)"
     },
     {
       "id": 452034712,
@@ -15759,7 +20720,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451973037,
@@ -15772,7 +20740,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451969739,
@@ -15785,7 +20760,16 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)",
+        "Previous Customer",
+        "imported_20260520_130548"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film) · Previous Customer · imported_20260520_130548"
     },
     {
       "id": 451969078,
@@ -15798,7 +20782,14 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Previous Customer"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: Customer · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Previous Customer"
     },
     {
       "id": 451951430,
@@ -15811,7 +20802,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451939054,
@@ -15824,7 +20822,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451930064,
@@ -15837,7 +20840,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451925608,
@@ -15850,7 +20860,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451920633,
@@ -15863,7 +20878,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451913156,
@@ -15876,7 +20898,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451906025,
@@ -15889,7 +20916,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451905739,
@@ -15902,7 +20934,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451899951,
@@ -15915,7 +20952,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 451894754,
@@ -15928,7 +20972,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451892464,
@@ -15941,7 +20992,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451887095,
@@ -15954,7 +21012,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451883667,
@@ -15967,7 +21030,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451879494,
@@ -15980,7 +21050,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451875278,
@@ -15993,7 +21068,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451866340,
@@ -16006,7 +21088,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451866124,
@@ -16019,7 +21106,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451865286,
@@ -16032,7 +21124,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451865194,
@@ -16045,7 +21142,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451863801,
@@ -16058,7 +21160,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451843084,
@@ -16071,7 +21180,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451842495,
@@ -16084,7 +21198,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451841345,
@@ -16097,7 +21218,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451805899,
@@ -16110,7 +21236,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451805629,
@@ -16123,7 +21254,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451769987,
@@ -16136,7 +21272,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-20",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451720396,
@@ -16149,7 +21290,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451719800,
@@ -16162,7 +21308,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451700598,
@@ -16175,7 +21326,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451695909,
@@ -16188,7 +21344,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451684577,
@@ -16201,7 +21362,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451678376,
@@ -16214,7 +21380,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451675394,
@@ -16227,7 +21398,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451674491,
@@ -16240,7 +21418,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451671200,
@@ -16253,7 +21436,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451668984,
@@ -16266,7 +21454,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451663135,
@@ -16279,7 +21474,14 @@ const REPORT_DATA = {
       "lifecycle": "Not set",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: Not set",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451657852,
@@ -16292,7 +21494,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451657749,
@@ -16305,7 +21512,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451655375,
@@ -16318,7 +21530,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451651951,
@@ -16331,7 +21548,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451651397,
@@ -16344,7 +21566,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451645361,
@@ -16357,7 +21584,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451644831,
@@ -16370,7 +21602,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451644614,
@@ -16383,7 +21622,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451643781,
@@ -16396,7 +21640,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451643302,
@@ -16409,7 +21658,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451643160,
@@ -16422,7 +21676,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451642568,
@@ -16435,7 +21694,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451642505,
@@ -16448,7 +21712,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451642344,
@@ -16461,7 +21730,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451638271,
@@ -16474,7 +21748,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451635668,
@@ -16487,7 +21766,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451635160,
@@ -16500,7 +21784,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451633230,
@@ -16513,7 +21802,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451632551,
@@ -16526,7 +21822,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451626733,
@@ -16539,7 +21840,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451503396,
@@ -16552,7 +21858,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451496423,
@@ -16565,7 +21878,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451492508,
@@ -16578,7 +21896,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451488137,
@@ -16591,7 +21914,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451484677,
@@ -16604,7 +21932,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451478678,
@@ -16617,7 +21950,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451411514,
@@ -16630,7 +21968,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451407331,
@@ -16643,7 +21986,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451402127,
@@ -16656,7 +22006,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 451397191,
@@ -16669,7 +22026,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Detailing",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing",
+        "Other Detailing Service"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Detailing · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead · Service: Detailing",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing · Other Detailing Service"
     },
     {
       "id": 451396858,
@@ -16682,7 +22047,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451390346,
@@ -16695,7 +22065,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451379279,
@@ -16708,7 +22083,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451369460,
@@ -16721,7 +22101,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451369244,
@@ -16734,7 +22119,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451360023,
@@ -16747,7 +22137,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451356598,
@@ -16760,7 +22155,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451311655,
@@ -16773,7 +22173,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451262561,
@@ -16786,7 +22191,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451258457,
@@ -16799,7 +22209,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451249722,
@@ -16812,7 +22227,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451245534,
@@ -16825,7 +22245,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451239650,
@@ -16838,7 +22263,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451182560,
@@ -16851,7 +22281,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451171050,
@@ -16864,7 +22299,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451161779,
@@ -16877,7 +22317,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451158976,
@@ -16890,7 +22335,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451154655,
@@ -16903,7 +22353,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451143885,
@@ -16916,7 +22371,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451105690,
@@ -16929,7 +22389,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451090018,
@@ -16942,7 +22407,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-19",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451040613,
@@ -16955,7 +22425,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 451016975,
@@ -16968,7 +22443,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450998241,
@@ -16981,7 +22461,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450988301,
@@ -16994,7 +22479,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450975544,
@@ -17007,7 +22497,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450962444,
@@ -17020,7 +22515,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450945707,
@@ -17033,7 +22533,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450936558,
@@ -17046,7 +22551,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450935814,
@@ -17059,7 +22569,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450930883,
@@ -17072,7 +22587,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450928622,
@@ -17085,7 +22605,12 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450922727,
@@ -17098,7 +22623,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450907363,
@@ -17111,7 +22641,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450896028,
@@ -17124,7 +22659,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450875619,
@@ -17137,7 +22677,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450872766,
@@ -17150,7 +22695,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 450871885,
@@ -17163,7 +22716,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450853569,
@@ -17176,7 +22734,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450834021,
@@ -17189,7 +22752,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450827694,
@@ -17202,7 +22770,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450817492,
@@ -17215,7 +22788,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450795532,
@@ -17228,7 +22806,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450701134,
@@ -17241,7 +22824,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 450695803,
@@ -17254,7 +22844,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450649433,
@@ -17267,7 +22862,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450647099,
@@ -17280,7 +22880,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450646528,
@@ -17293,7 +22898,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450556204,
@@ -17306,7 +22916,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450519683,
@@ -17319,7 +22934,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450498312,
@@ -17332,7 +22952,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450466586,
@@ -17345,7 +22970,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450465752,
@@ -17358,7 +22988,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 450442738,
@@ -17371,7 +23008,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450411577,
@@ -17384,7 +23026,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450409532,
@@ -17397,7 +23044,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450406657,
@@ -17410,7 +23062,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450406040,
@@ -17423,7 +23080,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450335262,
@@ -17436,7 +23098,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450311777,
@@ -17449,7 +23116,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450291501,
@@ -17462,7 +23134,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450288923,
@@ -17475,7 +23152,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450267724,
@@ -17488,7 +23170,12 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450251555,
@@ -17501,7 +23188,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450248453,
@@ -17514,7 +23206,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450218684,
@@ -17527,7 +23224,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450182465,
@@ -17540,7 +23242,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450179270,
@@ -17553,7 +23260,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450168772,
@@ -17566,7 +23278,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450163496,
@@ -17579,7 +23296,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450159063,
@@ -17592,7 +23314,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450156103,
@@ -17605,7 +23332,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450142595,
@@ -17618,7 +23350,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450131247,
@@ -17631,7 +23368,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450116678,
@@ -17644,7 +23386,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450114436,
@@ -17657,7 +23404,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450092751,
@@ -17670,7 +23422,12 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450088832,
@@ -17683,7 +23440,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450087522,
@@ -17696,7 +23458,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450083177,
@@ -17709,7 +23476,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450078921,
@@ -17722,7 +23494,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450072665,
@@ -17735,7 +23512,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450070384,
@@ -17748,7 +23530,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450067742,
@@ -17761,7 +23548,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450063307,
@@ -17774,7 +23566,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450062659,
@@ -17787,7 +23584,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450046112,
@@ -17800,7 +23602,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450042682,
@@ -17813,7 +23620,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450041526,
@@ -17826,7 +23638,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450036687,
@@ -17839,7 +23656,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450035586,
@@ -17852,7 +23674,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450035577,
@@ -17865,7 +23692,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450026755,
@@ -17878,7 +23710,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450025809,
@@ -17891,7 +23728,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450022346,
@@ -17904,7 +23746,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 450007230,
@@ -17917,7 +23764,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449999738,
@@ -17930,7 +23782,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449994540,
@@ -17943,7 +23800,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449994084,
@@ -17956,7 +23818,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449993788,
@@ -17969,7 +23836,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449993001,
@@ -17982,7 +23854,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449988134,
@@ -17995,7 +23872,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449983146,
@@ -18008,7 +23890,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449973296,
@@ -18021,7 +23908,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449965132,
@@ -18034,7 +23926,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449961016,
@@ -18047,7 +23944,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449951297,
@@ -18060,7 +23962,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449950407,
@@ -18073,7 +23980,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449950107,
@@ -18086,7 +23998,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449950041,
@@ -18099,7 +24016,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449942792,
@@ -18112,7 +24034,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449941193,
@@ -18125,7 +24052,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449926393,
@@ -18138,7 +24070,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449914689,
@@ -18151,7 +24088,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449904961,
@@ -18164,7 +24106,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449900003,
@@ -18177,7 +24124,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449898442,
@@ -18190,7 +24142,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449897657,
@@ -18203,7 +24160,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449892899,
@@ -18216,7 +24178,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449891534,
@@ -18229,7 +24196,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449885047,
@@ -18242,7 +24214,14 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Previous Customer"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Previous Customer"
     },
     {
       "id": 449882986,
@@ -18255,7 +24234,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449867171,
@@ -18268,7 +24252,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449864321,
@@ -18281,7 +24270,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449862318,
@@ -18294,7 +24288,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449861055,
@@ -18307,7 +24306,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449856220,
@@ -18320,7 +24324,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449855049,
@@ -18333,7 +24342,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449854985,
@@ -18346,7 +24360,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449854242,
@@ -18359,7 +24378,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449850952,
@@ -18372,7 +24396,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449850488,
@@ -18385,7 +24414,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449847286,
@@ -18398,7 +24432,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449847008,
@@ -18411,7 +24450,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449844539,
@@ -18424,7 +24468,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449840951,
@@ -18437,7 +24486,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449840689,
@@ -18450,7 +24504,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449840109,
@@ -18463,7 +24522,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449835661,
@@ -18476,7 +24540,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449834952,
@@ -18489,7 +24558,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449833789,
@@ -18502,7 +24576,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449831380,
@@ -18515,7 +24594,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449830316,
@@ -18528,7 +24612,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449829741,
@@ -18541,7 +24630,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449826937,
@@ -18554,7 +24648,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449826659,
@@ -18567,7 +24666,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449825322,
@@ -18580,7 +24684,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449822473,
@@ -18593,7 +24702,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449821364,
@@ -18606,7 +24720,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449821264,
@@ -18619,7 +24738,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449820941,
@@ -18632,7 +24756,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449820906,
@@ -18645,7 +24774,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449820164,
@@ -18658,7 +24792,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449819258,
@@ -18671,7 +24810,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449815462,
@@ -18684,7 +24828,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449814703,
@@ -18697,7 +24846,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449814568,
@@ -18710,7 +24864,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449814565,
@@ -18723,7 +24882,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 449813167,
@@ -18736,7 +24902,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449812890,
@@ -18749,7 +24920,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449810845,
@@ -18762,7 +24938,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449806451,
@@ -18775,7 +24956,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449803034,
@@ -18788,7 +24974,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449799552,
@@ -18801,7 +24992,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449797169,
@@ -18814,7 +25010,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449796931,
@@ -18827,7 +25028,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449795117,
@@ -18840,7 +25046,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449793608,
@@ -18853,7 +25064,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449789663,
@@ -18866,7 +25082,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449782092,
@@ -18879,7 +25100,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449780234,
@@ -18892,7 +25118,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449776511,
@@ -18905,7 +25136,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449773584,
@@ -18918,7 +25154,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449771709,
@@ -18931,7 +25172,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449764474,
@@ -18944,7 +25190,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449762835,
@@ -18957,7 +25208,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-17",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449723793,
@@ -18970,7 +25226,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449710759,
@@ -18983,7 +25244,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449703458,
@@ -18996,7 +25262,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449699459,
@@ -19009,7 +25280,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449699075,
@@ -19022,7 +25298,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449696056,
@@ -19035,7 +25316,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449666404,
@@ -19048,7 +25334,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449663591,
@@ -19061,7 +25352,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449646715,
@@ -19074,7 +25370,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449639641,
@@ -19087,7 +25388,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449628276,
@@ -19100,7 +25406,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449620009,
@@ -19113,7 +25424,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449614726,
@@ -19126,7 +25442,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449544861,
@@ -19139,7 +25460,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449530185,
@@ -19152,7 +25478,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449526907,
@@ -19165,7 +25496,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449523297,
@@ -19178,7 +25514,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449514027,
@@ -19191,7 +25532,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449508041,
@@ -19204,7 +25550,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449505717,
@@ -19217,7 +25568,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449501253,
@@ -19230,7 +25586,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449497520,
@@ -19243,7 +25604,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449496351,
@@ -19256,7 +25622,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449480548,
@@ -19269,7 +25640,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449464492,
@@ -19282,7 +25658,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449456102,
@@ -19295,7 +25676,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449454551,
@@ -19308,7 +25694,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449451251,
@@ -19321,7 +25712,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449446482,
@@ -19334,7 +25730,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449443957,
@@ -19347,7 +25748,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449432658,
@@ -19360,7 +25766,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 449422697,
@@ -19373,7 +25786,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 449415633,
@@ -19386,7 +25806,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449410921,
@@ -19399,7 +25824,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449410228,
@@ -19412,7 +25842,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449404425,
@@ -19425,7 +25860,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449402785,
@@ -19438,7 +25878,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449394681,
@@ -19451,7 +25896,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449391288,
@@ -19464,7 +25914,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449388643,
@@ -19477,7 +25932,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449387528,
@@ -19490,7 +25950,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449384490,
@@ -19503,7 +25968,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449375325,
@@ -19516,7 +25986,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449368892,
@@ -19529,7 +26004,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449359637,
@@ -19542,7 +26022,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449356002,
@@ -19555,7 +26040,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449355717,
@@ -19568,7 +26058,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449354354,
@@ -19581,7 +26076,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449350291,
@@ -19594,7 +26094,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449349477,
@@ -19607,7 +26112,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449347617,
@@ -19620,7 +26130,12 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: Customer · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449345897,
@@ -19633,7 +26148,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449337424,
@@ -19646,7 +26166,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449330271,
@@ -19659,7 +26184,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449324998,
@@ -19672,7 +26202,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449324496,
@@ -19685,7 +26220,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449316017,
@@ -19698,7 +26238,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449315979,
@@ -19711,7 +26256,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449315592,
@@ -19724,7 +26274,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449313950,
@@ -19737,7 +26292,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449309795,
@@ -19750,7 +26310,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449308010,
@@ -19763,7 +26328,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449304796,
@@ -19776,7 +26346,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449301832,
@@ -19789,7 +26364,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449294693,
@@ -19802,7 +26382,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449293343,
@@ -19815,7 +26400,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449287686,
@@ -19828,7 +26418,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449286498,
@@ -19841,7 +26436,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449272513,
@@ -19854,7 +26454,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449269743,
@@ -19867,7 +26472,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449266129,
@@ -19880,7 +26490,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449259668,
@@ -19893,7 +26508,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-16",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449250524,
@@ -19906,7 +26526,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: Bad Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 449244512,
@@ -19919,7 +26546,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449244209,
@@ -19932,7 +26564,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449238180,
@@ -19945,7 +26582,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449237870,
@@ -19958,7 +26600,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Express Wash",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Service: Express Wash · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead · Service: Express Wash",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449236632,
@@ -19971,7 +26618,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449228562,
@@ -19984,7 +26636,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449224322,
@@ -19997,7 +26654,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449209597,
@@ -20010,7 +26672,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449209128,
@@ -20023,7 +26690,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449195303,
@@ -20036,7 +26708,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449194808,
@@ -20049,7 +26726,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449194200,
@@ -20062,7 +26744,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449194070,
@@ -20075,7 +26762,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449183766,
@@ -20088,7 +26780,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449181117,
@@ -20101,7 +26798,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449180059,
@@ -20114,7 +26816,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449165209,
@@ -20127,7 +26834,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449145238,
@@ -20140,7 +26852,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449143508,
@@ -20153,7 +26870,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449141307,
@@ -20166,7 +26888,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449124418,
@@ -20179,7 +26906,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449124121,
@@ -20192,7 +26924,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449100004,
@@ -20205,7 +26942,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449073088,
@@ -20218,7 +26960,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449071698,
@@ -20231,7 +26978,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 449059031,
@@ -20244,7 +26996,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 448955547,
@@ -20257,7 +27014,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating"
     },
     {
       "id": 448852932,
@@ -20270,7 +27034,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 448850846,
@@ -20283,7 +27054,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-15",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 448379697,
@@ -20296,7 +27074,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-14",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 448326719,
@@ -20309,7 +27094,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-14",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 447906987,
@@ -20322,7 +27114,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-05-14",
+      "conversationBrief": "Lifecycle: New Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 447562430,
@@ -20335,7 +27134,14 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-13",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 447416627,
@@ -20348,7 +27154,14 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-13",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 447300531,
@@ -20361,7 +27174,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-13",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 447252483,
@@ -20374,7 +27194,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-13",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 446792121,
@@ -20387,7 +27212,14 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 5500.0
+      "finalSaleValue": 5500.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 446757636,
@@ -20400,7 +27232,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 446739271,
@@ -20413,7 +27252,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 446603874,
@@ -20426,7 +27270,15 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Ceramic Coating",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "Google Agency Lead"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Ceramic Coating · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: Hot Lead · Service: Ceramic Coating",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · Google Agency Lead"
     },
     {
       "id": 446596206,
@@ -20439,7 +27291,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 446592762,
@@ -20452,7 +27311,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-12",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 446348143,
@@ -20465,7 +27329,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-11",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 446125206,
@@ -20478,7 +27347,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-11",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 446008574,
@@ -20491,7 +27367,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-11",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 445788371,
@@ -20504,7 +27385,15 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-11",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Car Wrapping"
     },
     {
       "id": 445698287,
@@ -20517,7 +27406,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-11",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 445426648,
@@ -20530,7 +27426,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 445416123,
@@ -20543,7 +27446,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 445356298,
@@ -20556,7 +27464,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "Detailing"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · Detailing"
     },
     {
       "id": 445246559,
@@ -20569,7 +27485,15 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping · PPF (Paint Protection Film)"
     },
     {
       "id": 445152875,
@@ -20582,7 +27506,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 445073184,
@@ -20595,7 +27524,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 445067369,
@@ -20608,7 +27544,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing"
+      ],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing"
     },
     {
       "id": 445055489,
@@ -20621,7 +27564,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 445030502,
@@ -20634,7 +27582,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-10",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 444904074,
@@ -20647,7 +27600,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 444770731,
@@ -20660,7 +27618,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film)"
     },
     {
       "id": 444732815,
@@ -20673,7 +27639,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 444636693,
@@ -20686,7 +27659,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 444617433,
@@ -20699,7 +27679,14 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 444605503,
@@ -20712,7 +27699,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-09",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 444057847,
@@ -20725,7 +27719,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-08",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 444021432,
@@ -20738,7 +27737,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-08",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 443972305,
@@ -20751,7 +27755,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-08",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 443877664,
@@ -20764,7 +27773,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Meta Ads · Medium: Paid Ads · Date: 2026-05-08",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 443269996,
@@ -20777,7 +27791,15 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 1260.0
+      "finalSaleValue": 1260.0,
+      "tags": [
+        "Car Tinting",
+        "Previous Customer"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-07",
+      "conversationBrief": "Lifecycle: Customer",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Previous Customer"
     },
     {
       "id": 443250534,
@@ -20790,7 +27812,15 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-07",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing · PPF (Paint Protection Film)"
     },
     {
       "id": 443072904,
@@ -20803,7 +27833,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-05-07",
+      "conversationBrief": "Lifecycle: New Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 442898879,
@@ -20816,7 +27851,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-06",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 442715460,
@@ -20829,7 +27871,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-06",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 442342532,
@@ -20842,7 +27891,15 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-06",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 442297820,
@@ -20855,7 +27912,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-05-06",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 438500903,
@@ -20868,7 +27930,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-04-29",
+      "conversationBrief": "Lifecycle: New Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 438266554,
@@ -20881,7 +27950,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-29",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 438199864,
@@ -20894,7 +27968,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-29",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 437897860,
@@ -20907,7 +27988,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 437855124,
@@ -20920,7 +28008,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Google Agency Lead"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Google Agency Lead"
     },
     {
       "id": 437767337,
@@ -20933,7 +28028,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 437699587,
@@ -20946,7 +28046,16 @@ const REPORT_DATA = {
       "lifecycle": "Hot Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Car Wrapping",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: Hot Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Car Wrapping · PPF (Paint Protection Film)"
     },
     {
       "id": 437670216,
@@ -20959,7 +28068,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 437561332,
@@ -20972,7 +28088,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Detailing"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Detailing"
     },
     {
       "id": 437510362,
@@ -20985,7 +28109,16 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 10500.0
+      "finalSaleValue": 10500.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)",
+        "Previous Customer"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: Customer · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film) · Previous Customer"
     },
     {
       "id": 437423377,
@@ -20998,7 +28131,15 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-28",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Car Wrapping"
     },
     {
       "id": 436782059,
@@ -21011,7 +28152,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Ceramic Coating"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Ceramic Coating"
     },
     {
       "id": 436606866,
@@ -21024,7 +28173,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 436582021,
@@ -21037,7 +28193,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-27",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 436041008,
@@ -21050,7 +28211,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-04-26",
+      "conversationBrief": "Lifecycle: Bad Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 436029570,
@@ -21063,7 +28231,15 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-26",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 436024952,
@@ -21076,7 +28252,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-04-26",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 436012825,
@@ -21089,7 +28272,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-26",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 435806425,
@@ -21102,7 +28292,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-25",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 435679499,
@@ -21115,7 +28312,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Wrap",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Wrap · Date: 2026-04-25",
+      "conversationBrief": "Lifecycle: New Lead · Service: Wrap",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 435601036,
@@ -21128,7 +28332,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film)"
     },
     {
       "id": 435545848,
@@ -21141,7 +28353,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-25",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 435317117,
@@ -21154,7 +28371,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-24",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 434985566,
@@ -21167,7 +28391,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-24",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 434958247,
@@ -21180,7 +28411,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-24",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 434886107,
@@ -21193,7 +28431,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-24",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 434851318,
@@ -21206,7 +28451,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-24",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 434545200,
@@ -21219,7 +28471,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Detailing",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Previous Customer"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Detailing · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Detailing",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Previous Customer"
     },
     {
       "id": 434154842,
@@ -21232,7 +28491,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 434130418,
@@ -21245,7 +28509,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 434130153,
@@ -21258,7 +28527,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 434125215,
@@ -21271,7 +28545,12 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 434101645,
@@ -21284,7 +28563,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 434092569,
@@ -21297,7 +28581,14 @@ const REPORT_DATA = {
       "lifecycle": "Appointment",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Google Agency Lead"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: Appointment",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Google Agency Lead"
     },
     {
       "id": 433976504,
@@ -21310,7 +28601,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Tinting",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Tinting · Date: 2026-04-23",
+      "conversationBrief": "Lifecycle: New Lead · Service: Tinting",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 433710435,
@@ -21323,7 +28619,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 433699414,
@@ -21336,7 +28637,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-22",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 433367604,
@@ -21349,7 +28655,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Detailing",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Detailing · Date: 2026-04-22",
+      "conversationBrief": "Lifecycle: New Lead · Service: Detailing",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 433356668,
@@ -21362,7 +28673,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Detailing",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Detailing · Date: 2026-04-22",
+      "conversationBrief": "Lifecycle: Bad Lead · Service: Detailing",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 432826358,
@@ -21375,7 +28691,14 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 432785512,
@@ -21388,7 +28711,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 432729722,
@@ -21401,7 +28731,14 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing"
     },
     {
       "id": 432657636,
@@ -21414,7 +28751,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Detailing"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing"
     },
     {
       "id": 432650755,
@@ -21427,7 +28771,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 432543627,
@@ -21440,7 +28791,15 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Paint Protection Film (PPF)",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Paint Protection Film (PPF) · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: Bad Lead · Service: Paint Protection Film (PPF)",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film)"
     },
     {
       "id": 432402846,
@@ -21453,7 +28812,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-21",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 432021912,
@@ -21466,7 +28830,15 @@ const REPORT_DATA = {
       "lifecycle": "Quotation",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-20",
+      "conversationBrief": "Lifecycle: Quotation",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 431899114,
@@ -21479,7 +28851,15 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-20",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · PPF (Paint Protection Film)"
     },
     {
       "id": 431827792,
@@ -21492,7 +28872,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-20",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 431764283,
@@ -21505,7 +28892,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-20",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 431749612,
@@ -21518,7 +28912,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-20",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 431302558,
@@ -21531,7 +28932,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-19",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 431170014,
@@ -21544,7 +28952,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-19",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 430877998,
@@ -21557,7 +28970,12 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 430829642,
@@ -21570,7 +28988,16 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-18",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 430786137,
@@ -21583,7 +29010,12 @@ const REPORT_DATA = {
       "lifecycle": "Bad Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-18",
+      "conversationBrief": "Lifecycle: Bad Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "No tags recorded"
     },
     {
       "id": 430727769,
@@ -21596,7 +29028,15 @@ const REPORT_DATA = {
       "lifecycle": "New Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Google Agency Lead",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-18",
+      "conversationBrief": "Lifecycle: New Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Google Agency Lead · PPF (Paint Protection Film)"
     },
     {
       "id": 430697407,
@@ -21609,7 +29049,15 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating",
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-18",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating · PPF (Paint Protection Film)"
     },
     {
       "id": 430270512,
@@ -21622,7 +29070,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-17",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 430212557,
@@ -21635,7 +29090,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Wrapping"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-17",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Wrapping"
     },
     {
       "id": 430180747,
@@ -21648,7 +29110,14 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Ceramic Coating"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-17",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Ceramic Coating"
     },
     {
       "id": 429935959,
@@ -21661,7 +29130,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "PPF (Paint Protection Film)"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-16",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "PPF (Paint Protection Film)"
     },
     {
       "id": 429571388,
@@ -21674,7 +29150,14 @@ const REPORT_DATA = {
       "lifecycle": "Cold Lead",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-16",
+      "conversationBrief": "Lifecycle: Cold Lead",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting"
     },
     {
       "id": 429200012,
@@ -21687,7 +29170,15 @@ const REPORT_DATA = {
       "lifecycle": "Customer",
       "service": "Detailing",
       "quotedValue": 0.0,
-      "finalSaleValue": 1580.0
+      "finalSaleValue": 1580.0,
+      "tags": [
+        "Detailing",
+        "Google Agency Lead"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Service: Detailing · Date: 2026-04-15",
+      "conversationBrief": "Lifecycle: Customer · Service: Detailing",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Detailing · Google Agency Lead"
     },
     {
       "id": 429151639,
@@ -21700,7 +29191,15 @@ const REPORT_DATA = {
       "lifecycle": "Lost",
       "service": "Not set",
       "quotedValue": 0.0,
-      "finalSaleValue": 0.0
+      "finalSaleValue": 0.0,
+      "tags": [
+        "Car Tinting",
+        "Ceramic Coating"
+      ],
+      "contactEntry": "Source: Google Ads · Medium: Paid Ads · Date: 2026-04-15",
+      "conversationBrief": "Lifecycle: Lost",
+      "salesComments": "Not available in Respond.io export",
+      "notes": "Car Tinting · Ceramic Coating"
     }
   ],
   "respondFilterOptions": {

@@ -2,7 +2,7 @@ scope,dimension,value_1,value_2,count
 paid_all_time,source,Meta Ads,,1223
 paid_all_time,source,Google Ads,,136
 paid_all_time,medium,Paid Ads,,1359
-all_contacts,source_medium,Not set,Not set,2381
+all_contacts,source_medium,Not set,Not set,2382
 all_contacts,source_medium,Meta Ads,Paid Ads,1223
 all_contacts,source_medium,Max,Not set,589
 all_contacts,source_medium,Google Ads,Paid Ads,136

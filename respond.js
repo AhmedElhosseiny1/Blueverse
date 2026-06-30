@@ -4,13 +4,16 @@
   const options = data.respondFilterOptions || {};
   const funnel = data.respondLifecycleFunnel || [];
   const health = data.respondDataHealth || {};
-  const nct = data.nctValidation || {};
-  const notes = data.crmNotes || [];
 
   const fmtMoney = v => 'AED ' + Number(v || 0).toLocaleString(undefined, { maximumFractionDigits: 0 });
   const fmtNum = (v, d = 0) => Number(v || 0).toLocaleString(undefined, { maximumFractionDigits: d });
   const fmtPct = v => Number(v || 0).toFixed(1) + '%';
   const pad = n => String(n).padStart(2, '0');
+  const esc = s => {
+    const d = document.createElement('div');
+    d.textContent = s == null ? '' : String(s);
+    return d.innerHTML;
+  };
   const toDateInput = d => {
     if (!d) return '';
     const date = new Date(d);
@@ -23,7 +26,7 @@
     { stage: 'Leads', test: c => c.lifecycle === 'New Lead' },
     { stage: 'Hot leads', test: c => c.lifecycle === 'Hot Lead' },
     { stage: 'Quotation', test: c => c.lifecycle === 'Quotation' },
-    { stage: 'Follow-up', test: c => c.lifecycle === 'Appointment' },
+    { stage: 'Follow-up', test: c => ['Appointment', 'Show Up'].includes(c.lifecycle) },
     { stage: 'Customers', test: c => c.lifecycle === 'Customer' },
     { stage: 'Old leads', test: c => c.lifecycle === 'Cold Lead' },
     { stage: 'Bad leads', test: c => ['Bad Lead', 'Lost'].includes(c.lifecycle) },
@@ -53,8 +56,6 @@
     serviceQuality: document.getElementById('serviceQualityRows'),
     healthMeter: document.getElementById('healthMeter'),
     healthIssues: document.getElementById('healthIssues'),
-    nctCard: document.getElementById('nctCard'),
-    crmNotes: document.getElementById('crmNotes'),
     contactRows: document.getElementById('contactRows'),
     loadMore: document.getElementById('loadMoreContacts')
   };
@@ -254,40 +255,17 @@
     }).join('');
   }
 
-  function renderNct() {
-    if (!els.nctCard) return;
-    const statusClass = nct.connected ? 'connected' : 'pending';
-    els.nctCard.innerHTML = `
-      <div class="status-card">
-        <span class="status-dot ${statusClass}"></span>
-        <div>
-          <div style="font-weight:800;text-transform:uppercase;font-size:12px">${nct.status || 'pending'}</div>
-          <p style="margin:4px 0 0;color:#3e4e64">${nct.message || 'NCT validation status is unknown.'}</p>
-          ${nct.connected ? `<p class="subdue" style="margin-top:4px">${fmtNum(nct.contacts, 0)} contacts · ${fmtNum(nct.matched, 0)} matched · last sync ${nct.lastSync || 'unknown'}</p>` : ''}
-        </div>
-      </div>
-    `;
-  }
-
-  function renderNotes() {
-    if (!els.crmNotes) return;
-    els.crmNotes.innerHTML = notes.map(note => `<li class="note-card">${note}</li>`).join('') || '<li class="note-card">No notes available.</li>';
-  }
-
   function renderContacts() {
     if (!els.contactRows) return;
     const visible = filtered.slice(0, visibleLimit);
     els.contactRows.innerHTML = visible.map(c => `
       <tr>
-        <td>${c.date || ''}</td>
-        <td>${c.source || 'Not set'}</td>
-        <td>${c.medium || 'Not set'}</td>
-        <td>${c.lifecycle || 'Not set'}</td>
-        <td>${c.service || 'Not set'}</td>
-        <td class="num">${fmtMoney(c.quotedValue)}</td>
-        <td class="num">${fmtMoney(c.finalSaleValue)}</td>
+        <td class="contact-col">${esc(c.contactEntry || '')}</td>
+        <td class="contact-col">${esc(c.conversationBrief || '')}</td>
+        <td class="contact-col gap-cell">${esc(c.salesComments || 'Not available')}</td>
+        <td class="contact-col">${esc(c.notes || '')}</td>
       </tr>
-    `).join('') || '<tr><td colspan="7" class="empty-state">No contacts match the current filters.</td></tr>';
+    `).join('') || '<tr><td colspan="4" class="empty-state">No contacts match the current filters.</td></tr>';
 
     els.loadMore.style.display = visibleLimit >= filtered.length ? 'none' : 'inline-flex';
     els.summary.textContent = `Showing ${fmtNum(visible.length, 0)} of ${fmtNum(filtered.length, 0)} paid contacts${filtered.length !== contacts.length ? ' (filtered)' : ''}.`;
@@ -298,8 +276,6 @@
     renderFunnel();
     renderQuality();
     renderHealth();
-    renderNct();
-    renderNotes();
     renderContacts();
   }
 

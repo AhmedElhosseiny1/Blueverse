@@ -210,6 +210,8 @@ th, td { padding: 10px 9px; border-bottom: 1px solid #e8eef5; text-align: left; 
 th { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; background: #f7faff; white-space: nowrap; }
 td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 tbody tr:hover td { background: #f8fbff; }
+.contact-col { max-width: 320px; min-width: 180px; white-space: normal; word-break: break-word; line-height: 1.45; }
+.gap-cell { color: var(--muted); font-style: italic; }
 .badge {
   display: inline-flex; align-items: center;
   min-height: 22px;
